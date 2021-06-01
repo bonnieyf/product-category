@@ -1,0 +1,148 @@
+@import '~bulma/sass/utilities/mixins'
+@import _var
+
+// side Menu
+.side-menu
+  position: absolute
+  top: 0
+  left: -360px
+  width: 360px
+  bottom: 0
+  overflow: hidden
+  -webkit-overflow-scrolling: touch
+  background-color: #1B1B1B
+  transition: all .5s ease
+
+  +mobile
+    width: 270px
+
+
+.side-menu__item
+  padding-left: 30px
+  position: relative
+  margin-bottom: 44px
+
+  h2
+    position: absolute
+    top: 0
+    left: 0
+    color: $color
+    font-size: 24px
+    line-height: 1.2
+
+  span
+    color: $color
+
+  a
+    color: white
+    font-size: 18px
+    line-height: 1.5
+
+
+.side-menu .side-menu__item:nth-child(2) h2
+    font-size: 18px
+    color: #FFAA00
+
+    svg
+      margin-top: 5px
+
+
+//open menu
+.page .main-box
+  padding-bottom: 150px
+  position: relative
+
+  +mobile
+    padding-bottom: 40px
+
+  &.showmenu
+    padding-left: 360px
+
+    +mobile
+      padding-left: 0
+
+    .side-menu
+      left: 0
+
+    .menu-button
+      left: 360px
+      +mobile
+        left: 253px
+        z-index: 20
+
+      svg
+        transform: rotate(0)
+
+  .container-inner.move
+    transform: translateX(100px)
+
+  .container-inner
+    transition: all .5s ease
+
+.side-menu__title
+  font-size: 22px
+  color:#8E8E8E
+  text-align: center
+  position: relative
+  margin-top: 16px
+  margin-bottom: 30px
+
+  span
+    display: inline-block
+    padding: 0 10px
+    background-color: #1B1B1B
+    position: relative
+    z-index: 2
+    font-family: "Oswald", sans-serif
+    text-transform: uppercase
+
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 0
+    width: 100%
+    height: 1px
+    z-index: 1
+    background-color: #8E8E8E
+
+
+.side-menu__inner
+  padding-left: 15px
+  padding-right: 40px
+
+.side-menu__item
+  text-align: left
+
+// menu button
+.menu-button
+  position: absolute
+  left: 0
+  width: 48px
+  height: 48px
+  background-color: $color
+  text-align: center
+  transition: all .5s ease
+
+  +tablet
+    bottom: auto
+    top: 20px
+
+  +widescreen
+    bottom: 0
+    top: auto
+
+  a
+    display: flex
+    width: 100%
+    height: 100%
+    align-items: center
+    text-align: center
+    color: white
+    justify-content: center
+    font-size: 14px
+  svg
+    display: inline-block
+    width: 15px
+    margin-left: -3px
+    transform: rotate(180deg)
