@@ -1,0 +1,448 @@
+@import '~bulma/sass/utilities/mixins'
+
+$color: #D3461E
+$gray: #464646
+$gray200: #C5C5C5
+
+
+.container
+  padding: 0 15px
+.card
+  box-shadow: 0px 3px 6px rgba(black,.2)
+  border-radius: 5px
+
+.card-image
+  padding: 15px
+.all-bg
+  background-color: #FAFAFA
+.breadcrumb-bar
+  width: 100%
+  background-color: $color
+  padding: 20px 15px
+
+  li,li a
+    color: white
+
+  a
+    color: white
+    font-size: 15px
+
+
+.space-line
+  width: 100%
+  height: 1px
+  background-color: $gray200
+  margin-top: 90px
+
+
+.product-content__inner
+  padding-left: 50px
+  padding-right: 50px
+
+.buttons
+  justify-content: center
+
+.button.is-org
+  min-width: 110px
+  max-width: 110px
+  background-color: $color
+  color: white
+  border: none
+  span
+    color: white
+
+
+.main-box
+  padding-top: 50px
+  padding-bottom: 50px
+  box-sizing: border-box
+
+.video-page .main-box
+  min-height: calc(100vh - 68px)
+
+.media-content .title
+  color: $color
+  font-weight: normal
+
+.buttons
+  text-align: center
+
+  a
+    display: block
+
+.bd-anchor-title
+  text-align: left
+  margin-top: 50px
+  margin-bottom: 65px
+
+.bd-anchor-name
+  color: $gray
+  font-size: 30px
+  line-height: 1.5
+  padding-left: 30px
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 5px
+    left: 0
+    width: 10px
+    height: 30px
+    background-color: $color
+
+
+.filter-resulet
+  margin-bottom: 50px
+  text-align: left
+  display: flex
+  flex-flow: wrap
+
+.filter-item
+  padding: 8px
+  flex: 100%
+  max-width: 100%
+  
+  +tablet
+    flex: 50%
+    max-width: 50%
+
+  +desktop
+    flex: 33.3%
+    max-width: 33.3%
+    
+  +widescreen
+    flex: 25%
+    max-width: 25%
+  
+
+  .filter-content
+    background-color: #F3F3F3
+  
+
+
+.filter-item.hidebox .filter-content
+    background-color: $color
+    color: white
+    
+    h2,a,span
+      color: white
+    
+    a:before
+      background-color: #fff
+  
+.filter-item
+  +mobile
+    display: none
+    
+.filter-item.hidebox
+  +mobile
+    display: block
+    
+.filter-item.all
+  +mobile
+    display: block
+    
+
+.filter-content
+  min-height: 200px
+  height: 100%
+  display: flex
+  align-items: flex-start
+  padding-top: 18px
+  padding-bottom: 18px
+  box-sizing: border-box
+  transition: all .5s ease
+
+.filter-content__title
+  padding-left: 30px
+  padding-right: 50px
+  
+  h2
+    color: $color
+    font-size: 24px
+    line-height: 1.5
+
+.filter-content__main
+  padding-right: 15px
+
+  a
+    position: relative
+    display: inline-block
+    padding-left: 15px
+    color: #59595A
+    font-size: 18px
+    line-height: 1.5
+
+    span
+      color: $color
+
+    &::before
+      content: ""
+      position: absolute
+      top: 10px
+      left: 0
+      width: 6px
+      height: 6px
+      background-color: $color
+
+.main-box
+  padding-top: 0
+
+
+.main-box__header-inner
+  padding-left: 20px
+  padding-right: 20px
+  display: flex
+  align-items: center
+
+  +mobile
+    padding-top: 40px
+    padding-bottom: 40px
+    .columns
+      display: flex
+      flex-flow: column
+    .columns .column:nth-child(1)
+      order: 2
+    .columns .column:nth-child(2)
+      order: 1
+
+  +tablet
+    padding-left: 5%
+    padding-right: 5%
+
+
+  +desktop
+    min-height: 460px
+    padding-left: 60px
+    padding-right: 60px
+
+  +fullhd
+    padding-left: 180px
+    padding-right: 180px
+  
+
+  .columns
+    height: 100%
+
+.main-box__header
+  background-color: black
+
+  .title
+    color: white
+    font-size: 66px
+    font-weight: 500
+    line-height: 1.5
+    font-family: 'Oswald', sans-serif
+    text-align: left
+
+  .description
+    color: white
+    font-size: 18px
+    text-align: left
+    margin-bottom: 30px
+
+
+.filter-options.notification
+  background: none
+  padding: 0
+
+.filter-options .buttons
+  justify-content: start
+  
+.filter-options button
+  color: #A1A1A1
+  min-width: 62px
+  flex: 1
+  font-size: 20px
+  line-height: 38px
+  min-width: 62px
+  border: none
+  border-bottom: 1px solid #A1A1A1
+  margin: 0
+  border-radius: 0
+  background: none
+  margin-bottom: -1px
+  cursor: pointer
+
+  &:not(.is-outlined)
+    background-color: $color
+    color: white
+
+
+
+.main-box__txt
+  color: black
+  font-size: 18px
+  line-height: 1.5
+  text-align: left
+  padding-top: 60px
+  padding-bottom: 52px
+
+
+
+.side-menu__title
+  font-size: 22px
+  color:#8E8E8E
+  text-align: center
+  position: relative
+  margin-top: 16px
+  margin-bottom: 30px
+
+  span
+    display: inline-block
+    padding: 0 10px
+    background-color: #1B1B1B
+    position: relative
+    z-index: 2
+    font-family: "Oswald", sans-serif
+    text-transform: uppercase
+
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 0
+    width: 100%
+    height: 1px
+    z-index: 1
+    background-color: #8E8E8E
+
+
+.video-page .main-box .title
+  margin-top: 0
+  padding-top: 50px
+
+  +mobile
+    padding-top: 80px
+    margin-bottom: 30px
+
+
+
+.side-menu__inner
+  padding-left: 15px
+  padding-right: 40px
+
+.side-menu__item
+  text-align: left
+
+
+.main-box
+  padding-bottom: 200px
+  position: relative
+
+  +mobile
+    padding-bottom: 80px
+
+  &.showmenu
+    padding-left: 360px
+
+    +mobile
+      padding-left: 0
+
+    .side-menu
+      left: 0
+
+    .menu-button
+      left: 360px
+      +mobile
+        left: 252px
+        z-index: 20
+
+      svg
+        transform: rotate(0)
+
+  .container-inner.move
+    transform: translateX(100px)
+
+  .container-inner
+    transition: all .5s ease
+
+.side-menu
+  position: absolute
+  top: 0
+  left: -360px
+  width: 360px
+  bottom: 0
+  overflow: hidden
+  -webkit-overflow-scrolling: touch
+  background-color: #1B1B1B
+  transition: all .5s ease
+
+  +mobile
+    width: 270px
+
+
+.video-page
+  background-color: black
+  min-height: 100vh
+
+
+
+.resp-video
+  padding-top: 56.25%
+  position: relative
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    bottom: 0
+
+.side-menu__item
+  padding-left: 30px
+  position: relative
+  margin-bottom: 44px
+
+  h2
+    position: absolute
+    top: 0
+    left: 0
+    color: $color
+    font-size: 24px
+    line-height: 1.2
+
+  span
+    color: $color
+
+  a
+    color: white
+    font-size: 18px
+    line-height: 1.5
+
+
+.side-menu .side-menu__item:nth-child(2) h2
+    font-size: 18px
+    color: #FFAA00
+
+    svg
+      margin-top: 5px
+
+.menu-button
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 48px
+  height: 48px
+  background-color: $color
+  text-align: center
+  transition: all .5s ease
+
+  +mobile
+    bottom: auto
+    top: 20px
+
+  a
+    display: flex
+    width: 100%
+    height: 100%
+    align-items: center
+    text-align: center
+    color: white
+    justify-content: center
+    font-size: 14px
+  svg
+    display: inline-block
+    width: 15px
+    margin-left: -3px
+    transform: rotate(180deg)

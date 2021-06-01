@@ -1,0 +1,396 @@
+{
+  "datas": [
+    {
+      "name": "Laptops",
+      "datas": [
+        {
+          "id": "s410",
+          "title": "GETAC S410",
+          "videoUrl": "EDH6DsoKs1I",
+          "imgSrc": "assets/s410.png",
+          "descroption": "Please click \"Learn more\" to know what to prepare before the service.",
+          "txt": "Please select the category with initial alphabet of the item your would like to repair and click the specific component to view the video.",
+          "menu": [
+            {
+              "id": 0,
+              "menuTitle": "Antenna",
+              "videoUrl": "gJWzXh1wRJU",
+              "states": "standard"
+            },
+            {
+              "id": 1,
+              "menuTitle": "Battery / Hard Disk Drive",
+              "videoUrl": "Ji1EI-itIs4",
+              "states": "standard"
+            },
+            {
+              "id": 2,
+              "menuTitle": "Battery Board",
+              "videoUrl": "EDH6DsoKs1I",
+              "states": "standard"
+            },
+            {
+              "id": 3,
+              "menuTitle": "Barcode",
+              "videoUrl": "gJWzXh1wRJU",
+              "states": "standard"
+            },
+            {
+              "id": 4,
+              "menuTitle": "Battery - 3rd",
+              "videoUrl": "Kd5qSdMBZJI",
+              "states": "upgrade"
+            },
+            {
+              "id": 5,
+              "menuTitle": "Case A",
+              "videoUrl": "jZ8-PzZclQA",
+              "states": "standard"
+            },
+            {
+              "id": 6,
+              "menuTitle": "Case B",
+              "videoUrl": "osAj0PnHw",
+              "states": "standard"
+            },
+            {
+              "id": 7,
+              "menuTitle": "Case C",
+              "videoUrl": "gJWzXh1wRJU",
+              "states": "standard"
+            },
+            {
+              "id": 8,
+              "menuTitle": "Case D",
+              "videoUrl": "jZ8-PzZclQA",
+              "states": "standard"
+            },
+            {
+              "id": 9,
+              "menuTitle": "Camera",
+              "videoUrl": "Kd5qSdMBZJI",
+              "states": "upgrade"
+            },
+            {
+              "id": 10,
+              "menuTitle": "DDR",
+              "videoUrl": "gJWzXh1wRJU",
+              "states": "standard"
+            },
+            {
+              "id": 11,
+              "menuTitle": "DDR",
+              "videoUrl": "Kd5qSdMBZJI",
+              "states": "upgrade"
+            },
+            {
+              "id": 12,
+              "menuTitle": "Express Card",
+              "videoUrl": "Kd5qSdMBZJI",
+              "states": "upgrade"
+            },
+            {
+              "id": 13,
+              "menuTitle": "Fan",
+              "videoUrl": "gJWzXh1wRJU",
+              "states": "standard"
+            },
+            {
+              "id": 14,
+              "menuTitle": "Fingerprinter",
+              "videoUrl": "Kd5qSdMBZJI",
+              "states": "upgrade"
+            },
+            {
+              "id": 15,
+              "menuTitle": "Handle",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 16,
+              "menuTitle": "Hard Disk Drive",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 17,
+              "menuTitle": "Heatsink",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 18,
+              "menuTitle": "Keyboard",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 19,
+              "menuTitle": "LCD calbe Touchscreen Cable",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 20,
+              "menuTitle": "LAN Board",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 21,
+              "menuTitle": "LED Driver Board",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 22,
+              "menuTitle": "Media Bay",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 23,
+              "menuTitle": "MXM",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "upgrade"
+            },
+            {
+              "id": 24,
+              "menuTitle": "Microphone Cable",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 25,
+              "menuTitle": "ODD",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "upgrade"
+            },
+            {
+              "id": 26,
+              "menuTitle": "Pogo Board",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 27,
+              "menuTitle": "Passthrough",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 28,
+              "menuTitle": "Quick Button Board",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 29,
+              "menuTitle": "RF Switch Board",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 30,
+              "menuTitle": "RFID Board",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "upgrade"
+            },
+            {
+              "id": 31,
+              "menuTitle": "RJ45 Connector",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 32,
+              "menuTitle": "SSD",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 33,
+              "menuTitle": "Speaker",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 34,
+              "menuTitle": "Smart Card",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "upgrade"
+            },
+            {
+              "id": 35,
+              "menuTitle": "Touchpad",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            },
+            {
+              "id": 36,
+              "menuTitle": "WIFI 4G",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "upgrade"
+            }
+          ]
+        },
+        {
+          "id": "b360",
+          "title": "GETAC B360",
+          "videoUrl": "EDH6DsoKs1I",
+          "imgSrc": "assets/b360.png",
+          "descroption": "The b360 notebook is a tool for many jobs, delivering more power, more mobility, more connectivity, and more capability than ever before.",
+          "menu": [
+            {
+              "id": 0,
+              "menuTitle": "Bettery / Hand Disk Drive",
+              "videoUrl": "gJWzXh1wRJU",
+              "states": "standard"
+            },
+            {
+              "id": 1,
+              "menuTitle": "DDR",
+              "videoUrl": "Ji1EI-itIs4",
+              "states": "standard"
+            },
+            {
+              "id": 2,
+              "menuTitle": "DDR",
+              "videoUrl": "EDH6DsoKs1I",
+              "states": "upgrade"
+            },
+            {
+              "id": 3,
+              "menuTitle": "Keyboard",
+              "videoUrl": "gJWzXh1wRJU",
+              "states": "standard"
+            },
+            {
+              "id": 4,
+              "menuTitle": "WIFI 4G Module",
+              "videoUrl": "Kd5qSdMBZJI",
+              "states": "standard"
+            },
+            {
+              "id": 5,
+              "menuTitle": "WIFI 4G Module",
+              "videoUrl": "jZ8-PzZclQA",
+              "states": "upgrade"
+            },
+            {
+              "id": 6,
+              "menuTitle": "Option IO",
+              "videoUrl": "osAj0PnHw",
+              "states": "standard"
+            },
+            {
+              "id": 7,
+              "menuTitle": "Handle",
+              "videoUrl": "gJWzXh1wRJU",
+              "states": "standard"
+            },
+            {
+              "id": 8,
+              "menuTitle": "LCD/Touchscreen Cable",
+              "videoUrl": "jZ8-PzZclQA",
+              "states": "standard"
+            },
+            {
+              "id": 9,
+              "menuTitle": "Antenna",
+              "videoUrl": "Kd5qSdMBZJI",
+              "states": "standard"
+            },
+            {
+              "id": 10,
+              "menuTitle": "Antenna",
+              "videoUrl": "gJWzXh1wRJU",
+              "states": "upgrade"
+            },
+            {
+              "id": 11,
+              "menuTitle": "Case A",
+              "videoUrl": "Kd5qSdMBZJI",
+              "states": "standard"
+            },
+            {
+              "id": 12,
+              "menuTitle": "Case D",
+              "videoUrl": "Kd5qSdMBZJI",
+              "states": "standard"
+            },
+            {
+              "id": 13,
+              "menuTitle": "Hard Disk Drive Canister",
+              "videoUrl": "gJWzXh1wRJU",
+              "states": "standard"
+            },
+            {
+              "id": 14,
+              "menuTitle": "Media Bay",
+              "videoUrl": "Kd5qSdMBZJI",
+              "states": "standard"
+            },
+            {
+              "id": 15,
+              "menuTitle": "Barcode Reader",
+              "videoUrl": "YiDyxQEYiDs",
+              "states": "standard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tablets",
+      "datas": [
+        {
+          "id": "ux10",
+          "title": "GETAC UX10",
+          "videoUrl": "EDH6DsoKs1I",
+          "imgSrc": "assets/ux10.png",
+          "descroption": "A versatile and portable tablet fully ready to deliver digital transformation in environments where rugged performance is required.",
+          "menu": [
+            {
+              "id": 0,
+              "menuTitle": "Bettery / Hand Disk Drive",
+              "videoUrl": "gJWzXh1wRJU",
+              "states": "standard"
+            },
+            {
+              "id": 1,
+              "menuTitle": "DDR",
+              "videoUrl": "Ji1EI-itIs4",
+              "states": "standard"
+            },
+            {
+              "id": 2,
+              "menuTitle": "DDR",
+              "videoUrl": "EDH6DsoKs1I",
+              "states": "upgrade"
+            },
+            {
+              "id": 3,
+              "menuTitle": "Keyboard",
+              "videoUrl": "gJWzXh1wRJU",
+              "states": "standard"
+            },
+            {
+              "id": 4,
+              "menuTitle": "WIFI 4G Module",
+              "videoUrl": "Kd5qSdMBZJI",
+              "states": "standard"
+            },
+            {
+              "id": 5,
+              "menuTitle": "WIFI 4G Module",
+              "videoUrl": "jZ8-PzZclQA",
+              "states": "upgrade"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
