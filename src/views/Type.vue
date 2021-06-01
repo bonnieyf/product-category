@@ -8,12 +8,9 @@
             <li><a href="#">Help & Support</a></li>
             <li><a href="#">Service Video</a></li>
             <li>
-              <router-link
-                to="/"
-                >{{
-                  getType.charAt(0).toUpperCase() + getType.slice(1)
-                }}</router-link
-              >
+              <router-link to="/">{{
+                getType.charAt(0).toUpperCase() + getType.slice(1)
+              }}</router-link>
             </li>
             <li class="is-active">
               <router-link :to="`/${getType}/${getId}/`">{{
@@ -35,10 +32,14 @@
                   {{ getDatas.datas.descroption }}
                 </p>
 
-                <router-link :to="`/${getType}/${getDatas.datas.id}/before`"><b-button type="is-org" expanded>Learn more</b-button></router-link>
+                <router-link :to="`/${getType}/${getDatas.datas.id}/before`"
+                  ><b-button type="is-org" expanded
+                    >Learn more</b-button
+                  ></router-link
+                >
               </div>
               <div class="column">
-                <img src="~@/assets/s410.png" class="photo" alt="" />
+                <img :src="getDatas.datas.imgSrc" class="photo" alt="" />
               </div>
             </div>
           </div>
@@ -74,7 +75,7 @@
             class="filter-item"
             :class="{
               hidebox: key === changeSelected,
-              all: changeSelected === 'All'
+              all: changeSelected === 'All',
             }"
             v-for="(data, key) in cateTatal"
             :key="data.id"

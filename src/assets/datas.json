@@ -7,7 +7,7 @@
           "id": "s410",
           "title": "GETAC S410",
           "videoUrl": "EDH6DsoKs1I",
-          "imgSrc": "assets/s410.png",
+          "imgSrc": "https://www.getac.com/wp-content/uploads/2021/01/S410G4_03-2.png",
           "descroption": "Please click \"Learn more\" to know what to prepare before the service.",
           "txt": "Please select the category with initial alphabet of the item your would like to repair and click the specific component to view the video.",
           "menu": [
@@ -239,7 +239,7 @@
           "id": "b360",
           "title": "GETAC B360",
           "videoUrl": "EDH6DsoKs1I",
-          "imgSrc": "assets/b360.png",
+          "imgSrc": "https://www.getac.com/wp-content/uploads/2021/03/B360_WIN10_2021-06.png",
           "descroption": "The b360 notebook is a tool for many jobs, delivering more power, more mobility, more connectivity, and more capability than ever before.",
           "menu": [
             {
@@ -349,7 +349,7 @@
           "id": "ux10",
           "title": "GETAC UX10",
           "videoUrl": "EDH6DsoKs1I",
-          "imgSrc": "assets/ux10.png",
+          "imgSrc": "https://www.getac.com/wp-content/uploads/2021/03/UX10_WIN10_2021-01.png",
           "descroption": "A versatile and portable tablet fully ready to deliver digital transformation in environments where rugged performance is required.",
           "menu": [
             {

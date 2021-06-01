@@ -41,7 +41,7 @@ const store = new Vuex.Store({
     },
     GET_FIRST_CATE: (state) => {
       let categories = [];
-      state.filterData.datas.menu.forEach((link) => {
+      state.filterData.datas["menu"].forEach((link) => {
         let getFirstLetter = link.menuTitle.toUpperCase().charAt(0);
         categories.push(getFirstLetter);
       });

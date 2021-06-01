@@ -35,13 +35,15 @@
                 <div class="card">
                   <div class="card-image">
                     <figure class="image is-4by3">
-                      <img :src="itemImg(item.imgSrc)" :alt="item.title" />
+                      <img :src="item.imgSrc" :alt="item.title" />
                     </figure>
                   </div>
                   <div class="card-content">
                     <div class="media">
                       <div class="media-content">
-                        <p class="title is-4">{{ item.title.replace('GETAC ','') }}</p>
+                        <p class="title is-4">
+                          {{ item.title.replace("GETAC ", "") }}
+                        </p>
                       </div>
                     </div>
 
@@ -71,11 +73,7 @@
 <script>
 export default {
   name: "Home",
-  methods: {
-    itemImg: function(path) {
-      return require("@/" + path);
-    },
-  },
+  methods: {},
   computed: {
     getProducts() {
       return this.$store.getters.GET_DATAS;
