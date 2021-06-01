@@ -65,11 +65,16 @@
       left: 0
 
     .menu-button
-      left: 360px
+      
       +mobile
+        top: 20px
         left: 253px
         z-index: 20
 
+      +widescreen
+        left: 360px
+        
+      
       svg
         transform: rotate(0)
 
@@ -117,12 +122,14 @@
 // menu button
 .menu-button
   position: absolute
+  bottom: auto
+  top: 20px
   left: 0
   width: 48px
   height: 48px
   background-color: $color
   text-align: center
-  transition: all .5s ease
+  transition: all .5s ease-out
 
   +tablet
     bottom: auto
