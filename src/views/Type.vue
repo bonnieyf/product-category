@@ -1,26 +1,5 @@
 <template>
   <div class="page">
-    <header class="breadcrumb-bar">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-          <ul>
-            <li><a href="#">Homepage</a></li>
-            <li><a href="#">Help & Support</a></li>
-            <li><a href="#">Service Video</a></li>
-            <li>
-              <router-link to="/">{{
-                getType.charAt(0).toUpperCase() + getType.slice(1)
-              }}</router-link>
-            </li>
-            <li class="is-active">
-              <router-link :to="`/${getType}/${getId}/`">{{
-                getDatas.datas.title.replaceAll("GETAC ", "")
-              }}</router-link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
     <div class="main-box">
       <div class="main-box__header">
         <div class="container">
@@ -46,54 +25,95 @@
         </div>
       </div>
       <div class="container">
+        <!-- <nav class="breadcrumb" aria-label="breadcrumbs">
+          <ul>
+            <li><a href="#">Service Video</a></li>
+            <li class="is-active">
+              <router-link :to="`/${getType}/${getId}/`">{{
+                getDatas.datas.title.replaceAll("GETAC ", "")
+              }}</router-link>
+            </li>
+          </ul>
+        </nav> -->
         <p class="main-box__txt">
           {{ getDatas.datas.txt }}
         </p>
-        <div class="filter-options notification">
-          <div class="buttons">
-            <button
-              @click="change('All')"
-              :class="{ 'is-outlined': changeSelected != 'All' }"
-              inverted
-            >
-              All
-            </button>
-            <button
-              v-for="(item, index) in getCate"
-              :key="item[index]"
-              inverted
-              :class="{ 'is-outlined': changeSelected != item }"
-              @click="change(item)"
-            >
-              {{ item }}
-            </button>
+
+        <!-- Search function -->
+        <div class="search-bar">
+          <label for="">Search title</label>
+          <input type="text" v-model="search" placeholder="search title..." />
+          <b-button type="is-org" @click="searchBlur = true">Search</b-button>
+        </div>
+
+        <div class="search-result" v-if="search.length > 0">
+          <div class="search-result-total">
+            <span>
+              <b>{{ searchFilter.length }}</b> Result for "{{ search }}"
+            </span>
+            <b-button type="is-org" @click="cleanResult">Clean</b-button>
+          </div>
+          <div class="filter-content__main">
+            <p v-for="result in searchFilter" :key="result.id">
+              <router-link :to="`/${getType}/${getId}/${result.id}`"
+                >{{ result.menuTitle }}
+
+                <span v-if="result.states === 'upgrade'" type="is-info"
+                  >(Upgrade)</span
+                >
+              </router-link>
+            </p>
           </div>
         </div>
 
-        <div class="filter-resulet">
-          <div
-            class="filter-item"
-            :class="{
-              hidebox: key === changeSelected,
-              all: changeSelected === 'All',
-            }"
-            v-for="(data, key) in cateTatal"
-            :key="data.id"
-          >
-            <div class="filter-content">
-              <div class="filter-content__title">
-                <h2>{{ key }}</h2>
-              </div>
-              <div class="filter-content__main">
-                <p v-for="group in data" :key="group.id">
-                  <router-link :to="`/${getType}/${getId}/${group.id}`"
-                    >{{ group.menuTitle }}
+        <!-- Filter main -->
+        <div class="filter-main" v-if="search.length <= 0">
+          <div class="filter-options notification">
+            <div class="buttons">
+              <button
+                @click="change('All')"
+                :class="{ 'is-outlined': changeSelected != 'All' }"
+                inverted
+              >
+                All
+              </button>
+              <button
+                v-for="(item, index) in getCate"
+                :key="item[index]"
+                inverted
+                :class="{ 'is-outlined': changeSelected != item }"
+                @click="change(item)"
+              >
+                {{ item }}
+              </button>
+            </div>
+          </div>
 
-                    <span v-if="group.states === 'upgrade'" type="is-info"
-                      >(Upgrade)</span
-                    >
-                  </router-link>
-                </p>
+          <div class="filter-resulet">
+            <div
+              class="filter-item"
+              :class="{
+                hidebox: key === changeSelected,
+                all: changeSelected === 'All',
+              }"
+              v-for="(data, key) in cateTatal"
+              :key="data.id"
+            >
+              <div class="filter-content">
+                <div class="filter-content__title">
+                  <h2>{{ key }}</h2>
+                </div>
+                <div class="filter-content__main">
+                  <p v-for="group in data" :key="group.id">
+                    <router-link :to="`/${getType}/${getId}/${group.id}`"
+                      >{{ group.menuTitle }}
+
+                      <span v-if="group.states === 'upgrade'" type="is-info"
+                        >(Upgrade)</span
+                      >
+                    </router-link>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -110,9 +130,16 @@ export default {
       changeSelected: null,
       filterObject: [],
       cateTatal: {},
+      searchBlur: false,
+      search: "",
+      totalLength: "",
     };
   },
   methods: {
+    cleanResult() {
+      this.search = "";
+      this.searchBlur = false;
+    },
     change(val) {
       this.changeSelected = val;
     },
@@ -151,6 +178,11 @@ export default {
         resultObj.sort((a, b) => a.menuTitle.localeCompare(b.menuTitle));
       });
       return resultObj;
+    },
+    searchFilter() {
+      return this.filterLinks.filter((item) => {
+        return item.menuTitle.toLowerCase().includes(this.search.toLowerCase());
+      });
     },
   },
   created() {

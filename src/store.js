@@ -6,7 +6,8 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
   state: {
-    productDatas: datas,
+    productDatas: datas.datas,
+    menuDatas: datas.menuDatas,
     filterData: {},
     categoryFilterSelected: "All",
     categoriesList: [],
@@ -14,11 +15,11 @@ const store = new Vuex.Store({
   mutations: {
     FILTER_CATEGORYLIST: (state, payload) => {
       let deviceId = payload.deviceId === "tablets" ? 1 : 0;
-      let productId = state.productDatas.datas[deviceId].datas.findIndex(
+      let productId = state.productDatas[deviceId].datas.findIndex(
         (s) => s.id === payload.productId
       );
 
-      let datas = state.productDatas.datas[deviceId].datas[productId];
+      let datas = state.productDatas[deviceId].datas[productId];
 
       state.filterData = {
         deviceId,
@@ -34,14 +35,17 @@ const store = new Vuex.Store({
   },
   getters: {
     GET_DATAS: (state) => {
-      return state.productDatas.datas;
+      return state.productDatas;
+    },
+    GET_MENU_DATAS: (state) => {
+      return state.menuDatas;
     },
     GET_SELECTD_CATE: (state) => {
       return state.categoryFilterSelected;
     },
     GET_FIRST_CATE: (state) => {
       let categories = [];
-      state.filterData.datas["menu"].forEach((link) => {
+      state.filterData.datas.menu.forEach((link) => {
         let getFirstLetter = link.menuTitle.toUpperCase().charAt(0);
         categories.push(getFirstLetter);
       });
