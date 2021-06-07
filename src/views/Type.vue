@@ -25,31 +25,37 @@
         </div>
       </div>
       <div class="container">
-        <!-- <nav class="breadcrumb" aria-label="breadcrumbs">
-          <ul>
-            <li><a href="#">Service Video</a></li>
-            <li class="is-active">
-              <router-link :to="`/${getType}/${getId}/`">{{
-                getDatas.datas.title.replaceAll("GETAC ", "")
-              }}</router-link>
-            </li>
-          </ul>
-        </nav> -->
+        <div class="breadcrumb-content">
+          <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+              <li><router-link to="/">Service Video</router-link></li>
+              <li class="is-active">
+                <router-link :to="`/${getType}/${getId}/`">{{
+                  getDatas.datas.title.replaceAll("GETAC ", "")
+                }}</router-link>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <p class="main-box__txt">
           {{ getDatas.datas.txt }}
         </p>
 
         <!-- Search function -->
         <div class="search-bar">
-          <label for="">Search title</label>
-          <input type="text" v-model="search" placeholder="search title..." />
+          <input
+            type="text"
+            v-model="search"
+            placeholder="Enter component name"
+          />
           <b-button type="is-org" @click="searchBlur = true">Search</b-button>
         </div>
 
         <div class="search-result" v-if="search.length > 0">
+          <div class="hr"></div>
           <div class="search-result-total">
             <span>
-              <b>{{ searchFilter.length }}</b> Result for "{{ search }}"
+              <b>{{ searchFilter.length }}</b> Result for <b>{{ search }}</b>
             </span>
             <b-button type="is-org" @click="cleanResult">Clean</b-button>
           </div>
@@ -132,7 +138,6 @@ export default {
       cateTatal: {},
       searchBlur: false,
       search: "",
-      totalLength: "",
     };
   },
   methods: {
