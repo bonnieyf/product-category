@@ -3,13 +3,21 @@
 
 //basic setting
 .breadcrumb-content
-  padding-top: 50px
+  padding-top: 30px
+
+  +tablet
+    padding-top: 40px
+    
+  +widescreen
+    padding-top: 50px
 
 .breadcrumb
   li , a
     color: #707070
-    font-size: 30px
+    font-size: 20px
     line-height: 1.5
+    +tablet
+      font-size: 30px
 
   li:first-child
     &:before
@@ -17,11 +25,18 @@
       color: #707070
       font-size: 10px
       margin-right: 10px
+      transform: scale(.8)
+      +tablet
+        transform: none
+        
 
   li + li::before
     content: " ▶ ▶"
     color: #707070
     font-size: 10px
+    transform: scale(.8)
+    +tablet
+      transform: none
 
   li.is-active,
   li.is-active a
@@ -250,6 +265,17 @@
       margin-bottom: 8px
       margin-top: 8px
 
+  .search-bar
+    display: flex
+
+    .item
+      flex: auto
+
+  .search-bar input
+    width: 100%
+    max-width: 210px
+
+    
 .search-result-total
   vertical-align: middle
   margin-bottom: 30px

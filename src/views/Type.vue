@@ -43,12 +43,16 @@
 
         <!-- Search function -->
         <div class="search-bar">
-          <input
-            type="text"
-            v-model="search"
-            placeholder="Enter component name"
-          />
-          <b-button type="is-org" @click="searchBlur = true">Search</b-button>
+          <div class="item">
+            <input
+              type="text"
+              v-model="search"
+              placeholder="Enter component name"
+            />
+          </div>
+          <div class="item">
+            <b-button type="is-org" @click="searchBlur = true">Search</b-button>
+          </div>
         </div>
 
         <div class="search-result" v-if="search.length > 0">
@@ -204,4 +208,23 @@ export default {
 <style scoped lang="sass">
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap')
 @import '../assets/web.style'
+
+.search-bar
+  +tablet
+    display: flex
+
+  +mobile
+    .item
+      padding-right: 0
+
+    input
+      margin-right: 0
+      margin-bottom: 15px
+      max-width: 100%
+      width: 100%
+
+    button.is-org
+      margin-left: 0
+      width: 100%
+      max-width: 100%
 </style>

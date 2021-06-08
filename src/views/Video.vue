@@ -80,14 +80,18 @@
             </h3>
             <!-- Search function -->
             <div class="search-bar">
-              <input
-                type="text"
-                v-model="search"
-                placeholder="Enter component name"
-              />
-              <b-button type="is-org" @click="searchBlur = true"
-                >Search</b-button
-              >
+              <div class="item">
+                <input
+                  type="text"
+                  v-model="search"
+                  placeholder="Enter component name"
+                />
+              </div>
+              <div class="item">
+                <b-button type="is-org" @click="searchBlur = true"
+                  >Search</b-button
+                >
+              </div>
             </div>
 
             <div class="search-result" v-if="search.length > 0">
@@ -254,13 +258,33 @@ export default {
   opacity: .6
 
 .search-bar
-  display: flex
+  .item:nth-child(1)
+    margin-bottom: 10px
+    padding-right: 0
 
   input
-    width: 210px
+    width: 100%
 
-  button
-    width: 90px
+
+  .button.is-org
+    margin-left: 0
+    width: 100%
+    max-width: 100%
+
+  +tablet
+    display: flex
+
+    .item
+      flex: auto
+      &:nth-child(1)
+        padding-right: 10px
+
+    input
+      max-width: 210px
+
+    .button.is-org
+      max-width: 90px
+
 
 .search-bar
   padding-bottom: 30px
