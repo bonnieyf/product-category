@@ -61,224 +61,261 @@
             {
               "id": 0,
               "menuTitle": "Antenna",
+              "searchKey": "Antenna",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 1,
               "menuTitle": "Battery / Hard Disk Drive",
+              "searchKey": "Battery / Hard Disk Drive",
               "videoUrl": "Ji1EI-itIs4",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 2,
               "menuTitle": "Battery Board",
+              "searchKey": "Battery Board",
               "videoUrl": "EDH6DsoKs1I",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 3,
               "menuTitle": "Barcode",
+              "searchKey": "Barcode",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 4,
               "menuTitle": "Battery - 3rd",
+              "searchKey": "Battery - 3rd (upgrade)",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 5,
               "menuTitle": "Case A",
+              "searchKey": "Case A",
               "videoUrl": "jZ8-PzZclQA",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 6,
               "menuTitle": "Case B",
+              "searchKey": "Case B",
               "videoUrl": "osAj0PnHw",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 7,
               "menuTitle": "Case C",
+              "searchKey": "Case C",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 8,
               "menuTitle": "Case D",
+              "searchKey": "Case D",
               "videoUrl": "jZ8-PzZclQA",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 9,
               "menuTitle": "Camera",
+              "searchKey": "Camera (upgrade)",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 10,
               "menuTitle": "DDR",
+              "searchKey": "DDR",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 11,
               "menuTitle": "DDR",
+              "searchKey": "DDR (upgrade)",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 12,
               "menuTitle": "Express Card",
+              "searchKey": "Express Card (upgrade)",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 13,
               "menuTitle": "Fan",
+              "searchKey": "Fan",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 14,
               "menuTitle": "Fingerprinter",
+              "searchKey": "Fingerprinter (upgrade)",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 15,
               "menuTitle": "Handle",
+              "searchKey": "Handle",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 16,
               "menuTitle": "Hard Disk Drive",
+              "searchKey": "Hard Disk Drive",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 17,
               "menuTitle": "Heatsink",
+              "searchKey": "Heatsink",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 18,
               "menuTitle": "Keyboard",
+              "searchKey": "Keyboard",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 19,
               "menuTitle": "LCD calbe Touchscreen Cable",
+              "searchKey": "LCD calbe Touchscreen Cable",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 20,
               "menuTitle": "LAN Board",
+              "searchKey": "LAN Board",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 21,
               "menuTitle": "LED Driver Board",
+              "searchKey": "LED Driver Board",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 22,
               "menuTitle": "Media Bay",
+              "searchKey": "Media Bay",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 23,
               "menuTitle": "MXM",
+              "searchKey": "MXM (upgrade)",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 24,
               "menuTitle": "Microphone Cable",
+              "searchKey": "Microphone Cable",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 25,
               "menuTitle": "ODD",
+              "searchKey": "ODD (upgrade)",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 26,
               "menuTitle": "Pogo Board",
+              "searchKey": "Pogo Board",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 27,
               "menuTitle": "Passthrough",
+              "searchKey": "Passthrough",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 28,
               "menuTitle": "Quick Button Board",
+              "searchKey": "Quick Button Board",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 29,
               "menuTitle": "RF Switch Board",
+              "searchKey": "RF Switch Board",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 30,
               "menuTitle": "RFID Board",
+              "searchKey": "RFID Board (upgrade)",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 31,
               "menuTitle": "RJ45 Connector",
+              "searchKey": "RJ45 Connector",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 32,
               "menuTitle": "SSD",
+              "searchKey": "SSD",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 33,
               "menuTitle": "Speaker",
+              "searchKey": "Speaker",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 34,
               "menuTitle": "Smart Card",
+              "searchKey": "Smart Card (upgrade)",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 35,
               "menuTitle": "Touchpad",
+              "searchKey": "Touchpad",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 36,
               "menuTitle": "WIFI 4G",
+              "searchKey": "WIFI 4G (upgrade)",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "upgrade"
+              "isUpgrade": true
             }
           ]
         },
@@ -293,224 +330,261 @@
             {
               "id": 0,
               "menuTitle": "Antenna",
+              "searchKey": "Antenna",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 1,
               "menuTitle": "Battery / Hard Disk Drive",
+              "searchKey": "Battery / Hard Disk Drive",
               "videoUrl": "Ji1EI-itIs4",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 2,
               "menuTitle": "Battery Board",
+              "searchKey": "Battery Board",
               "videoUrl": "EDH6DsoKs1I",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 3,
               "menuTitle": "Barcode",
+              "searchKey": "Barcode",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 4,
               "menuTitle": "Battery - 3rd",
+              "searchKey": "Battery - 3rd (upgrade)",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 5,
               "menuTitle": "Case A",
+              "searchKey": "Case A",
               "videoUrl": "jZ8-PzZclQA",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 6,
               "menuTitle": "Case B",
+              "searchKey": "Case B",
               "videoUrl": "osAj0PnHw",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 7,
               "menuTitle": "Case C",
+              "searchKey": "Case C",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 8,
               "menuTitle": "Case D",
+              "searchKey": "Case D",
               "videoUrl": "jZ8-PzZclQA",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 9,
               "menuTitle": "Camera",
+              "searchKey": "Camera (upgrade)",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 10,
               "menuTitle": "DDR",
+              "searchKey": "DDR",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 11,
               "menuTitle": "DDR",
+              "searchKey": "DDR (upgrade)",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 12,
               "menuTitle": "Express Card",
+              "searchKey": "Express Card (upgrade)",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 13,
               "menuTitle": "Fan",
+              "searchKey": "Fan",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 14,
               "menuTitle": "Fingerprinter",
+              "searchKey": "Fingerprinter (upgrade)",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 15,
               "menuTitle": "Handle",
+              "searchKey": "Handle",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 16,
               "menuTitle": "Hard Disk Drive",
+              "searchKey": "Hard Disk Drive",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 17,
               "menuTitle": "Heatsink",
+              "searchKey": "Heatsink",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 18,
               "menuTitle": "Keyboard",
+              "searchKey": "Keyboard",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 19,
               "menuTitle": "LCD calbe Touchscreen Cable",
+              "searchKey": "LCD calbe Touchscreen Cable",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 20,
               "menuTitle": "LAN Board",
+              "searchKey": "LAN Board",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 21,
               "menuTitle": "LED Driver Board",
+              "searchKey": "LED Driver Board",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 22,
               "menuTitle": "Media Bay",
+              "searchKey": "Media Bay",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 23,
               "menuTitle": "MXM",
+              "searchKey": "MXM (upgrade)",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 24,
               "menuTitle": "Microphone Cable",
+              "searchKey": "Microphone Cable",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 25,
               "menuTitle": "ODD",
+              "searchKey": "ODD (upgrade)",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 26,
               "menuTitle": "Pogo Board",
+              "searchKey": "Pogo Board",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 27,
               "menuTitle": "Passthrough",
+              "searchKey": "Passthrough",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 28,
               "menuTitle": "Quick Button Board",
+              "searchKey": "Quick Button Board",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 29,
               "menuTitle": "RF Switch Board",
+              "searchKey": "RF Switch Board",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 30,
               "menuTitle": "RFID Board",
+              "searchKey": "RFID Board (upgrade)",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 31,
               "menuTitle": "RJ45 Connector",
+              "searchKey": "RJ45 Connector",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 32,
               "menuTitle": "SSD",
+              "searchKey": "SSD",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 33,
               "menuTitle": "Speaker",
+              "searchKey": "Speaker",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 34,
               "menuTitle": "Smart Card",
+              "searchKey": "Smart Card (upgrade)",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 35,
               "menuTitle": "Touchpad",
+              "searchKey": "Touchpad",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 36,
               "menuTitle": "WIFI 4G",
+              "searchKey": "WIFI 4G (upgrade)",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "upgrade"
+              "isUpgrade": true
             }
           ]
         },
@@ -524,98 +598,114 @@
             {
               "id": 0,
               "menuTitle": "Bettery / Hand Disk Drive",
+              "searchKey": "Bettery / Hand Disk Drive",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 1,
               "menuTitle": "DDR",
+              "searchKey": "DDR",
               "videoUrl": "Ji1EI-itIs4",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 2,
               "menuTitle": "DDR",
+              "searchKey": "DDR (upgrade)",
               "videoUrl": "EDH6DsoKs1I",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 3,
               "menuTitle": "Keyboard",
+              "searchKey": "Keyboard",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 4,
               "menuTitle": "WIFI 4G Module",
+              "searchKey": "WIFI 4G Module",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 5,
               "menuTitle": "WIFI 4G Module",
+              "searchKey": "WIFI 4G Modul (upgrade)e",
               "videoUrl": "jZ8-PzZclQA",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 6,
               "menuTitle": "Option IO",
+              "searchKey": "Option IO",
               "videoUrl": "osAj0PnHw",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 7,
               "menuTitle": "Handle",
+              "searchKey": "Handle",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 8,
               "menuTitle": "LCD/Touchscreen Cable",
+              "searchKey": "LCD/Touchscreen Cable",
               "videoUrl": "jZ8-PzZclQA",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 9,
               "menuTitle": "Antenna",
+              "searchKey": "Antenna",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 10,
               "menuTitle": "Antenna",
+              "searchKey": "Antenna (upgrade)",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 11,
               "menuTitle": "Case A",
+              "searchKey": "Case A",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 12,
               "menuTitle": "Case D",
+              "searchKey": "Case D",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 13,
               "menuTitle": "Hard Disk Drive Canister",
+              "searchKey": "Hard Disk Drive Canister",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 14,
               "menuTitle": "Media Bay",
+              "searchKey": "Media Bay",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 15,
               "menuTitle": "Barcode Reader",
+              "searchKey": "Barcode Reader",
               "videoUrl": "YiDyxQEYiDs",
-              "states": "standard"
+              "isupgrade": false
             }
           ]
         }
@@ -634,38 +724,44 @@
             {
               "id": 0,
               "menuTitle": "Bettery / Hand Disk Drive",
+              "searchKey": "Bettery / Hand Disk Drive",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 1,
               "menuTitle": "DDR",
+              "searchKey": "DDR",
               "videoUrl": "Ji1EI-itIs4",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 2,
               "menuTitle": "DDR",
+              "searchKey": "DDR (upgrade)",
               "videoUrl": "EDH6DsoKs1I",
-              "states": "upgrade"
+              "isUpgrade": true
             },
             {
               "id": 3,
               "menuTitle": "Keyboard",
+              "searchKey": "Keyboard",
               "videoUrl": "gJWzXh1wRJU",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 4,
               "menuTitle": "WIFI 4G Module",
+              "searchKey": "WIFI 4G Module",
               "videoUrl": "Kd5qSdMBZJI",
-              "states": "standard"
+              "isupgrade": false
             },
             {
               "id": 5,
               "menuTitle": "WIFI 4G Module",
+              "searchKey": "WIFI 4G Modul (upgrade)e",
               "videoUrl": "jZ8-PzZclQA",
-              "states": "upgrade"
+              "isUpgrade": true
             }
           ]
         }

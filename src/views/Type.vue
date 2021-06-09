@@ -68,9 +68,7 @@
               <router-link :to="`/${getType}/${getId}/${result.id}`"
                 >{{ result.menuTitle }}
 
-                <span v-if="result.states === 'upgrade'" type="is-info"
-                  >(Upgrade)</span
-                >
+                <span v-if="result.isUpgrade" type="is-info">(Upgrade)</span>
               </router-link>
             </p>
           </div>
@@ -118,7 +116,7 @@
                     <router-link :to="`/${getType}/${getId}/${group.id}`"
                       >{{ group.menuTitle }}
 
-                      <span v-if="group.states === 'upgrade'" type="is-info"
+                      <span v-if="group.isUpgrade" type="is-info"
                         >(Upgrade)</span
                       >
                     </router-link>
@@ -190,7 +188,7 @@ export default {
     },
     searchFilter() {
       return this.filterLinks.filter((item) => {
-        return item.menuTitle.toLowerCase().includes(this.search.toLowerCase());
+        return item.searchKey.toLowerCase().includes(this.search.toLowerCase());
       });
     },
   },

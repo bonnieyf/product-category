@@ -11,10 +11,7 @@
             <span class="bd-anchor-name">
               {{ getDatas.datas.title }} -
               {{ filterSelectData.datas.menu[getVideoId].menuTitle }}
-              <b
-                v-if="
-                  filterSelectData.datas.menu[getVideoId].states === 'upgrade'
-                "
+              <b v-if="filterSelectData.datas.menu[getVideoId].isUpgrade"
                 >(Upgrade)</b
               >
             </span>
@@ -114,7 +111,7 @@
                   <router-link :to="`/${getType}/${getId}/${result.id}`"
                     >{{ result.menuTitle }}
 
-                    <span v-if="result.states === 'upgrade'" type="is-info"
+                    <span v-if="result.isUpgrade" type="is-info"
                       >(Upgrade)</span
                     >
                   </router-link>
@@ -143,7 +140,7 @@
 
                       <span
                         class="upgrade-tag"
-                        v-if="group.states === 'upgrade'"
+                        v-if="group.isUpgrade"
                         type="is-info"
                         >(Upgrade)</span
                       ></router-link
@@ -233,7 +230,7 @@ export default {
     },
     searchFilter() {
       return this.filterLinks.filter((item) => {
-        return item.menuTitle.toLowerCase().includes(this.search.toLowerCase());
+        return item.searchKey.toLowerCase().includes(this.search.toLowerCase());
       });
     },
   },

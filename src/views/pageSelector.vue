@@ -28,7 +28,7 @@ export default {
   },
   props: {
     options: Array,
-    item: Array,
+    item: Object,
     device: String,
   },
   methods: {
