@@ -42,7 +42,7 @@
           <div class="buttons">
             <router-link
               :to="
-                `/${item.name}/${item.product}/${
+                `/${device}/${item.product}/${
                   item.version[0].isOld ? 'video' : ''
                 }`
               "
