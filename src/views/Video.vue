@@ -10,7 +10,12 @@
           <h3 class="title is-4 is-spaced bd-anchor-title">
             <span class="bd-anchor-name">
               {{ getDatas.datas.title }} -
-              {{ filterSelectData.datas.menu[getVideoId].menuTitle }}
+              {{
+                filterSelectData.datas.menu[getVideoId].menuTitle.replace(
+                  "(Upgrade)",
+                  ""
+                )
+              }}
               <b v-if="filterSelectData.datas.menu[getVideoId].isUpgrade"
                 >(Upgrade)</b
               >
@@ -109,7 +114,7 @@
                   "
                 >
                   <router-link :to="`/${getType}/${getId}/${result.id}`"
-                    >{{ result.menuTitle }}
+                    >{{ result.menuTitle.replace("(Upgrade)", "") }}
 
                     <span v-if="result.isUpgrade" type="is-info"
                       >(Upgrade)</span
@@ -136,7 +141,7 @@
                 <div v-for="group in data" :key="group.id">
                   <p @click="openMenu = false">
                     <router-link :to="`/${getType}/${getId}/${group.id}`"
-                      >{{ group.menuTitle }}
+                      >{{ group.menuTitle.replace("(Upgrade)", "") }}
 
                       <span
                         class="upgrade-tag"
@@ -162,7 +167,7 @@ export default {
     return {
       filterSelectData: null,
       cateTatal: {},
-      openMenu: false,
+      openMenu: true,
       ops: {
         vuescroll: {},
         scrollPanel: {},
@@ -230,7 +235,7 @@ export default {
     },
     searchFilter() {
       return this.filterLinks.filter((item) => {
-        return item.searchKey.toLowerCase().includes(this.search.toLowerCase());
+        return item.menuTitle.toLowerCase().includes(this.search.toLowerCase());
       });
     },
   },

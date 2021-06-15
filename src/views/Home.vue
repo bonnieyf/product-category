@@ -22,39 +22,12 @@
                 :key="index"
               >
                 <div class="card">
-                  <div class="card-image">
-                    <figure class="image is-4by3">
-                      <img :src="item.version[0].imgSrc" />
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="media">
-                      <div class="media-content" v-if="item.version.length > 1">
-                        <pageSelector
-                          :options="item.version"
-                          :item="item"
-                          :device="group.name.toLowerCase()"
-                        ></pageSelector>
-                      </div>
-
-                      <div class="media-content" v-else>
-                        <p class="title is-4">
-                          {{ item.product }}
-                        </p>
-
-                        <div class="buttons">
-                          <router-link
-                            :to="
-                              `/${group.name.toLowerCase()}/${item.product}/`
-                            "
-                            ><b-button type="is-org" expanded
-                              >Enter</b-button
-                            ></router-link
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <pageSelector
+                    :options="item.version"
+                    :item="item"
+                    :device="group.name.toLowerCase()"
+                    :itemLength="item.version.length"
+                  ></pageSelector>
                 </div>
               </div>
             </div>
@@ -98,7 +71,4 @@ export default {
 .home
   padding-top: 30px
   padding-bottom: 50px
-
-.media-content .title
-  margin-bottom: 30px
 </style>

@@ -8,13 +8,29 @@
           "version": [
             {
               "id": 0,
-              "verId": "g1",
-              "imgSrc": "https://www.getac.com/wp-content/uploads/2021/03/UX10_WIN10_2021-01.png"
+              "verId": "g3",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
             },
             {
               "id": 1,
-              "verId": "g2",
-              "imgSrc": "https://www.getac.com/wp-content/uploads/2021/03/UX10_WIN10_2021-01.png"
+              "verId": "g4",
+              "imgSrc": "https://www.getac.com/wp-content/uploads/2021/03/UX10_WIN10_2021-01.png",
+              "isOld": false,
+              "status": "open"
+            }
+          ]
+        },
+        {
+          "product": "b300-g4",
+          "version": [
+            {
+              "id": 0,
+              "verId": "g4",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
             }
           ]
         },
@@ -23,8 +39,53 @@
           "version": [
             {
               "id": 0,
-              "verId": "g1",
-              "imgSrc": "https://www.getac.com/wp-content/uploads/2021/03/UX10_WIN10_2021-01.png"
+              "verId": "",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
+            }
+          ]
+        },
+        {
+          "product": "s400",
+          "version": [
+            {
+              "id": 0,
+              "verId": "",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
+            }
+          ]
+        },
+        {
+          "product": "v110",
+          "version": [
+            {
+              "id": 0,
+              "verId": "g5",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
+            },
+            {
+              "id": 1,
+              "verId": "g6",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": false,
+              "status": "pending"
+            }
+          ]
+        },
+        {
+          "product": "x500",
+          "version": [
+            {
+              "id": 0,
+              "verId": "",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
             }
           ]
         }
@@ -34,12 +95,105 @@
       "name": "Tablets",
       "datas": [
         {
+          "product": "a140",
+          "version": [
+            {
+              "id": 0,
+              "verId": "",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
+            }
+          ]
+        },
+        {
+          "product": "f110",
+          "version": [
+            {
+              "id": 0,
+              "verId": "g5",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
+            },
+            {
+              "id": 1,
+              "verId": "g6",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
+            }
+          ]
+        },
+        {
+          "product": "k120",
+          "version": [
+            {
+              "id": 0,
+              "verId": "",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
+            }
+          ]
+        },
+        {
+          "product": "mx50",
+          "version": [
+            {
+              "id": 0,
+              "verId": "",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
+            }
+          ]
+        },
+        {
+          "product": "rx10",
+          "version": [
+            {
+              "id": 0,
+              "verId": "",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
+            }
+          ]
+        },
+        {
+          "product": "t800",
+          "version": [
+            {
+              "id": 0,
+              "verId": "",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
+            }
+          ]
+        },
+        {
           "product": "ux10",
           "version": [
             {
               "id": 0,
               "verId": "",
-              "imgSrc": "https://www.getac.com/wp-content/uploads/2021/03/UX10_WIN10_2021-01.png"
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
+            }
+          ]
+        },
+        {
+          "product": "zx70",
+          "version": [
+            {
+              "id": 0,
+              "verId": "",
+              "imgSrc": "http://fakeimg.pl/1920x1080/",
+              "isOld": true,
+              "status": "open"
             }
           ]
         }
@@ -51,8 +205,8 @@
       "name": "Laptops",
       "datas": [
         {
-          "id": "s410-g1",
-          "title": "GETAC S410-G1",
+          "id": "s410-g4",
+          "title": "GETAC S410-G4",
           "videoUrl": "EDH6DsoKs1I",
           "imgSrc": "https://www.getac.com/wp-content/uploads/2021/01/S410G4_03-2.png",
           "descroption": "Please click \"Learn more\" to know what to prepare before the service.",
@@ -61,651 +215,284 @@
             {
               "id": 0,
               "menuTitle": "Antenna",
-              "searchKey": "Antenna",
               "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
+              "isUpgrade": false
             },
             {
               "id": 1,
-              "menuTitle": "Battery / Hard Disk Drive",
-              "searchKey": "Battery / Hard Disk Drive",
+              "menuTitle": "Antenna (Upgrade)",
               "videoUrl": "Ji1EI-itIs4",
-              "isupgrade": false
+              "isUpgrade": true
             },
             {
               "id": 2,
-              "menuTitle": "Battery Board",
-              "searchKey": "Battery Board",
-              "videoUrl": "EDH6DsoKs1I",
-              "isupgrade": false
-            },
-            {
-              "id": 3,
-              "menuTitle": "Barcode",
-              "searchKey": "Barcode",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 4,
-              "menuTitle": "Battery - 3rd",
-              "searchKey": "Battery - 3rd (upgrade)",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isUpgrade": true
-            },
-            {
-              "id": 5,
-              "menuTitle": "Case A",
-              "searchKey": "Case A",
-              "videoUrl": "jZ8-PzZclQA",
-              "isupgrade": false
-            },
-            {
-              "id": 6,
-              "menuTitle": "Case B",
-              "searchKey": "Case B",
-              "videoUrl": "osAj0PnHw",
-              "isupgrade": false
-            },
-            {
-              "id": 7,
-              "menuTitle": "Case C",
-              "searchKey": "Case C",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 8,
-              "menuTitle": "Case D",
-              "searchKey": "Case D",
-              "videoUrl": "jZ8-PzZclQA",
-              "isupgrade": false
-            },
-            {
-              "id": 9,
-              "menuTitle": "Camera",
-              "searchKey": "Camera (upgrade)",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isUpgrade": true
-            },
-            {
-              "id": 10,
-              "menuTitle": "DDR",
-              "searchKey": "DDR",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 11,
-              "menuTitle": "DDR",
-              "searchKey": "DDR (upgrade)",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isUpgrade": true
-            },
-            {
-              "id": 12,
-              "menuTitle": "Express Card",
-              "searchKey": "Express Card (upgrade)",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isUpgrade": true
-            },
-            {
-              "id": 13,
-              "menuTitle": "Fan",
-              "searchKey": "Fan",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 14,
-              "menuTitle": "Fingerprinter",
-              "searchKey": "Fingerprinter (upgrade)",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isUpgrade": true
-            },
-            {
-              "id": 15,
-              "menuTitle": "Handle",
-              "searchKey": "Handle",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 16,
-              "menuTitle": "Hard Disk Drive",
-              "searchKey": "Hard Disk Drive",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 17,
-              "menuTitle": "Heatsink",
-              "searchKey": "Heatsink",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 18,
-              "menuTitle": "Keyboard",
-              "searchKey": "Keyboard",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 19,
-              "menuTitle": "LCD calbe Touchscreen Cable",
-              "searchKey": "LCD calbe Touchscreen Cable",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 20,
-              "menuTitle": "LAN Board",
-              "searchKey": "LAN Board",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 21,
-              "menuTitle": "LED Driver Board",
-              "searchKey": "LED Driver Board",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 22,
-              "menuTitle": "Media Bay",
-              "searchKey": "Media Bay",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 23,
-              "menuTitle": "MXM",
-              "searchKey": "MXM (upgrade)",
-              "videoUrl": "YiDyxQEYiDs",
-              "isUpgrade": true
-            },
-            {
-              "id": 24,
-              "menuTitle": "Microphone Cable",
-              "searchKey": "Microphone Cable",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 25,
-              "menuTitle": "ODD",
-              "searchKey": "ODD (upgrade)",
-              "videoUrl": "YiDyxQEYiDs",
-              "isUpgrade": true
-            },
-            {
-              "id": 26,
-              "menuTitle": "Pogo Board",
-              "searchKey": "Pogo Board",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 27,
-              "menuTitle": "Passthrough",
-              "searchKey": "Passthrough",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 28,
-              "menuTitle": "Quick Button Board",
-              "searchKey": "Quick Button Board",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 29,
-              "menuTitle": "RF Switch Board",
-              "searchKey": "RF Switch Board",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 30,
-              "menuTitle": "RFID Board",
-              "searchKey": "RFID Board (upgrade)",
-              "videoUrl": "YiDyxQEYiDs",
-              "isUpgrade": true
-            },
-            {
-              "id": 31,
-              "menuTitle": "RJ45 Connector",
-              "searchKey": "RJ45 Connector",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 32,
-              "menuTitle": "SSD",
-              "searchKey": "SSD",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 33,
-              "menuTitle": "Speaker",
-              "searchKey": "Speaker",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 34,
-              "menuTitle": "Smart Card",
-              "searchKey": "Smart Card (upgrade)",
-              "videoUrl": "YiDyxQEYiDs",
-              "isUpgrade": true
-            },
-            {
-              "id": 35,
-              "menuTitle": "Touchpad",
-              "searchKey": "Touchpad",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 36,
-              "menuTitle": "WIFI 4G",
-              "searchKey": "WIFI 4G (upgrade)",
-              "videoUrl": "YiDyxQEYiDs",
-              "isUpgrade": true
-            }
-          ]
-        },
-        {
-          "id": "s410-g2",
-          "title": "GETAC S410-G2",
-          "videoUrl": "EDH6DsoKs1I",
-          "imgSrc": "https://www.getac.com/wp-content/uploads/2021/01/S410G4_03-2.png",
-          "descroption": "Please click \"Learn more\" to know what to prepare before the service.",
-          "txt": "Please select the category with initial alphabet of the item your would like to repair and click the specific component to view the video.",
-          "menu": [
-            {
-              "id": 0,
-              "menuTitle": "Antenna",
-              "searchKey": "Antenna",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 1,
-              "menuTitle": "Battery / Hard Disk Drive",
-              "searchKey": "Battery / Hard Disk Drive",
-              "videoUrl": "Ji1EI-itIs4",
-              "isupgrade": false
-            },
-            {
-              "id": 2,
-              "menuTitle": "Battery Board",
-              "searchKey": "Battery Board",
-              "videoUrl": "EDH6DsoKs1I",
-              "isupgrade": false
-            },
-            {
-              "id": 3,
-              "menuTitle": "Barcode",
-              "searchKey": "Barcode",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 4,
-              "menuTitle": "Battery - 3rd",
-              "searchKey": "Battery - 3rd (upgrade)",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isUpgrade": true
-            },
-            {
-              "id": 5,
-              "menuTitle": "Case A",
-              "searchKey": "Case A",
-              "videoUrl": "jZ8-PzZclQA",
-              "isupgrade": false
-            },
-            {
-              "id": 6,
-              "menuTitle": "Case B",
-              "searchKey": "Case B",
-              "videoUrl": "osAj0PnHw",
-              "isupgrade": false
-            },
-            {
-              "id": 7,
-              "menuTitle": "Case C",
-              "searchKey": "Case C",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 8,
-              "menuTitle": "Case D",
-              "searchKey": "Case D",
-              "videoUrl": "jZ8-PzZclQA",
-              "isupgrade": false
-            },
-            {
-              "id": 9,
-              "menuTitle": "Camera",
-              "searchKey": "Camera (upgrade)",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isUpgrade": true
-            },
-            {
-              "id": 10,
-              "menuTitle": "DDR",
-              "searchKey": "DDR",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 11,
-              "menuTitle": "DDR",
-              "searchKey": "DDR (upgrade)",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isUpgrade": true
-            },
-            {
-              "id": 12,
-              "menuTitle": "Express Card",
-              "searchKey": "Express Card (upgrade)",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isUpgrade": true
-            },
-            {
-              "id": 13,
-              "menuTitle": "Fan",
-              "searchKey": "Fan",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 14,
-              "menuTitle": "Fingerprinter",
-              "searchKey": "Fingerprinter (upgrade)",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isUpgrade": true
-            },
-            {
-              "id": 15,
-              "menuTitle": "Handle",
-              "searchKey": "Handle",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 16,
-              "menuTitle": "Hard Disk Drive",
-              "searchKey": "Hard Disk Drive",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 17,
-              "menuTitle": "Heatsink",
-              "searchKey": "Heatsink",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 18,
-              "menuTitle": "Keyboard",
-              "searchKey": "Keyboard",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 19,
-              "menuTitle": "LCD calbe Touchscreen Cable",
-              "searchKey": "LCD calbe Touchscreen Cable",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 20,
-              "menuTitle": "LAN Board",
-              "searchKey": "LAN Board",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 21,
-              "menuTitle": "LED Driver Board",
-              "searchKey": "LED Driver Board",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 22,
-              "menuTitle": "Media Bay",
-              "searchKey": "Media Bay",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 23,
-              "menuTitle": "MXM",
-              "searchKey": "MXM (upgrade)",
-              "videoUrl": "YiDyxQEYiDs",
-              "isUpgrade": true
-            },
-            {
-              "id": 24,
-              "menuTitle": "Microphone Cable",
-              "searchKey": "Microphone Cable",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 25,
-              "menuTitle": "ODD",
-              "searchKey": "ODD (upgrade)",
-              "videoUrl": "YiDyxQEYiDs",
-              "isUpgrade": true
-            },
-            {
-              "id": 26,
-              "menuTitle": "Pogo Board",
-              "searchKey": "Pogo Board",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 27,
-              "menuTitle": "Passthrough",
-              "searchKey": "Passthrough",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 28,
-              "menuTitle": "Quick Button Board",
-              "searchKey": "Quick Button Board",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 29,
-              "menuTitle": "RF Switch Board",
-              "searchKey": "RF Switch Board",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 30,
-              "menuTitle": "RFID Board",
-              "searchKey": "RFID Board (upgrade)",
-              "videoUrl": "YiDyxQEYiDs",
-              "isUpgrade": true
-            },
-            {
-              "id": 31,
-              "menuTitle": "RJ45 Connector",
-              "searchKey": "RJ45 Connector",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 32,
-              "menuTitle": "SSD",
-              "searchKey": "SSD",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 33,
-              "menuTitle": "Speaker",
-              "searchKey": "Speaker",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 34,
-              "menuTitle": "Smart Card",
-              "searchKey": "Smart Card (upgrade)",
-              "videoUrl": "YiDyxQEYiDs",
-              "isUpgrade": true
-            },
-            {
-              "id": 35,
-              "menuTitle": "Touchpad",
-              "searchKey": "Touchpad",
-              "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
-            },
-            {
-              "id": 36,
-              "menuTitle": "WIFI 4G",
-              "searchKey": "WIFI 4G (upgrade)",
-              "videoUrl": "YiDyxQEYiDs",
-              "isUpgrade": true
-            }
-          ]
-        },
-        {
-          "id": "b360",
-          "title": "GETAC B360",
-          "videoUrl": "EDH6DsoKs1I",
-          "imgSrc": "https://www.getac.com/wp-content/uploads/2021/03/B360_WIN10_2021-06.png",
-          "descroption": "The b360 notebook is a tool for many jobs, delivering more power, more mobility, more connectivity, and more capability than ever before.",
-          "menu": [
-            {
-              "id": 0,
-              "menuTitle": "Bettery / Hand Disk Drive",
-              "searchKey": "Bettery / Hand Disk Drive",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 1,
-              "menuTitle": "DDR",
-              "searchKey": "DDR",
-              "videoUrl": "Ji1EI-itIs4",
-              "isupgrade": false
-            },
-            {
-              "id": 2,
-              "menuTitle": "DDR",
-              "searchKey": "DDR (upgrade)",
+              "menuTitle": "Battery - 3rd (Upgrade)",
               "videoUrl": "EDH6DsoKs1I",
               "isUpgrade": true
             },
             {
               "id": 3,
-              "menuTitle": "Keyboard",
-              "searchKey": "Keyboard",
+              "menuTitle": "BatteryBoard",
               "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
+              "isUpgrade": false
             },
             {
               "id": 4,
-              "menuTitle": "WIFI 4G Module",
-              "searchKey": "WIFI 4G Module",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isupgrade": false
-            },
-            {
-              "id": 5,
-              "menuTitle": "WIFI 4G Module",
-              "searchKey": "WIFI 4G Modul (upgrade)e",
-              "videoUrl": "jZ8-PzZclQA",
-              "isUpgrade": true
-            },
-            {
-              "id": 6,
-              "menuTitle": "Option IO",
-              "searchKey": "Option IO",
-              "videoUrl": "osAj0PnHw",
-              "isupgrade": false
-            },
-            {
-              "id": 7,
-              "menuTitle": "Handle",
-              "searchKey": "Handle",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 8,
-              "menuTitle": "LCD/Touchscreen Cable",
-              "searchKey": "LCD/Touchscreen Cable",
-              "videoUrl": "jZ8-PzZclQA",
-              "isupgrade": false
-            },
-            {
-              "id": 9,
-              "menuTitle": "Antenna",
-              "searchKey": "Antenna",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isupgrade": false
-            },
-            {
-              "id": 10,
-              "menuTitle": "Antenna",
-              "searchKey": "Antenna (upgrade)",
-              "videoUrl": "gJWzXh1wRJU",
-              "isUpgrade": true
-            },
-            {
-              "id": 11,
-              "menuTitle": "Case A",
-              "searchKey": "Case A",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isupgrade": false
-            },
-            {
-              "id": 12,
-              "menuTitle": "Case D",
-              "searchKey": "Case D",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isupgrade": false
-            },
-            {
-              "id": 13,
-              "menuTitle": "Hard Disk Drive Canister",
-              "searchKey": "Hard Disk Drive Canister",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 14,
-              "menuTitle": "Media Bay",
-              "searchKey": "Media Bay",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isupgrade": false
-            },
-            {
-              "id": 15,
               "menuTitle": "Barcode Reader",
-              "searchKey": "Barcode Reader",
+              "videoUrl": "Kd5qSdMBZJI",
+              "isUpgrade": false
+            },
+            {
+              "id": 5,
+              "menuTitle": "Barcode Reader (Upgrade)",
+              "videoUrl": "jZ8-PzZclQA",
+              "isUpgrade": true
+            },
+            {
+              "id": 6,
+              "menuTitle": "Case A / Top Cover",
+              "videoUrl": "osAj0PnHw",
+              "isUpgrade": false
+            },
+            {
+              "id": 7,
+              "menuTitle": "Case-B / LCD Bezel",
+              "videoUrl": "gJWzXh1wRJU",
+              "isUpgrade": false
+            },
+            {
+              "id": 8,
+              "menuTitle": "Case-C / Chassis",
+              "videoUrl": "jZ8-PzZclQA",
+              "isUpgrade": false
+            },
+            {
+              "id": 9,
+              "menuTitle": "Case-D / Bottom Plate",
+              "videoUrl": "Kd5qSdMBZJI",
+              "isUpgrade": false
+            },
+            {
+              "id": 10,
+              "menuTitle": "Camera",
+              "videoUrl": "gJWzXh1wRJU",
+              "isUpgrade": false
+            },
+            {
+              "id": 11,
+              "menuTitle": "Camera (Upgrade)",
+              "videoUrl": "Kd5qSdMBZJI",
+              "isUpgrade": true
+            },
+            {
+              "id": 12,
+              "menuTitle": "Express Card",
+              "videoUrl": "Kd5qSdMBZJI",
+              "isUpgrade": false
+            },
+            {
+              "id": 13,
+              "menuTitle": "Express Card (Upgrade)",
+              "videoUrl": "gJWzXh1wRJU",
+              "isUpgrade": true
+            },
+            {
+              "id": 14,
+              "menuTitle": "Fan",
+              "videoUrl": "Kd5qSdMBZJI",
+              "isUpgrade": false
+            },
+            {
+              "id": 15,
+              "menuTitle": "Fingerprinter",
               "videoUrl": "YiDyxQEYiDs",
-              "isupgrade": false
+              "isUpgrade": false
+            },
+            {
+              "id": 16,
+              "menuTitle": "Fingerprinter (Upgrade)",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": true
+            },
+            {
+              "id": 17,
+              "menuTitle": "Handle",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 18,
+              "menuTitle": "Heatsink",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 19,
+              "menuTitle": "I/O Module",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 20,
+              "menuTitle": "Keyboard",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 21,
+              "menuTitle": "LAN Board",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 22,
+              "menuTitle": "LED Driver Board",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 23,
+              "menuTitle": "LCD/TS Cable",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 24,
+              "menuTitle": "Memory (DDR)",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 25,
+              "menuTitle": "Memory (DDR) (Upgrade)",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": true
+            },
+            {
+              "id": 26,
+              "menuTitle": "Motherboard",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 27,
+              "menuTitle": "Microphone",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 28,
+              "menuTitle": "Microphone Cable",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 29,
+              "menuTitle": "MXM",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 30,
+              "menuTitle": "MXM (Upgrade)",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": true
+            },
+            {
+              "id": 31,
+              "menuTitle": "ODD",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 32,
+              "menuTitle": "ODD (Upgrade)",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": true
+            },
+            {
+              "id": 33,
+              "menuTitle": "Pogo Board",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 34,
+              "menuTitle": "Passthrough",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 35,
+              "menuTitle": "Quick Key Board",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 36,
+              "menuTitle": "RF Switch Board",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 37,
+              "menuTitle": "RFID Board",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 38,
+              "menuTitle": "RFID Board (Upgrade)",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": true
+            },
+            {
+              "id": 39,
+              "menuTitle": "RJ45 Connector",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 40,
+              "menuTitle": "SSD",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 41,
+              "menuTitle": "Speaker",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 42,
+              "menuTitle": "Smart Card",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 43,
+              "menuTitle": "Smart Card (Upgrade)",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": true
+            },
+            {
+              "id": 44,
+              "menuTitle": "Touchpad",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 45,
+              "menuTitle": "WLAN (Wi-Fi)",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": false
+            },
+            {
+              "id": 46,
+              "menuTitle": "WWAN (4G) (Upgrade)",
+              "videoUrl": "YiDyxQEYiDs",
+              "isUpgrade": true
             }
           ]
         }
@@ -715,55 +502,84 @@
       "name": "Tablets",
       "datas": [
         {
+          "id": "a410",
+          "title": "GETAC A140",
+          "videoUrl": "EDH6DsoKs1I",
+          "imgSrc": "http://fakeimg.pl/1920x1080/",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "f110-g5",
+          "title": "GETAC F110 G5",
+          "videoUrl": "EDH6DsoKs1I",
+          "imgSrc": "http://fakeimg.pl/1920x1080/",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "f110-g6",
+          "title": "GETAC F110 G6",
+          "videoUrl": "EDH6DsoKs1I",
+          "imgSrc": "http://fakeimg.pl/1920x1080/",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "k120",
+          "title": "GETAC K120",
+          "videoUrl": "EDH6DsoKs1I",
+          "imgSrc": "http://fakeimg.pl/1920x1080/",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "k120",
+          "title": "GETAC K120",
+          "videoUrl": "EDH6DsoKs1I",
+          "imgSrc": "http://fakeimg.pl/1920x1080/",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "mx50",
+          "title": "GETAC MX50",
+          "videoUrl": "EDH6DsoKs1I",
+          "imgSrc": "http://fakeimg.pl/1920x1080/",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "rx10",
+          "title": "GETAC RX10",
+          "videoUrl": "EDH6DsoKs1I",
+          "imgSrc": "http://fakeimg.pl/1920x1080/",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "t800",
+          "title": "GETAC T800",
+          "videoUrl": "EDH6DsoKs1I",
+          "imgSrc": "http://fakeimg.pl/1920x1080/",
+          "descroption": "",
+          "menu": ""
+        },
+        {
           "id": "ux10",
           "title": "GETAC UX10",
           "videoUrl": "EDH6DsoKs1I",
-          "imgSrc": "https://www.getac.com/wp-content/uploads/2021/03/UX10_WIN10_2021-01.png",
-          "descroption": "A versatile and portable tablet fully ready to deliver digital transformation in environments where rugged performance is required.",
-          "menu": [
-            {
-              "id": 0,
-              "menuTitle": "Bettery / Hand Disk Drive",
-              "searchKey": "Bettery / Hand Disk Drive",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 1,
-              "menuTitle": "DDR",
-              "searchKey": "DDR",
-              "videoUrl": "Ji1EI-itIs4",
-              "isupgrade": false
-            },
-            {
-              "id": 2,
-              "menuTitle": "DDR",
-              "searchKey": "DDR (upgrade)",
-              "videoUrl": "EDH6DsoKs1I",
-              "isUpgrade": true
-            },
-            {
-              "id": 3,
-              "menuTitle": "Keyboard",
-              "searchKey": "Keyboard",
-              "videoUrl": "gJWzXh1wRJU",
-              "isupgrade": false
-            },
-            {
-              "id": 4,
-              "menuTitle": "WIFI 4G Module",
-              "searchKey": "WIFI 4G Module",
-              "videoUrl": "Kd5qSdMBZJI",
-              "isupgrade": false
-            },
-            {
-              "id": 5,
-              "menuTitle": "WIFI 4G Module",
-              "searchKey": "WIFI 4G Modul (upgrade)e",
-              "videoUrl": "jZ8-PzZclQA",
-              "isUpgrade": true
-            }
-          ]
+          "imgSrc": "http://fakeimg.pl/1920x1080/",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "zx70",
+          "title": "GETAC ZX70",
+          "videoUrl": "EDH6DsoKs1I",
+          "imgSrc": "http://fakeimg.pl/1920x1080/",
+          "descroption": "",
+          "menu": ""
         }
       ]
     }

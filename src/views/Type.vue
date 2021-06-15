@@ -92,7 +92,7 @@
                 :class="{ 'is-outlined': changeSelected != item }"
                 @click="change(item)"
               >
-                {{ item }}
+                {{ item.replace("(Upgrade)", "") }}
               </button>
             </div>
           </div>
@@ -114,8 +114,7 @@
                 <div class="filter-content__main">
                   <p v-for="group in data" :key="group.id">
                     <router-link :to="`/${getType}/${getId}/${group.id}`"
-                      >{{ group.menuTitle }}
-
+                      >{{ group.menuTitle.replace("(Upgrade)", "") }}
                       <span v-if="group.isUpgrade" type="is-info"
                         >(Upgrade)</span
                       >
@@ -188,7 +187,7 @@ export default {
     },
     searchFilter() {
       return this.filterLinks.filter((item) => {
-        return item.searchKey.toLowerCase().includes(this.search.toLowerCase());
+        return item.menuTitle.toLowerCase().includes(this.search.toLowerCase());
       });
     },
   },
