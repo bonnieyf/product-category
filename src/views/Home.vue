@@ -1,5 +1,5 @@
 <template>
-  <div class="home all-bg">
+  <div class="home all-bg" ref="infoBox">
     <main class="main-box">
       <div class="container">
         <section
@@ -18,10 +18,10 @@
             <div class="columns is-flex-wrap-wrap is-5">
               <div
                 class="column is-one-quarter"
-                v-for="(item, index) in group.datas"
-                :key="index"
+                v-for="item in group.datas"
+                :key="item.id"
               >
-                <div class="card">
+                <div class="card" v-images-loaded:on.done="imageLoaded">
                   <pageSelector
                     :options="item.version"
                     :item="item"
@@ -40,20 +40,55 @@
 
 <script>
 import pageSelector from "./pageSelector";
+import imagesLoaded from 'vue-images-loaded'
+
 export default {
   name: "Home",
   data() {
     return {
       code: "",
+      bodyHeight: 0,
+      imgLength: 0
     };
   },
   components: {
     pageSelector,
   },
+  directives: {
+    imagesLoaded
+  },
   methods: {
     productOnChange(event) {
       this.code = event.target.value;
     },
+    setData() {
+      this.getProducts.forEach((val, index) => {
+        this.getProducts[index].datas = val.datas.sort(function(a, b) {
+          var nameA = a.product.toLowerCase();
+          var nameB = b.product.toLowerCase();
+          if (nameA < nameB) {
+            return -1;
+          }
+          if (nameA > nameB) {
+            return 1;
+          }
+
+          return 0;
+        });
+        console.log('push')
+      });
+    },
+    imageLoaded(){
+      let element = document.querySelectorAll('.card-image');
+      this.imgLength++;
+      if(this.imgLength >= element.length){
+        this.getBodyHeight();
+      }
+    },
+    getBodyHeight(){
+      this.bodyHeight = this.$refs.infoBox.clientHeight;
+      console.log(this.bodyHeight)
+    }
   },
   computed: {
     getProducts() {
@@ -63,6 +98,40 @@ export default {
       return this.$store.getters.GET_DATAS;
     },
   },
+  // mounted() {
+  //   // document.onreadystatechange = () => {
+  //   //   if (document.readyState == "complete") {
+  //   //     console.log("home hihi", this.$refs.infoBox.clientHeight);
+  //   //     window.parent.postMessage({ Type: 3 }, "*");
+  //   //     window.parent.postMessage(
+  //   //       {
+  //   //         Type: 2,
+  //   //         ID: "repairinstructioniframe",
+  //   //         Height: 390,
+  //   //       },
+  //   //       "*"
+  //   //     );
+  //   //   }
+  //   // };
+
+  //   // if (document.readyState == "complete") {
+  //   //   window.parent.postMessage({ Type: 3 }, "*");
+  //   //   window.parent.postMessage(
+  //   //     {
+  //   //       Type: 2,
+  //   //       ID: "repairinstructioniframe",
+  //   //       Height: 390,
+  //   //     },
+  //   //     "*"
+  //   //   );
+  //   // }
+
+  // },
+  mounted(){
+  },
+  created() {
+    this.setData();
+  },
 };
 </script>
 
@@ -71,4 +140,8 @@ export default {
 .home
   padding-top: 30px
   padding-bottom: 50px
+
+.card-image img
+  bottom: auto
+  height: auto
 </style>

@@ -22,7 +22,7 @@
             </span>
           </h3>
 
-          <div class="resp-video">
+          <!-- <div class="resp-video">
             <iframe
               width="100%"
               height="600"
@@ -34,7 +34,15 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-          </div>
+          </div> -->
+
+          <video width="100%" height="600" controls>
+            <source
+              src="http://testsupport.getac.com/Elibrary/GetVideo/2663?t=1626078910488"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
         <div
@@ -78,11 +86,7 @@
         </a>
       </div>
 
-      <div
-        class="side-menu"
-        v-if="getVideoId != 'video'"
-        :class="{ show: openMenu }"
-      >
+      <div class="side-menu" v-if="getVideoId != 'video'">
         <vue-scroll :ops="ops">
           <div class="side-menu__inner">
             <h3 class="side-menu__title">
@@ -116,10 +120,7 @@
                 <p
                   v-for="result in searchFilter"
                   :key="result.id"
-                  @click="
-                    openMenu = false;
-                    search = '';
-                  "
+                  @click="search = ''"
                 >
                   <router-link :to="`/${getType}/${getId}/${result.id}`"
                     >{{ result.menuTitle.replace("(Upgrade)", "") }}
@@ -133,7 +134,7 @@
             </div>
 
             <div class="side-menu__list" v-if="search.length <= 0">
-              <div class="side-menu__item" @click="openMenu = false">
+              <div class="side-menu__item">
                 <h2><font-awesome-icon icon="star" /></h2>
                 <router-link :to="`/${getType}/${getId}/before`"
                   >Preparation before Service</router-link
@@ -147,7 +148,7 @@
               >
                 <h2>{{ key }}</h2>
                 <div v-for="group in data" :key="group.id">
-                  <p @click="openMenu = false">
+                  <p>
                     <router-link :to="`/${getType}/${getId}/${group.id}`"
                       >{{ group.menuTitle.replace("(Upgrade)", "") }}
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="page video-page">
+  <div class="page video-page" ref="infoBox">
     <VideoHasSideMenu v-if="this.getVideoId !== 'video'"></VideoHasSideMenu>
     <div v-else class="main-box">
       <div class="container">
@@ -8,21 +8,15 @@
             {{ getDatas.datas.title.replace("GETAC ", "") }}
           </span>
         </h3>
-
         <div
           v-for="(video, index) in getDatas.datas.videoUrl"
           :key="index"
           class="resp-video"
         >
-          <iframe
-            width="100%"
-            height="600"
-            :src="`https://www.youtube.com/embed/${video}`"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <video width="100%" height="600" controls>
+            <source :src="`${video}`" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
 
@@ -63,6 +57,34 @@ export default {
     getCate() {
       return this.$store.getters.GET_FIRST_CATE;
     },
+  },
+  mounted() {
+    // document.onreadystatechange = () => {
+    //   if (document.readyState == "complete") {
+    //     console.log("video hihi", this.$refs.infoBox.clientHeight);
+    //     window.parent.postMessage({ Type: 3 }, "*");
+    //     window.parent.postMessage(
+    //       {
+    //         Type: 2,
+    //         ID: "repairinstructioniframe",
+    //         Height: 390,
+    //       },
+    //       "*"
+    //     );
+    //   }
+    // };
+
+    // if (document.readyState == "complete") {
+    //   window.parent.postMessage({ Type: 3 }, "*");
+    //   window.parent.postMessage(
+    //     {
+    //       Type: 2,
+    //       ID: "repairinstructioniframe",
+    //       Height: 390,
+    //     },
+    //     "*"
+    //   );
+    // }
   },
   created() {
     this.$store.dispatch("COMMITFILTERDATA", {

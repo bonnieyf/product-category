@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div class="page" ref="infoBox" >
     <div class="main-box">
       <div class="main-box__header">
         <div class="container">
@@ -12,16 +12,27 @@
                 </p>
 
                 <router-link :to="`/${getType}/${getDatas.datas.id}/before`"
-                  ><b-button type="is-org" expanded
+                  ><b-button class="hero-btn" type="is-org" expanded
                     >Learn more</b-button
                   ></router-link
                 >
               </div>
               <div class="column">
-                <img :src="getDatas.datas.imgSrc" class="photo" alt="" />
+                <img class="product-img"
+                  :src="getURL(getDatas.datas.imgSrc)"
+                  :alt="getDatas.datas.title"
+                />
               </div>
             </div>
           </div>
+        </div>
+        <!-- Back to List -->
+        <div class="back-to-list">
+          <router-link :to="`/`"
+            ><b-button style="max-width: 140px" type="is-org"
+              >Back to List</b-button
+            ></router-link
+          >
         </div>
       </div>
       <div class="container">
@@ -31,7 +42,7 @@
               <li><router-link to="/">Service Video</router-link></li>
               <li class="is-active">
                 <router-link :to="`/${getType}/${getId}/`">{{
-                  getDatas.datas.title.replaceAll("GETAC ", "")
+                  getDatas.datas.title.replace(/GETAC /g, "")
                 }}</router-link>
               </li>
             </ul>
@@ -66,7 +77,7 @@
           <div class="filter-content__main">
             <p v-for="result in searchFilter" :key="result.id">
               <router-link :to="`/${getType}/${getId}/${result.id}`"
-                >{{ result.menuTitle }}
+                >{{ result.menuTitle.replace("(Upgrade)", "") }}
 
                 <span v-if="result.isUpgrade" type="is-info">(Upgrade)</span>
               </router-link>
@@ -107,7 +118,7 @@
               v-for="(data, key) in cateTatal"
               :key="data.id"
             >
-              <div class="filter-content">
+              <div class="filter-content" :class="`class-${key}`">
                 <div class="filter-content__title">
                   <h2>{{ key }}</h2>
                 </div>
@@ -131,9 +142,11 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
+      publicPath: process.env.BASE_URL,
       changeSelected: null,
       filterObject: [],
       cateTatal: {},
@@ -142,12 +155,33 @@ export default {
     };
   },
   methods: {
+    getURL(val) {
+      return require(`./../assets/images/${val}`);
+    },
     cleanResult() {
       this.search = "";
       this.searchBlur = false;
     },
     change(val) {
       this.changeSelected = val;
+
+      let divPosition = document.querySelector(".filter-main");
+      let scrollPositon = 'start';
+      if (val !== "All" && window.innerWidth > 769) {
+        divPosition = document.querySelector(`.class-${val}`);
+        scrollPositon = 'center';
+      }
+
+      divPosition.scrollIntoView({ behavior: 'smooth', block: scrollPositon });
+    },
+    findPos(obj) {
+      var curtop = 0;
+      if (obj.offsetParent) {
+        do {
+          curtop += obj.offsetTop;
+        } while ((obj = obj.offsetParent));
+        return [curtop];
+      }
     },
     getSelecedDefault() {
       this.changeSelected = this.getCateSelect;
@@ -159,7 +193,7 @@ export default {
         );
         this.cateTatal[item] = returnData;
       });
-    },
+    }
   },
   computed: {
     getType() {
@@ -191,6 +225,34 @@ export default {
       });
     },
   },
+  mounted() {
+    // document.onreadystatechange = () => {
+    //   if (document.readyState == "complete") {
+    //     console.log("type hihi", this.$refs.infoBox.clientHeight);
+    //     window.parent.postMessage({ Type: 3 }, "*");
+    //     window.parent.postMessage(
+    //       {
+    //         Type: 2,
+    //         ID: "repairinstructioniframe",
+    //         Height: 390,
+    //       },
+    //       "*"
+    //     );
+    //   }
+    // };
+
+    // if (document.readyState == "complete") {
+    //   window.parent.postMessage({ Type: 3 }, "*");
+    //   window.parent.postMessage(
+    //     {
+    //       Type: 2,
+    //       ID: "repairinstructioniframe",
+    //       Height: 390,
+    //     },
+    //     "*"
+    //   );
+    // }
+  },
   created() {
     this.$store.dispatch("COMMITFILTERDATA", {
       deviceId: this.getType,
@@ -198,6 +260,7 @@ export default {
     });
     this.getSelecedDefault();
     this.marginObject();
+
   },
 };
 </script>
@@ -206,6 +269,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap')
 @import '../assets/web.style'
 
+.hero-btn
+  text-transform: uppercase
 .search-bar
   +tablet
     display: flex
