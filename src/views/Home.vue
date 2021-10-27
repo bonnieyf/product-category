@@ -75,20 +75,28 @@ export default {
 
           return 0;
         });
-        console.log('push')
       });
     },
     imageLoaded(){
       let element = document.querySelectorAll('.card-image');
       this.imgLength++;
-      if(this.imgLength >= element.length){
-        this.getBodyHeight();
+      if(this.imgLength === element.length){
+        this.sendMessageToParent();
       }
     },
-    getBodyHeight(){
+    sendMessageToParent(){
       this.bodyHeight = this.$refs.infoBox.clientHeight;
-      console.log(this.bodyHeight)
-    }
+      console.log('bodyHeight:'+this.bodyHeight);
+      parent.postMessage({ Type: 3 }, "*");
+      parent.postMessage(
+        {
+          Type: 2,
+          ID: ".repairinstructioniframe",
+          Height: this.bodyHeight,
+        },
+        "*"
+      );
+    },
   },
   computed: {
     getProducts() {
@@ -98,39 +106,18 @@ export default {
       return this.$store.getters.GET_DATAS;
     },
   },
-  // mounted() {
-  //   // document.onreadystatechange = () => {
-  //   //   if (document.readyState == "complete") {
-  //   //     console.log("home hihi", this.$refs.infoBox.clientHeight);
-  //   //     window.parent.postMessage({ Type: 3 }, "*");
-  //   //     window.parent.postMessage(
-  //   //       {
-  //   //         Type: 2,
-  //   //         ID: "repairinstructioniframe",
-  //   //         Height: 390,
-  //   //       },
-  //   //       "*"
-  //   //     );
-  //   //   }
-  //   // };
-
-  //   // if (document.readyState == "complete") {
-  //   //   window.parent.postMessage({ Type: 3 }, "*");
-  //   //   window.parent.postMessage(
-  //   //     {
-  //   //       Type: 2,
-  //   //       ID: "repairinstructioniframe",
-  //   //       Height: 390,
-  //   //     },
-  //   //     "*"
-  //   //   );
-  //   // }
-
-  // },
   mounted(){
+    this.sendMessageToParent();
+    this.$nextTick(() => {
+        window.addEventListener('resize', this.onResize);
+    })
   },
   created() {
     this.setData();
+    window.addEventListener('resize', this.sendMessageToParent);
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.sendMessageToParent);
   },
 };
 </script>
