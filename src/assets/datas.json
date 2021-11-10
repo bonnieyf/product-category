@@ -120,7 +120,7 @@
               "id": 1,
               "verId": "g6",
               "imgSrc": "F110_WIN10_2021-1.png",
-              "isOld": true,
+              "isOld": false,
               "status": "open"
             }
           ]
@@ -838,6 +838,323 @@
           "imgSrc": "F110_WIN10_2021-1.png",
           "descroption": "",
           "menu": ""
+        },
+        {
+          "id": "f110-g6",
+          "title": "GETAC F110 G6",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2668?t=1623909873944"
+          ],
+          "imgSrc": "F110_WIN10_2021-1.png",
+          "descroption": "",
+          "menu": [
+            {
+              "id": 1,
+              "menuTitle": "Preparation",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 2,
+              "menuTitle": "Smart Card",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 3,
+              "menuTitle": "Smart Card",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            },
+            {
+              "id": 4,
+              "menuTitle": "HID RFID",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 5,
+              "menuTitle": "HID RFID",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            },
+            {
+              "id": 6,
+              "menuTitle": "DDR",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 7,
+              "menuTitle": "WIFI",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 8,
+              "menuTitle": "4G",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 9,
+              "menuTitle": "4G",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            },
+            {
+              "id": 10,
+              "menuTitle": "LTE GPS",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 11,
+              "menuTitle": "LTE GPS",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            },
+            {
+              "id": 12,
+              "menuTitle": "MC10100-V2b GPS",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 13,
+              "menuTitle": "MC10100-V2b GPS",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            },
+            {
+              "id": 14,
+              "menuTitle": "MC1010G GPS",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 15,
+              "menuTitle": "MC1010G GPS",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            },
+            {
+              "id": 16,
+              "menuTitle": "Case A / Top Cover",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 17,
+              "menuTitle": "Option FPC",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 18,
+              "menuTitle": "Option FPC",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            },
+            {
+              "id": 19,
+              "menuTitle": "Front Camera",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 20,
+              "menuTitle": "Rear Camera",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 21,
+              "menuTitle": "SSD",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 22,
+              "menuTitle": "2D Barcode",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 23,
+              "menuTitle": "2D Barcode",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            },
+            {
+              "id": 24,
+              "menuTitle": "MicroSD Card",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 25,
+              "menuTitle": "MicroSD Card",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            },
+            {
+              "id": 26,
+              "menuTitle": "RS232/LAN",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 27,
+              "menuTitle": "RS232/LAN",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            },
+            {
+              "id": 28,
+              "menuTitle": "USB 2.0",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 29,
+              "menuTitle": "USB 2.0",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            },
+            {
+              "id": 31,
+              "menuTitle": "Top Cover",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 32,
+              "menuTitle": "Bottom Cover",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 33,
+              "menuTitle": "Left Cap",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 34,
+              "menuTitle": "Motherboard",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 35,
+              "menuTitle": "DJ Jack",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 36,
+              "menuTitle": "Fan",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 37,
+              "menuTitle": "Expansion Bay",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 38,
+              "menuTitle": "SIM Card Board",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 39,
+              "menuTitle": "RF Switch Board",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 40,
+              "menuTitle": "NXP RFID Right Cap",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 41,
+              "menuTitle": "NXP RFID Right Cap",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            },
+            {
+              "id": 42,
+              "menuTitle": "Fingerprinter Right Cap",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 43,
+              "menuTitle": "Fingerprinter Right Cap",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            },
+            {
+              "id": 44,
+              "menuTitle": "Antenna",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 45,
+              "menuTitle": "SSD Translation Board",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 46,
+              "menuTitle": "LCD Cable",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 47,
+              "menuTitle": "Keypad FPC",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 48,
+              "menuTitle": "Battery Sensor FPC",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 49,
+              "menuTitle": "LED Board",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 50,
+              "menuTitle": "Case B/LCD Bezel",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 51,
+              "menuTitle": "Digitizer LCD",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false
+            },
+            {
+              "id": 52,
+              "menuTitle": "Digitizer LCD",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true
+            }
+          ]
         },
         {
           "id": "k120",

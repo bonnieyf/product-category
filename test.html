@@ -17,11 +17,11 @@
   </body>
   <script>
     window.addEventListener("message", function(e) {
-      if (e.data.type) {
-        console.log("yesssss");
-        document.querySelector(".iframe").height = e.data.type
-          ? e.data.type
-          : 700;
+      if (e.data.Type === 2) {
+        let element = e.data.ID;
+        let elementHeight = e.data.Height;
+        console.log("child message:",element ,elementHeight);
+        document.querySelector(".iframe").height = elementHeight;
       }
     });
   </script>

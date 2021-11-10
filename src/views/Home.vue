@@ -21,7 +21,7 @@
                 v-for="item in group.datas"
                 :key="item.id"
               >
-                <div class="card" v-images-loaded:on.done="imageLoaded">
+                <div class="card">
                   <pageSelector
                     :options="item.version"
                     :item="item"
@@ -40,7 +40,6 @@
 
 <script>
 import pageSelector from "./pageSelector";
-import imagesLoaded from 'vue-images-loaded'
 
 export default {
   name: "Home",
@@ -53,9 +52,6 @@ export default {
   },
   components: {
     pageSelector,
-  },
-  directives: {
-    imagesLoaded
   },
   methods: {
     productOnChange(event) {

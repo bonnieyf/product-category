@@ -38,7 +38,7 @@
 
           <video width="100%" height="600" controls>
             <source
-              src="http://testsupport.getac.com/Elibrary/GetVideo/2663?t=1626078910488"
+              src="https://testsupport.getac.com/Elibrary/GetVideo/2663?t=1626078910488"
               type="video/mp4"
             />
             Your browser does not support the video tag.
