@@ -11,12 +11,27 @@
         <div
           v-for="(video, index) in getDatas.datas.videoUrl"
           :key="index"
-          class="resp-video"
+          style="magin-bottom: 30px;"
         >
-          <video width="100%" height="600" controls>
+          <!-- <video width="100%" height="600" controls>
             <source :src="`${video}`" type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+          </video> -->
+
+          <vue-plyr>
+            <video
+              controls
+              autoplay
+              playsinlines
+            >
+              <source
+                size="1080"
+                :src="`${video}`"
+                type="video/mp4"
+              />
+            </video>
+          </vue-plyr>
+          
         </div>
       </div>
 
@@ -59,6 +74,9 @@ export default {
     },
   },
   mounted() {
+    console.log('scroll parent to top');
+    parent.postMessage({ Type: 3 }, "*")
+    
     // document.onreadystatechange = () => {
     //   if (document.readyState == "complete") {
     //     console.log("video hihi", this.$refs.infoBox.clientHeight);
@@ -92,6 +110,7 @@ export default {
       productId: this.getId,
     });
   },
+  
 };
 </script>
 

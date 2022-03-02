@@ -12,10 +12,15 @@ import "vuescroll/dist/vuescroll.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-
+import VuePlyr from "vue-plyr";
+import "vue-plyr/dist/vue-plyr.css";
 
 Vue.use(Buefy);
 Vue.use(vuescroll);
+
+Vue.use(VuePlyr, {
+  plyr: {},
+});
 Vue.config.productionTip = false;
 
 library.add(fas);

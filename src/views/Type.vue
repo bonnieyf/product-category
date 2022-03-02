@@ -13,7 +13,7 @@
 
                 <router-link :to="`/${getType}/${getDatas.datas.id}/before`"
                   ><b-button class="hero-btn" type="is-org" expanded
-                    >Learn more</b-button
+                    >PREPARATION</b-button
                   ></router-link
                 >
               </div>
@@ -72,14 +72,14 @@
             <span>
               <b>{{ searchFilter.length }}</b> Result for <b>{{ search }}</b>
             </span>
-            <b-button type="is-org" @click="cleanResult">Clean</b-button>
+            <b-button type="is-org" @click="cleanResult">Clear</b-button>
           </div>
           <div class="filter-content__main">
             <p v-for="result in searchFilter" :key="result.id">
-              <router-link :to="`/${getType}/${getId}/${result.id}`"
-                >{{ result.menuTitle.replace("(Upgrade)", "") }}
+              <router-link :to="`/${getType}/${getId}/${result.id}`" v-if="result.isShow === true"
+                >{{ result.menuTitle.replace("(Device Upgrade)", "") }}
 
-                <span v-if="result.isUpgrade" type="is-info">(Upgrade)</span>
+                <span v-if="result.isUpgrade" type="is-info">(Device Upgrade)</span>
               </router-link>
             </p>
           </div>
@@ -124,10 +124,11 @@
                 </div>
                 <div class="filter-content__main">
                   <p v-for="group in data" :key="group.id">
-                    <router-link :to="`/${getType}/${getId}/${group.id}`"
-                      >{{ group.menuTitle.replace("(Upgrade)", "") }}
+                    <router-link :to="`/${getType}/${getId}/${group.id}`" v-if="group.isShow === true"
+                      >{{ group.menuTitle.replace('(Upgrade)','' ) }}
+
                       <span v-if="group.isUpgrade" type="is-info"
-                        >(Upgrade)</span
+                        >(Device Upgrade)</span
                       >
                     </router-link>
                   </p>
@@ -221,11 +222,18 @@ export default {
     },
     searchFilter() {
       return this.filterLinks.filter((item) => {
+        if(this.search.toLowerCase().match(/^device.*(up)|.*(up)/g)){
+          return item.isUpgrade == true;
+        }
         return item.menuTitle.toLowerCase().includes(this.search.toLowerCase());
       });
     },
   },
   mounted() {
+
+    console.log('scroll parent to top');
+    parent.postMessage({ Type: 3 }, "*")
+    
     // document.onreadystatechange = () => {
     //   if (document.readyState == "complete") {
     //     console.log("type hihi", this.$refs.infoBox.clientHeight);

@@ -3,73 +3,48 @@
     <div class="main-box" :class="{ showmenu: openMenu }">
       <div class="container">
         <div
-          v-if="getVideoId != 'before'"
+          
           class="container-inner"
           :class="{ move: openMenu }"
         >
-          <h3 class="title is-4 is-spaced bd-anchor-title">
+          <h3 v-if="getVideoId != 'before'" class="title is-4 is-spaced bd-anchor-title">
             <span class="bd-anchor-name">
               {{ getDatas.datas.title.replace("GETAC ", "") }} -
               {{
                 filterSelectData.datas.menu[getVideoId].menuTitle.replace(
-                  "(Upgrade)",
+                  "(Device Upgrade)",
                   ""
                 )
               }}
               <b v-if="filterSelectData.datas.menu[getVideoId].isUpgrade"
-                >(Upgrade)</b
+                >(Device Upgrade)</b
               >
             </span>
           </h3>
 
-          <!-- <div class="resp-video">
-            <iframe
-              width="100%"
-              height="600"
-              :src="
-                `https://www.youtube.com/embed/${filterSelectData.datas.menu[getVideoId].videoUrl}`
-              "
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div> -->
-
-          <video width="100%" height="600" controls>
-            <source
-              src="https://testsupport.getac.com/Elibrary/GetVideo/2663?t=1626078910488"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-        <div
-          v-if="getVideoId === 'before'"
-          class="container-inner"
-          :class="{ move: openMenu }"
-        >
-          <h3 class="title is-4 is-spaced bd-anchor-title">
+          <h3 v-if="getVideoId === 'before'" class="title is-4 is-spaced bd-anchor-title">
             <span class="bd-anchor-name">
-              {{ getDatas.datas.title }} - Preparation before Service
+              {{ getDatas.datas.title }} - Preparation Before Service
             </span>
           </h3>
+          
 
-          <div class="resp-video">
-            <iframe
-              width="100%"
-              height="600"
-              :src="
-                `https://www.youtube.com/embed/${filterSelectData.datas.videoUrl}`
-              "
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
+            <!-- <div class="resp-video">
+              <video ref="player" controls autoplay :src="newUrl"></video>
+            </div> -->
+            <!-- <div id="player"></div> -->
+            <vue-plyr ref="plyr">
+              <video
+                controls
+                autoplay
+                playsinlines
+                :src="`${publicPath}${newUrl}`"
+                format="video/mp4"
+              >
+              </video>
+            </vue-plyr>
         </div>
+
       </div>
 
       <!-- Back to List -->
@@ -82,7 +57,8 @@
       <!-- navigation -->
       <div class="menu-button left" v-if="getVideoId != 'video'">
         <a href="#" @click.prevent="openMenu = !openMenu">
-          <span><font-awesome-icon icon="caret-right"/></span>
+          <i v-if="openMenu == false" class="icon-bar"></i>
+          <i v-else class="icon-x"></i>
         </a>
       </div>
 
@@ -114,7 +90,7 @@
                   <b>{{ searchFilter.length }}</b> Result for
                   <b>{{ search }}</b>
                 </span>
-                <b-button type="is-org" @click="cleanResult">Clean</b-button>
+                <b-button type="is-org" @click="cleanResult">Clear</b-button>
               </div>
               <div class="filter-content__main">
                 <p
@@ -122,11 +98,11 @@
                   :key="result.id"
                   @click="search = ''"
                 >
-                  <router-link :to="`/${getType}/${getId}/${result.id}`"
-                    >{{ result.menuTitle.replace("(Upgrade)", "") }}
+                  <router-link :to="`/${getType}/${getId}/${result.id}`" v-if="result.isShow === true"
+                    >{{ result.menuTitle.replace("(Device Upgrade)", "") }}
 
                     <span v-if="result.isUpgrade" type="is-info"
-                      >(Upgrade)</span
+                      >(Device Upgrade)</span
                     >
                   </router-link>
                 </p>
@@ -136,8 +112,8 @@
             <div class="side-menu__list" v-if="search.length <= 0">
               <div class="side-menu__item">
                 <h2><font-awesome-icon icon="star" /></h2>
-                <router-link :to="`/${getType}/${getId}/before`"
-                  >Preparation before Service</router-link
+                <router-link @click.native="updateUrl('before')" :to="`/${getType}/${getId}/before`"
+                  >Preparation Before Service</router-link
                 >
               </div>
 
@@ -148,15 +124,16 @@
               >
                 <h2>{{ key }}</h2>
                 <div v-for="group in data" :key="group.id">
-                  <p>
-                    <router-link :to="`/${getType}/${getId}/${group.id}`"
-                      >{{ group.menuTitle.replace("(Upgrade)", "") }}
-
+                  <p v-if="group.isShow === true">
+                    <router-link @click.native="updateUrl(group.id)" :to="`/${getType}/${getId}/${group.id}`"
+                      >{{ group.menuTitle.replace("(Device Upgrade)", "") }}
+                      
+                      <br>
                       <span
                         class="upgrade-tag"
                         v-if="group.isUpgrade"
                         type="is-info"
-                        >(Upgrade)</span
+                        >(Device Upgrade)</span
                       ></router-link
                     >
                   </p>
@@ -171,12 +148,16 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
       filterSelectData: null,
+      publicPath: process.env.BASE_URL,
       cateTatal: {},
-      openMenu: true,
+      openMenu: false,
+      newUrl: null,
+      player: null,
       ops: {
         vuescroll: {},
         scrollPanel: {},
@@ -217,6 +198,16 @@ export default {
         this.cateTatal[item] = returnData;
       });
     },
+    updateUrl(newId){
+      if(newId == 'before'){
+        this.newUrl = this.getDatas.datas.videoUrl;
+      }
+
+      this.newUrl = this.getDatas.datas.menu[newId].videoUrl;
+
+      this.player = this.$refs.plyr.player;
+      this.player.load();
+    }
   },
   computed: {
     getType() {
@@ -240,10 +231,14 @@ export default {
         resultObj.push(link);
         resultObj.sort((a, b) => a.menuTitle.localeCompare(b.menuTitle));
       });
+
       return resultObj;
     },
     searchFilter() {
       return this.filterLinks.filter((item) => {
+        if(this.search.toLowerCase().match(/^device.*(up)|.*(up)/g)){
+          return item.isUpgrade == true;
+        }
         return item.menuTitle.toLowerCase().includes(this.search.toLowerCase());
       });
     },
@@ -255,8 +250,9 @@ export default {
     });
     this.getSelectedData();
     this.marginObject();
+    this.updateUrl(this.getVideoId);
   },
-};
+}
 </script>
 
 <style scoped lang="sass">

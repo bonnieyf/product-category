@@ -24,9 +24,7 @@
                       :value="option.id"
                       :key="option.verId"
                        @click="select(option.id)">
-                        {{
-                          (`${item.product} ${item.version.length > 1 ? `- ${option.verId}`: ''}`).toUpperCase()
-                        }}
+                        <span>{{ (`${item.product} ${item.version.length > 1 ? `- ${option.verId}`: ''}`).toUpperCase() }}</span>
                       </li>
                   </ul>
               </div>
@@ -34,14 +32,12 @@
         </div>
           <div class="buttons">
             <router-link
-              v-if="options[code].status != 'pending'"
+              v-if="options[code].status === 'open'"
               class="link"
               :to="getEnterURL"
               ><b-button type="is-org" expanded>Enter</b-button></router-link
             >
-            <span v-else class="note">
-              Coming soon
-            </span>
+            <span v-else class="note"></span>
           </div>
         </div>
       </div>
@@ -79,6 +75,8 @@ export default {
         setTimeout(()=>{
           this.$router.push({ path: newURL })
         },500)
+      }else if(newState == 'f110g6'){
+        window.location.href = './f110/index.html'
       }
 		},
     getURL(val) {

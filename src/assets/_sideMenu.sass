@@ -11,8 +11,8 @@
 .side-menu
   position: absolute
   top: 0
-  left: -380px
-  width: 380px
+  left: -320px
+  width: 320px
   bottom: 0
   overflow: hidden
   -webkit-overflow-scrolling: touch
@@ -45,7 +45,11 @@
     line-height: 1.5
 
 
-.side-menu__list .side-menu__item:nth-child(1) h2
+.side-menu__list
+  padding-left: 20px
+  +mobile
+    padding-left: 0
+  .side-menu__item:nth-child(1) h2
     font-size: 18px
     color: #FFAA00
 
@@ -62,7 +66,7 @@
     padding-bottom: 40px
 
   &.showmenu
-    padding-left: 380px
+    padding-left: 250px
 
     +mobile
       padding-left: 0
@@ -71,7 +75,7 @@
       left: 0
 
     .menu-button
-      left: 380px
+      left: 320px
       +mobile
         top: 20px
         left: 253px
@@ -88,7 +92,7 @@
     transition: all .5s ease
 
 .side-menu__title
-  font-size: 22px
+  font-size: 18px
   color:#8E8E8E
   text-align: center
   position: relative

@@ -40,7 +40,6 @@
 
 <script>
 import pageSelector from "./pageSelector";
-
 export default {
   name: "Home",
   data() {
@@ -106,7 +105,7 @@ export default {
     this.sendMessageToParent();
     this.$nextTick(() => {
         window.addEventListener('resize', this.onResize);
-    })
+    });
   },
   created() {
     this.setData();
