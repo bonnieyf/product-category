@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="card-image" >
+    <div class="card-image">
       <figure class="image">
-        <img :src="getURL(item.version[code].imgSrc)"/>
+        <img :src="getURL(item.version[code].imgSrc)" />
       </figure>
     </div>
 
@@ -10,26 +10,42 @@
       <div class="media">
         <div class="media-content">
           <div class="aselect">
-            <div class="selector" ref="customDropdown" @click="toggleDropdown()" @blur="closeDropDown()" tabindex="0"> 
+            <div
+              class="selector"
+              ref="customDropdown"
+              @click="toggleDropdown()"
+              @blur="closeDropDown()"
+              tabindex="0"
+            >
               <div class="label">
-                <span>{{ 
-                  (`${item.product} ${item.version.length > 1 ? `- ${item.version[code].verId}`: ''}`).toUpperCase()
-                  }}</span>
+                <span>{{
+                  `${item.product} ${
+                    item.version.length > 1
+                      ? `- ${item.version[code].verId}`
+                      : ""
+                  }`.toUpperCase()
+                }}</span>
               </div>
-              <div class="arrow" :class="{ expanded : visible }"></div>
-              <div :class="{ hidden : !visible, visible }">
-                  <ul>
-                      <li :class="{ current : option.id === code }"
-                      v-for="option in options"
-                      :value="option.id"
-                      :key="option.verId"
-                       @click="select(option.id)">
-                        <span>{{ (`${item.product} ${item.version.length > 1 ? `- ${option.verId}`: ''}`).toUpperCase() }}</span>
-                      </li>
-                  </ul>
+              <div class="arrow" :class="{ expanded: visible }"></div>
+              <div :class="{ hidden: !visible, visible }">
+                <ul>
+                  <li
+                    :class="{ current: option.id === code }"
+                    v-for="option in options"
+                    :value="option.id"
+                    :key="option.verId"
+                    @click="select(option.id)"
+                  >
+                    <span>{{
+                      `${item.product} ${
+                        item.version.length > 1 ? `- ${option.verId}` : ""
+                      }`.toUpperCase()
+                    }}</span>
+                  </li>
+                </ul>
               </div>
             </div>
-        </div>
+          </div>
           <div class="buttons">
             <router-link
               v-if="options[code].status === 'open'"
@@ -38,6 +54,13 @@
               ><b-button type="is-org" expanded>Enter</b-button></router-link
             >
             <span v-else class="note"></span>
+
+            <a
+              v-if="options[code].status === 'b360'"
+              class="link"
+              href="./b360/index.html"
+              ><b-button type="is-org" expanded>Enter</b-button></a
+            >
           </div>
         </div>
       </div>
@@ -45,7 +68,6 @@
   </div>
 </template>
 <script>
-
 export default {
   data() {
     return {
@@ -64,24 +86,26 @@ export default {
     toggleDropdown() {
       this.visible = !this.visible;
     },
-    closeDropDown(){
+    closeDropDown() {
       this.visible = false;
     },
     select(option) {
       this.code = option;
-      let newURL= this.getEnterURL;
-      let newState = this.options[this.code].status
-      if(newState == 'open'){
-        setTimeout(()=>{
-          this.$router.push({ path: newURL })
-        },500)
-      }else if(newState == 'f110g6'){
-        window.location.href = './f110/index.html'
+      let newURL = this.getEnterURL;
+      let newState = this.options[this.code].status;
+      if (newState == "open") {
+        setTimeout(() => {
+          this.$router.push({ path: newURL });
+        }, 500);
+      } else if (newState == "f110g6") {
+        window.location.href = "./f110/index.html";
+      } else if (newState == "b360") {
+        window.location.href = "./b360/index.html";
       }
-		},
+    },
     getURL(val) {
       return require(`./../assets/images/${val}`);
-    }
+    },
   },
   computed: {
     getEnterURL() {
@@ -121,11 +145,8 @@ span.note
   margin-bottom: 25px
   color: $color
 
-
 select,option
   text-transform: uppercase
-
-	
 </style>
 
 <style scoped lang="scss">
@@ -133,16 +154,16 @@ select,option
   width: 100%;
   max-width: 200px;
   margin: 20px auto;
-  
+
   .selector {
-    border: 1px solid #C5C5C5;
+    border: 1px solid #c5c5c5;
     background: #fff;
     position: relative;
     z-index: 1;
     padding-right: 20px;
-    
+
     text-align: left;
-    &:focus{
+    &:focus {
       border: 2px solid #000;
       border-radius: 5px;
     }
@@ -157,7 +178,7 @@ select,option
       border-top: 5px solid #000;
       transform: rotateZ(0deg) translateY(0px);
       transition-duration: 0.3s;
-      transition-timing-function: cubic-bezier(.59,1.39,.37,1.01);
+      transition-timing-function: cubic-bezier(0.59, 1.39, 0.37, 1.01);
     }
     .expanded {
       transform: rotateZ(180deg) translateY(2px);
@@ -190,13 +211,13 @@ select,option
     &:hover {
       background: #ececec;
     }
-    &.current:hover{
-      background: #D3461E;
+    &.current:hover {
+      background: #d3461e;
     }
   }
   .current {
     color: white;
-    background: #D3461E;
+    background: #d3461e;
   }
   .hidden {
     visibility: hidden;

@@ -10,16 +10,16 @@
 <link rel="stylesheet" href="js.lib/plyr.css">
 <link rel="stylesheet" href="js.lib/overlayScrollbar/css/OverlayScrollbars.min.css">
 <link rel="stylesheet" href="js.lib/overlayScrollbar/os-theme-minimal-dark.css">
-<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/custom.css?ver=20220303">
 </head>
-<body>
+<body onload="parent.postMessage({ Type: 3 }, '*')">
 <div data-v-14f059e6="" class="page video-page">
 <div data-v-37f52652="" data-v-14f059e6="">
-<div data-v-37f52652="" class="main-box showmenu" style="padding-bottom: 100px;">
+<div data-v-37f52652="" class="main-box" style="padding-bottom: 100px;">
 <div data-v-37f52652="" class="container">
 <div data-v-37f52652="" class="container-inner move"><div class="row row-pt70">
 <div class="col-left"><h3 data-v-37f52652="" class="title is-4 is-spaced bd-anchor-title pt0">
-<span data-v-37f52652="" class="bd-anchor-name"> Getac F110 - fingerprinter</span></h3>
+<span data-v-37f52652="" class="bd-anchor-name"> Getac F110 - Fingerprinter</span></h3>
 <!--Upgrade	-->
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">
@@ -34,40 +34,42 @@
   <div class="sub-menu">
     <h3 class="side-menu__title" data-v-37f52652=""><span data-v-37f52652="">DISMANTLE</span></h3>
     <ol class="sub-menu__nav">
-      <li class="active" data-url="https://support.getac.com/Elibrary/GetVideo/4647"><a>01_SSD(D)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4655"><a>05_USB2.0(D)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4666"><a>09_Expansion_Bay_cover(D)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4662"><a>07_Right_cap(D)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4660"><a>07_1_Left_cap(D)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4664"><a>08_Top_cap(D)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4734"><a>16_case A(D)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4706"><a>29_fingerprinter (D)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4647"><a>SSD(D)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4655"><a>USB2.0(D)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4666"><a>Expansion Bay cover(D)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4662"><a>Right cap(D)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4660"><a>Left cap(D)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4664"><a>Top &amp; Bottom cap(D)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4734"><a>Case A(D)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4706"><a>Fingerprinter(D)</a></li>
     </ol>
   </div>
   <!-- 裝-->
   <div class="sub-menu">
     <h3 class="side-menu__title" data-v-37f52652=""><span data-v-37f52652="">ASSEMBLY</span></h3>
     <ol class="sub-menu__nav">
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4707"><a>29_fingerprinter (A)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4735"><a>16_case A(A)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4663"><a>08_Top_cap(A)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4659"><a>07_1_Left_cap(A)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4661"><a>07_Right_cap(A)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4665"><a>09_Expansion_Bay_cover(A)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4654"><a>05_USB2.0(A)</a></li>
-      <li data-url="https://support.getac.com/Elibrary/GetVideo/4646"><a>01_SSD(A)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4707"><a>Fingerprinter(A)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4735"><a>Case A(A)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4663"><a>Top &amp; Bottom cap(A)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4659"><a>Left cap(A)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4661"><a>Right cap(A)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4665"><a>Expansion Bay cover(A)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4654"><a>USB2.0(A)</a></li>
+      <li data-url="https://support.getac.com/Elibrary/GetVideo/4646"><a>SSD(A)</a></li>
     </ol>
   </div>
 </div></div>
 <div class="col-right">
-<!-- Video Path --><video id="player" playsinline controls>
+<!-- Video Path --><video id="player" playsinline controls autoplay>
 <source src="https://support.getac.com/Elibrary/GetVideo/4645" type="video/mp4" />
 </video></div>
 </div></div>
 </div>
 <!-- Back Button -->
-<div data-v-37f52652="" class="back-to-list"><a data-v-37f52652="" href="category.html" class="router-link-active"><button data-v-37f52652="" type="button" class="button is-org"><span>Back to List</span></button></a></div>
-<div data-v-37f52652="" class="menu-button left"><a data-v-37f52652="" href="#"><span data-v-37f52652=""><svg data-v-37f52652="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512" class="svg-inline--fa fa-caret-right fa-w-6"> <path data-v-37f52652="" fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z" class=""></path> </svg></span></a></div>
+<div data-v-37f52652="" class="back-to-list"><a data-v-37f52652="" href="./index.html" class="router-link-active"><button data-v-37f52652="" type="button" class="button is-org"><span>Back to List</span></button></a></div>
+<div data-v-37f52652="" class="menu-button left">
+<a data-v-37f52652="" href="#"><i class="icon-bar"></i><i class="icon-x"></i></a>
+</div>
 <!-- Side menu -->
 <div data-v-37f52652="" class="side-menu"><!-- Navigation title -->
 <div id="side-menu-box">
@@ -78,46 +80,41 @@
 <h2 data-v-37f52652=""><svg data-v-37f52652="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-star fa-w-18"> <path data-v-37f52652="" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" class=""></path> </svg></h2>
 <a data-v-37f52652="" href="./preparation.html" class="">Preparation Before Service</a>
 </div>
-<div class="side-menu__item" data-v-37f52652="">
-  <h2 data-v-37f52652="">1</h2>
-  <div data-v-37f52652="">
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="07_1.html">1_L_DC Door (L)</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="07_2.html">1_Left cap</a></p>
-  </div>
-</div><!-- 2 -->
+<!-- 2 -->
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">2</h2>
   <div data-v-37f52652="">
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="02.html">2D barcode</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="02_upgrade.html">
-        2D barcode<span data-v-37f52652="" type="is-info" class="upgrade-tag">  (Device Upgrade)</span></a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="02_upgrade.html">2D barcode<br/><span data-v-37f52652="" type="is-info" class="upgrade-tag">  (Device Upgrade)</span></a></p>
   </div>
 </div><!-- 4 -->
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">4</h2>
   <div data-v-37f52652="">
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="14.html">4G</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="33_3.html">4G antenna</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="33_3.html">4G Antenna</a></p>
   </div>
 </div><!-- B -->
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">B</h2>
   <div data-v-37f52652="">
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="27.html">battery sensor FPC</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="27.html">Battery Sensor FPC</a></p>
   </div>
 </div><!-- C -->
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">C</h2>
   <div data-v-37f52652="">
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="16.html">case A</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="38.html">case B</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="16.html">Case A</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="38.html">Case B</a></p>
   </div>
 </div><!-- D -->
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">D</h2>
   <div data-v-37f52652="">
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="31.html">DC jack</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="07_1.html">DC Door</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="12.html">DDR</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="07_3.html">Doors</a></p>
   </div>
 </div><!-- E -->
 <div class="side-menu__item" data-v-37f52652="">
@@ -130,25 +127,23 @@
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">F</h2>
   <div data-v-37f52652="">
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="32.html">fan</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="29_1.html">fingerprinter</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="18.html">front camera</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="32.html">Fan</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="29_1.html">Fingerprinter</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="18.html">Front camera</a></p>
   </div>
 </div><!-- H -->
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">H</h2>
   <div data-v-37f52652="">
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="06.html">hard handle</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="06.html">Hard handle</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="11.html">HID RFID</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="11_upgrade.html">
-         HID RFID<span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="11_upgrade.html"> HID RFID<br/><span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
   </div>
 </div><!-- K -->
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">K</h2>
   <div data-v-37f52652="">
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="26_1.html">keypad board+FPC</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="26_2.html">keypad FPC</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="26_1.html">Keypad board+FPC</a></p>
   </div>
 </div><!-- L -->
 <div class="side-menu__item" data-v-37f52652="">
@@ -156,6 +151,7 @@
   <div data-v-37f52652="">
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="25.html">LCD cable</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="28.html">LED board</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="07_2.html">Left cap</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="15.html">LTE GPS</a></p>
   </div>
 </div><!-- M -->
@@ -164,17 +160,16 @@
   <div data-v-37f52652="">
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="40.html">MC1010G</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="40_upgrade.html">
-         MC1010G<span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
+         MC1010G<br/><span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="33_1.html">MC1010G Antenna</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="39.html">MC1010v2b</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="39_upgrade.html">
-         MC1010v2b<span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
+         MC1010v2b<br/><span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="33_2.html">MC1010v2b Antenna</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="04.html">Micro SD card</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="04_upgrade.html">
-        Micro SD card<span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="20.html">microphone</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="20_upgrade.html">motherboard</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="04_upgrade.html"> Micro SD card<br/><span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="20.html">Microphone</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="30.html">Motherboard</a></p>
   </div>
 </div><!-- N -->
 <div class="side-menu__item" data-v-37f52652="">
@@ -186,45 +181,43 @@
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">O</h2>
   <div data-v-37f52652="">
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="17.html">option FPC</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="17.html">Option FPC</a></p>
   </div>
 </div><!-- P -->
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">P</h2>
   <div data-v-37f52652="">
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="36.html">pogo FPC</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="36.html">Pogo FPC</a></p>
   </div>
 </div><!-- R -->
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">R</h2>
   <div data-v-37f52652="">
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="07_3.html">R_Doors (R)</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="19.html">rear camera</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="19.html">Rear camera</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="37.html">RF pass through board</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="24.html">RF Switch board</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="07_4.html">Right cap </a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="03.html">RS232 / LAN </a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="03_upgrade.html">
-        RS232 / LAN<span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
+         RS232 / LAN<br/><span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
   </div>
 </div><!-- P -->
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">S</h2>
   <div data-v-37f52652="">
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="36.html">pogo FPC</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="22.html">sim card board</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="10.html">smart card</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="22.html">Sim card board</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="10.html">Smart card</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="10_upgrade.html">
-        smart card<span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="35.html">speaker</a></p>
+         Smart card<br/><span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="35.html">Speaker</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="01.html">SSD</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="23.html">ssd translation board</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="23.html">SSD translation board</a></p>
   </div>
 </div><!-- T -->
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">T</h2>
   <div data-v-37f52652="">
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="08.html">TOP_bottom_cap</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="08.html">Top & Bottom cap</a></p>
   </div>
 </div><!-- U -->
 <div class="side-menu__item" data-v-37f52652="">
@@ -232,14 +225,14 @@
   <div data-v-37f52652="">
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="05.html">USB2.0</a></p>
     <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="05_upgrade.html">
-         USB2.0<span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
+         USB2.0<br/><span data-v-37f52652="" type="is-info" class="upgrade-tag"> (Device Upgrade)</span></a></p>
   </div>
 </div><!-- W -->
 <div class="side-menu__item" data-v-37f52652="">
   <h2 data-v-37f52652="">W</h2>
   <div data-v-37f52652="">
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="34.html">wifi antenna</a></p>
-    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="13.html">wlan</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="34.html">WIFI Antenna</a></p>
+    <p data-v-37f52652=""><a data-v-37f52652="data-v-37f52652" href="13.html">WLAN</a></p>
   </div>
 </div></div>
 </div>
@@ -251,5 +244,5 @@
 <script src="js.lib/jquery.min.js"></script>
 <script src="js.lib/plyr.min.js"></script>
 <script src="js.lib/overlayScrollbar/js/jquery.overlayScrollbars.min.js"></script>
-<script src="js/video_js.js"></script>
+<script src="js/video_js.js?ver=20220303"></script>
 </html>
