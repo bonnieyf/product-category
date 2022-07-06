@@ -20,7 +20,7 @@
               <div class="label">
                 <span>{{
                   `${item.product} ${
-                    item.version.length > 1
+                    item.version[code].verId.length > 1
                       ? `- ${item.version[code].verId}`
                       : ""
                   }`.toUpperCase()
@@ -38,7 +38,9 @@
                   >
                     <span>{{
                       `${item.product} ${
-                        item.version.length > 1 ? `- ${option.verId}` : ""
+                        item.version[code].verId.length > 1
+                          ? `- ${option.verId}`
+                          : ""
                       }`.toUpperCase()
                     }}</span>
                   </li>
@@ -59,6 +61,13 @@
               v-if="options[code].status === 'b360'"
               class="link"
               href="./b360/index.html"
+              ><b-button type="is-org" expanded>Enter</b-button></a
+            >
+
+            <a
+              v-if="options[code].status === 'k120g2'"
+              class="link"
+              href="./k120/index.html"
               ><b-button type="is-org" expanded>Enter</b-button></a
             >
           </div>
@@ -101,6 +110,8 @@ export default {
         window.location.href = "./f110/index.html";
       } else if (newState == "b360") {
         window.location.href = "./b360/index.html";
+      } else if (newState == "k120g2") {
+        window.location.href = "./k120/index.html";
       }
     },
     getURL(val) {

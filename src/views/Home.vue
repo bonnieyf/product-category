@@ -41,24 +41,27 @@
 <script>
 import pageSelector from "./pageSelector";
 export default {
-  name: "Home",
   data() {
     return {
       code: "",
       bodyHeight: 0,
-      imgLength: 0
+      imgLength: 0,
     };
   },
   components: {
     pageSelector,
   },
   methods: {
+    sendGA() {
+      console.log("hello");
+      this.$gtag.event("login", { method: "Google" });
+    },
     productOnChange(event) {
       this.code = event.target.value;
     },
     setData() {
       this.getProducts.forEach((val, index) => {
-        this.getProducts[index].datas = val.datas.sort(function(a, b) {
+        this.getProducts[index].datas = val.datas.sort(function (a, b) {
           var nameA = a.product.toLowerCase();
           var nameB = b.product.toLowerCase();
           if (nameA < nameB) {
@@ -72,16 +75,16 @@ export default {
         });
       });
     },
-    imageLoaded(){
-      let element = document.querySelectorAll('.card-image');
+    imageLoaded() {
+      let element = document.querySelectorAll(".card-image");
       this.imgLength++;
-      if(this.imgLength === element.length){
+      if (this.imgLength === element.length) {
         this.sendMessageToParent();
       }
     },
-    sendMessageToParent(){
+    sendMessageToParent() {
       this.bodyHeight = this.$refs.infoBox.clientHeight;
-      console.log('bodyHeight:'+this.bodyHeight);
+      console.log("bodyHeight:" + this.bodyHeight);
       parent.postMessage({ Type: 3 }, "*");
       parent.postMessage(
         {
@@ -101,18 +104,18 @@ export default {
       return this.$store.getters.GET_DATAS;
     },
   },
-  mounted(){
+  mounted() {
     this.sendMessageToParent();
     this.$nextTick(() => {
-        window.addEventListener('resize', this.onResize);
+      window.addEventListener("resize", this.onResize);
     });
   },
   created() {
     this.setData();
-    window.addEventListener('resize', this.sendMessageToParent);
+    window.addEventListener("resize", this.sendMessageToParent);
   },
   destroyed() {
-    window.removeEventListener('resize', this.sendMessageToParent);
+    window.removeEventListener("resize", this.sendMessageToParent);
   },
 };
 </script>

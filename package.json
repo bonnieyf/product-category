@@ -19,6 +19,7 @@
     "sass-loader": "^10.1.1",
     "svg-sprite-loader": "^6.0.6",
     "vue": "^2.6.12",
+    "vue-gtag": "^1.16.1",
     "vue-images-loaded": "^1.1.2",
     "vue-lodash": "^2.1.2",
     "vue-multiselect": "^2.1.6",

@@ -101,7 +101,7 @@
               "id": 0,
               "verId": "",
               "imgSrc": "A140_WIN10_2021-1-2.png",
-              "isOld": true,
+              "isOld": false,
               "status": "open"
             }
           ]
@@ -130,10 +130,10 @@
           "version": [
             {
               "id": 0,
-              "verId": "",
+              "verId": "g2",
               "imgSrc": "K120G2_01-2.png",
-              "isOld": true,
-              "status": "open"
+              "isOld": false,
+              "status": "k120g2"
             }
           ]
         },
