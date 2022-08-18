@@ -1,26 +1,27 @@
 <template>
-  <div class="page" ref="infoBox" >
+  <div class="page" ref="infoBox">
     <div class="main-box">
       <div class="main-box__header">
         <div class="container">
           <div class="main-box__header-inner">
             <div class="columns is-align-items-center">
               <div class="column">
-                <h2 class="title is-0">{{ getDatas.datas.title }}</h2>
+                <h2 class="title is-0">{{ getDatas.title }}</h2>
                 <p class="description">
-                  {{ getDatas.datas.descroption }}
+                  {{ getDatas.descroption }}
                 </p>
 
-                <router-link :to="`/${getType}/${getDatas.datas.id}/before`"
+                <router-link :to="`/${getType}/${getDatas.id}/before`"
                   ><b-button class="hero-btn" type="is-org" expanded
                     >PREPARATION</b-button
                   ></router-link
                 >
               </div>
               <div class="column">
-                <img class="product-img"
-                  :src="getURL(getDatas.datas.imgSrc)"
-                  :alt="getDatas.datas.title"
+                <img
+                  class="product-img"
+                  :src="getURL(getDatas.imgSrc)"
+                  :alt="getDatas.title"
                 />
               </div>
             </div>
@@ -42,17 +43,16 @@
               <li><router-link to="/">Service Video</router-link></li>
               <li class="is-active">
                 <router-link :to="`/${getType}/${getId}/`">{{
-                  getDatas.datas.title.replace(/GETAC /g, "")
+                  getDatas.title.replace(/GETAC /g, "")
                 }}</router-link>
               </li>
             </ul>
           </nav>
         </div>
         <p class="main-box__txt">
-          {{ getDatas.datas.txt }}
+          {{ getDatas.txt }}
         </p>
 
-        <!-- Search function -->
         <div class="search-bar">
           <div class="item">
             <input
@@ -76,16 +76,19 @@
           </div>
           <div class="filter-content__main">
             <p v-for="result in searchFilter" :key="result.id">
-              <router-link :to="`/${getType}/${getId}/${result.id}`" v-if="result.isShow === true"
+              <router-link
+                :to="`/${getType}/${getId}/${result.id}`"
+                v-if="result.active === true"
                 >{{ result.menuTitle.replace("(Device Upgrade)", "") }}
 
-                <span v-if="result.isUpgrade" type="is-info">(Device Upgrade)</span>
+                <span v-if="result.isUpgrade" type="is-info"
+                  >(Device Upgrade)</span
+                >
               </router-link>
             </p>
           </div>
         </div>
 
-        <!-- Filter main -->
         <div class="filter-main" v-if="search.length <= 0">
           <div class="filter-options notification">
             <div class="buttons">
@@ -122,10 +125,27 @@
                 <div class="filter-content__title">
                   <h2>{{ key }}</h2>
                 </div>
-                <div class="filter-content__main">
+
+                <div class="filter-content__main" v-if="isNewMenu">
                   <p v-for="group in data" :key="group.id">
-                    <router-link :to="`/${getType}/${getId}/${group.id}`" v-if="group.isShow === true"
-                      >{{ group.menuTitle.replace('(Upgrade)','' ) }}
+                    <router-link
+                      :to="`/${getType}/${getId}/${group.id}`"
+                      v-if="group.active === true"
+                      >{{ group.menuTitle.replace("(Upgrade)", "") }}
+
+                      <span v-if="group.isUpgrade" type="is-info"
+                        >(Device Upgrade)</span
+                      >
+                    </router-link>
+                  </p>
+                </div>
+
+                <div class="filter-content__main" v-else>
+                  <p v-for="group in data" :key="group.id">
+                    <router-link
+                      :to="`/${getType}/${getId}/${group.id}`"
+                      v-if="group.active === true"
+                      >{{ group.menuTitle.replace("(Upgrade)", "") }}
 
                       <span v-if="group.isUpgrade" type="is-info"
                         >(Device Upgrade)</span
@@ -143,7 +163,6 @@
 </template>
 
 <script>
-
 export default {
   data() {
     return {
@@ -153,6 +172,7 @@ export default {
       cateTatal: {},
       searchBlur: false,
       search: "",
+      isNewMenu: null,
     };
   },
   methods: {
@@ -167,13 +187,13 @@ export default {
       this.changeSelected = val;
 
       let divPosition = document.querySelector(".filter-main");
-      let scrollPositon = 'start';
+      let scrollPositon = "start";
       if (val !== "All" && window.innerWidth > 769) {
         divPosition = document.querySelector(`.class-${val}`);
-        scrollPositon = 'center';
+        scrollPositon = "center";
       }
 
-      divPosition.scrollIntoView({ behavior: 'smooth', block: scrollPositon });
+      divPosition.scrollIntoView({ behavior: "smooth", block: scrollPositon });
     },
     findPos(obj) {
       var curtop = 0;
@@ -194,7 +214,7 @@ export default {
         );
         this.cateTatal[item] = returnData;
       });
-    }
+    },
   },
   computed: {
     getType() {
@@ -214,7 +234,11 @@ export default {
     },
     filterLinks() {
       let resultObj = [];
-      this.getDatas.datas.menu.filter((link) => {
+      let element = this.getDatas.menu;
+      if (this.isNewMenu) {
+        element = this.getDatas.menu.menuList;
+      }
+      element.filter((link) => {
         resultObj.push(link);
         resultObj.sort((a, b) => a.menuTitle.localeCompare(b.menuTitle));
       });
@@ -222,53 +246,22 @@ export default {
     },
     searchFilter() {
       return this.filterLinks.filter((item) => {
-        if(this.search.toLowerCase().match(/^device.*(up)|.*(up)/g)){
+        if (this.search.toLowerCase().match(/^device.*(up)|.*(up)/g)) {
           return item.isUpgrade == true;
         }
         return item.menuTitle.toLowerCase().includes(this.search.toLowerCase());
       });
     },
   },
-  mounted() {
-
-    console.log('scroll parent to top');
-    parent.postMessage({ Type: 3 }, "*")
-    
-    // document.onreadystatechange = () => {
-    //   if (document.readyState == "complete") {
-    //     console.log("type hihi", this.$refs.infoBox.clientHeight);
-    //     window.parent.postMessage({ Type: 3 }, "*");
-    //     window.parent.postMessage(
-    //       {
-    //         Type: 2,
-    //         ID: "repairinstructioniframe",
-    //         Height: 390,
-    //       },
-    //       "*"
-    //     );
-    //   }
-    // };
-
-    // if (document.readyState == "complete") {
-    //   window.parent.postMessage({ Type: 3 }, "*");
-    //   window.parent.postMessage(
-    //     {
-    //       Type: 2,
-    //       ID: "repairinstructioniframe",
-    //       Height: 390,
-    //     },
-    //     "*"
-    //   );
-    // }
-  },
+  mounted() {},
   created() {
     this.$store.dispatch("COMMITFILTERDATA", {
       deviceId: this.getType,
-      productId: this.getId,
+      id: this.getId,
     });
+    this.isNewMenu = this.getDatas.isNewMenu;
     this.getSelecedDefault();
     this.marginObject();
-
   },
 };
 </script>

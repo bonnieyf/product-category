@@ -9,17 +9,23 @@ import store from "./store";
 import vuescroll from "vuescroll/dist/vuescroll-native";
 import "vuescroll/dist/vuescroll.css";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import {
+  library
+} from "@fortawesome/fontawesome-svg-core";
+import {
+  fas
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  FontAwesomeIcon
+} from "@fortawesome/vue-fontawesome";
 import VuePlyr from "vue-plyr";
 import "vue-plyr/dist/vue-plyr.css";
 import VueGtag from "vue-gtag";
+import Vuebar from 'vuebar';
+Vue.use(Vuebar);
 
 Vue.use(Buefy);
 Vue.use(vuescroll);
-
-
 
 Vue.use(VuePlyr, {
   plyr: {},
@@ -33,11 +39,13 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.use(VueRouter);
 
 Vue.use(VueGtag, {
-  config: { id: "UA-225899724-1" },
+  config: {
+    id: "UA-225899724-1"
+  },
   params: {
     send_page_view: false
   }
-} ,router);
+}, router);
 
 new Vue({
   store,

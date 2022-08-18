@@ -5,8 +5,7 @@ import Type from "../views/Type";
 import Video from "../views/Video";
 Vue.use(VueRouter);
 
-const routes = [
-  {
+const routes = [{
     path: "/",
     name: "Home",
     component: Home,
@@ -27,6 +26,11 @@ const router = new VueRouter({
   mode: "hash",
   base: process.env.BASE_URL,
   routes,
+  scrollBehavior() {
+    document.getElementById('app').scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
 });
 
 export default router;

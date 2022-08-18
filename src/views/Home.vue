@@ -5,13 +5,12 @@
         <section
           class="product-content"
           v-for="(group, index) in getProducts"
-          :key="group.name"
+          :key="group.id"
         >
           <div class="space-line" v-if="index"></div>
-
-          <h3 :id="group.name" class="title is-4 is-spaced bd-anchor-title">
+          <h3 class="title is-4 is-spaced bd-anchor-title">
             <span class="bd-anchor-name">
-              {{ group.name }}
+              {{ group.typeName }}
             </span>
           </h3>
           <div class="product-content__inner">
@@ -25,7 +24,7 @@
                   <pageSelector
                     :options="item.version"
                     :item="item"
-                    :device="group.name.toLowerCase()"
+                    :device="group.typeName.toLowerCase()"
                     :itemLength="item.version.length"
                   ></pageSelector>
                 </div>
@@ -52,70 +51,33 @@ export default {
     pageSelector,
   },
   methods: {
-    sendGA() {
-      console.log("hello");
-      this.$gtag.event("login", { method: "Google" });
-    },
     productOnChange(event) {
       this.code = event.target.value;
-    },
-    setData() {
-      this.getProducts.forEach((val, index) => {
-        this.getProducts[index].datas = val.datas.sort(function (a, b) {
-          var nameA = a.product.toLowerCase();
-          var nameB = b.product.toLowerCase();
-          if (nameA < nameB) {
-            return -1;
-          }
-          if (nameA > nameB) {
-            return 1;
-          }
-
-          return 0;
-        });
-      });
-    },
-    imageLoaded() {
-      let element = document.querySelectorAll(".card-image");
-      this.imgLength++;
-      if (this.imgLength === element.length) {
-        this.sendMessageToParent();
-      }
-    },
-    sendMessageToParent() {
-      this.bodyHeight = this.$refs.infoBox.clientHeight;
-      console.log("bodyHeight:" + this.bodyHeight);
-      parent.postMessage({ Type: 3 }, "*");
-      parent.postMessage(
-        {
-          Type: 2,
-          ID: ".repairinstructioniframe",
-          Height: this.bodyHeight,
-        },
-        "*"
-      );
     },
   },
   computed: {
     getProducts() {
-      return this.$store.getters.GET_MENU_DATAS;
+      return this.$store.getters.GET_LIST;
     },
     getProductsData() {
       return this.$store.getters.GET_DATAS;
     },
   },
   mounted() {
-    this.sendMessageToParent();
-    this.$nextTick(() => {
-      window.addEventListener("resize", this.onResize);
+    this.getProducts.forEach((val, index) => {
+      this.getProducts[index].productName = val.datas.sort(function (a, b) {
+        var nameA = a.productName.toLowerCase();
+        var nameB = b.productName.toLowerCase();
+        if (nameA < nameB) {
+          return -1;
+        }
+        if (nameA > nameB) {
+          return 1;
+        }
+
+        return 0;
+      });
     });
-  },
-  created() {
-    this.setData();
-    window.addEventListener("resize", this.sendMessageToParent);
-  },
-  destroyed() {
-    window.removeEventListener("resize", this.sendMessageToParent);
   },
 };
 </script>

@@ -18,31 +18,19 @@
               tabindex="0"
             >
               <div class="label">
-                <span>{{
-                  `${item.product} ${
-                    item.version[code].verId.length > 1
-                      ? `- ${item.version[code].verId}`
-                      : ""
-                  }`.toUpperCase()
-                }}</span>
+                <span>{{ `${item.version[code].id}`.toUpperCase() }}</span>
               </div>
               <div class="arrow" :class="{ expanded: visible }"></div>
               <div :class="{ hidden: !visible, visible }">
                 <ul>
                   <li
                     :class="{ current: option.id === code }"
-                    v-for="option in options"
+                    v-for="(option, index) in options"
                     :value="option.id"
-                    :key="option.verId"
-                    @click="select(option.id)"
+                    :key="option.id"
+                    @click="select(index)"
                   >
-                    <span>{{
-                      `${item.product} ${
-                        item.version[code].verId.length > 1
-                          ? `- ${option.verId}`
-                          : ""
-                      }`.toUpperCase()
-                    }}</span>
+                    <span>{{ `${option.id}`.toUpperCase() }}</span>
                   </li>
                 </ul>
               </div>
@@ -56,20 +44,6 @@
               ><b-button type="is-org" expanded>Enter</b-button></router-link
             >
             <span v-else class="note"></span>
-
-            <a
-              v-if="options[code].status === 'b360'"
-              class="link"
-              href="./b360/index.html"
-              ><b-button type="is-org" expanded>Enter</b-button></a
-            >
-
-            <a
-              v-if="options[code].status === 'k120g2'"
-              class="link"
-              href="./k120/index.html"
-              ><b-button type="is-org" expanded>Enter</b-button></a
-            >
           </div>
         </div>
       </div>
@@ -89,6 +63,7 @@ export default {
     options: Array,
     item: Object,
     device: String,
+    menuType: Boolean,
     itemLength: Number,
   },
   methods: {
@@ -106,12 +81,6 @@ export default {
         setTimeout(() => {
           this.$router.push({ path: newURL });
         }, 500);
-      } else if (newState == "f110g6") {
-        window.location.href = "./f110/index.html";
-      } else if (newState == "b360") {
-        window.location.href = "./b360/index.html";
-      } else if (newState == "k120g2") {
-        window.location.href = "./k120/index.html";
       }
     },
     getURL(val) {
@@ -120,13 +89,8 @@ export default {
   },
   computed: {
     getEnterURL() {
-      let { product } = this.item;
-      let filterText = product.includes("-")
-        ? `${product.substring(0, product.lastIndexOf("-"))}`
-        : product;
-
-      return `/${this.device}/${filterText}${
-        this.options[this.code].verId ? "-" + this.options[this.code].verId : ""
+      return `/${this.device}/${
+        this.options[this.code].id ? this.options[this.code].id : ""
       }/${this.options[this.code].isOld ? "video" : ""}`;
     },
   },

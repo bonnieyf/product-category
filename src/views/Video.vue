@@ -1,37 +1,24 @@
 <template>
   <div class="page video-page" ref="infoBox">
     <VideoHasSideMenu v-if="this.getVideoId !== 'video'"></VideoHasSideMenu>
+
     <div v-else class="main-box">
       <div class="container">
         <h3 class="title is-4 is-spaced bd-anchor-title">
           <span class="bd-anchor-name">
-            {{ getDatas.datas.title.replace("GETAC ", "") }}
+            {{ getDatas.title.replace("GETAC ", "") }}
           </span>
         </h3>
         <div
-          v-for="(video, index) in getDatas.datas.videoUrl"
+          v-for="(video, index) in getDatas.videoUrl"
           :key="index"
-          style="magin-bottom: 30px;"
+          style="magin-bottom: 30px"
         >
-          <!-- <video width="100%" height="600" controls>
-            <source :src="`${video}`" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video> -->
-
           <vue-plyr>
-            <video
-              controls
-              autoplay
-              playsinlines
-            >
-              <source
-                size="1080"
-                :src="`${video}`"
-                type="video/mp4"
-              />
+            <video controls autoplay playsinlines>
+              <source size="1080" :src="`${video}`" type="video/mp4" />
             </video>
           </vue-plyr>
-          
         </div>
       </div>
 
@@ -69,48 +56,14 @@ export default {
     getDatas() {
       return this.$store.state.filterData;
     },
-    getCate() {
-      return this.$store.getters.GET_FIRST_CATE;
-    },
   },
-  mounted() {
-    console.log('scroll parent to top');
-    parent.postMessage({ Type: 3 }, "*")
-    
-    // document.onreadystatechange = () => {
-    //   if (document.readyState == "complete") {
-    //     console.log("video hihi", this.$refs.infoBox.clientHeight);
-    //     window.parent.postMessage({ Type: 3 }, "*");
-    //     window.parent.postMessage(
-    //       {
-    //         Type: 2,
-    //         ID: "repairinstructioniframe",
-    //         Height: 390,
-    //       },
-    //       "*"
-    //     );
-    //   }
-    // };
-
-    // if (document.readyState == "complete") {
-    //   window.parent.postMessage({ Type: 3 }, "*");
-    //   window.parent.postMessage(
-    //     {
-    //       Type: 2,
-    //       ID: "repairinstructioniframe",
-    //       Height: 390,
-    //     },
-    //     "*"
-    //   );
-    // }
-  },
+  mounted() {},
   created() {
     this.$store.dispatch("COMMITFILTERDATA", {
       deviceId: this.getType,
-      productId: this.getId,
+      id: this.getId,
     });
   },
-  
 };
 </script>
 
@@ -134,7 +87,6 @@ span
   input
     width: 100%
 
-
   .button.is-org
     margin-left: 0
     width: 100%
@@ -154,7 +106,6 @@ span
     .button.is-org
       max-width: 90px
 
-
 .search-bar
   padding-bottom: 30px
 
@@ -170,7 +121,6 @@ span
   padding-right: 25px
   a
     color: white
-
 
 .resp-video+.resp-video
   margin-top: 50px

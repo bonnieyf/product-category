@@ -14,6 +14,7 @@ export default {
   components: {},
   mounted(){
     
+    
   }
   // mounted() {
   //   // document.oncontextmenu = function() {

@@ -1,0 +1,1240 @@
+{
+  "menuDatas": [{
+      "name": "Laptops",
+      "datas": [{
+          "product": "s410",
+          "version": [{
+              "id": 0,
+              "verId": "g3",
+              "imgSrc": "S410_WIN10_2019-1.png",
+              "isOld": true,
+              "status": "open"
+            },
+            {
+              "id": 1,
+              "verId": "g4",
+              "imgSrc": "S410G4_03-2.png",
+              "isOld": false,
+              "status": "open"
+            }
+          ]
+        },
+        {
+          "product": "b300",
+          "version": [{
+            "id": 0,
+            "verId": "",
+            "imgSrc": "B300_product_photo_jpg.jpg",
+            "isOld": true,
+            "status": "open"
+          }]
+        },
+        {
+          "product": "b360",
+          "version": [{
+            "id": 0,
+            "verId": "",
+            "imgSrc": "B360_WIN10_2021-06.png",
+            "isOld": true,
+            "status": "b360"
+          }]
+        },
+        {
+          "product": "s400",
+          "version": [{
+            "id": 0,
+            "verId": "",
+            "imgSrc": "S400_product_photo_png.png",
+            "isOld": true,
+            "status": "open"
+          }]
+        },
+        {
+          "product": "v110",
+          "version": [{
+              "id": 0,
+              "verId": "g5",
+              "imgSrc": "V110_WIN10_2021-1.png",
+              "isOld": true,
+              "status": "open"
+            },
+            {
+              "id": 1,
+              "verId": "g6",
+              "imgSrc": "V110-G6.png",
+              "isOld": false,
+              "status": "open"
+            }
+          ]
+        },
+        {
+          "product": "x500",
+          "version": [{
+            "id": 0,
+            "verId": "",
+            "imgSrc": "X500_WIN10_2021-1.png",
+            "isOld": true,
+            "status": "open"
+          }]
+        }
+      ]
+    },
+    {
+      "name": "Tablets",
+      "datas": [{
+          "product": "a140",
+          "version": [{
+            "id": 0,
+            "verId": "",
+            "imgSrc": "A140_WIN10_2021-1-2.png",
+            "isOld": false,
+            "status": "open"
+          }]
+        },
+        {
+          "product": "f110",
+          "version": [{
+              "id": 0,
+              "verId": "g5",
+              "imgSrc": "F110_WIN10_2021-1.png",
+              "isOld": true,
+              "status": "open"
+            },
+            {
+              "id": 1,
+              "verId": "g6",
+              "imgSrc": "F110_WIN10_2021-1.png",
+              "isOld": false,
+              "status": "f110g6"
+            }
+          ]
+        },
+        {
+          "product": "k120",
+          "version": [{
+            "id": 0,
+            "verId": "g2",
+            "imgSrc": "K120G2_01-2.png",
+            "isOld": false,
+            "status": "k120g2"
+          }]
+        },
+        {
+          "product": "mx50",
+          "version": [{
+            "id": 0,
+            "verId": "",
+            "imgSrc": "Getac_MX50_front_Android.jpg",
+            "isOld": true,
+            "status": "open"
+          }]
+        },
+        {
+          "product": "rx10",
+          "version": [{
+            "id": 0,
+            "verId": "",
+            "imgSrc": "RX10_Product_photo_png.png",
+            "isOld": true,
+            "status": "open"
+          }]
+        },
+        {
+          "product": "t800",
+          "version": [{
+            "id": 0,
+            "verId": "",
+            "imgSrc": "T800_WIN10_2021-1.png",
+            "isOld": true,
+            "status": "open"
+          }]
+        },
+        {
+          "product": "ux10",
+          "version": [{
+            "id": 0,
+            "verId": "",
+            "imgSrc": "UX10_WIN10_2021-01.png",
+            "isOld": true,
+            "status": "open"
+          }]
+        },
+        {
+          "product": "zx10",
+          "version": [{
+            "id": 0,
+            "verId": "",
+            "imgSrc": "Getac_ZX10_01-2.png",
+            "isOld": true,
+            "status": "zx10"
+          }]
+        },
+        {
+          "product": "zx70",
+          "version": [{
+            "id": 0,
+            "verId": "",
+            "imgSrc": "ZX70_Android10_01_800.png",
+            "isOld": true,
+            "status": "open"
+          }]
+        }
+      ]
+    }
+  ],
+  "datas": [{
+      "name": "Laptops",
+      "datas": [{
+          "id": "s410-g4",
+          "title": "GETAC S410-G4",
+          "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4591"],
+          "imgSrc": "S410G4_03-2.png",
+          "descroption": "Please click \"PREPARATION\" to know what to prepare before the service.",
+          "txt": "Please select the category with initial alphabet of the item your would like to repair and click the specific component to view the video.",
+          "menu": [{
+              "id": 0,
+              "menuTitle": "SSD",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4592"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 1,
+              "menuTitle": "Handle",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4594"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 2,
+              "menuTitle": "IO module",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4595"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 3,
+              "menuTitle": "Memory",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4593"],
+              "isUpgrade": true,
+              "isShow": true
+            }, {
+              "id": 4,
+              "menuTitle": "Memory",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4596"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 5,
+              "menuTitle": "WLAN",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4555"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 6,
+              "menuTitle": "Case D",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4559"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 7,
+              "menuTitle": "Pogo board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4558"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 8,
+              "menuTitle": "Pass-through Board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4556"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 9,
+              "menuTitle": "LAN board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4557"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 10,
+              "menuTitle": "Fan",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4566"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 11,
+              "menuTitle": "RF Switch Board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4562"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 12,
+              "menuTitle": "Battery board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4561"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 13,
+              "menuTitle": "Speaker",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4608"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 14,
+              "menuTitle": "ODD",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4567"],
+              "isUpgrade": true,
+              "isShow": true
+            }, {
+              "id": 15,
+              "menuTitle": "ODD",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4565"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 16,
+              "menuTitle": "RFID board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4563"],
+              "isUpgrade": true,
+              "isShow": true
+            }, {
+              "id": 17,
+              "menuTitle": "RFID board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4564"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 18,
+              "menuTitle": "Bar code reader",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4568"],
+              "isUpgrade": true,
+              "isShow": true
+            }, {
+              "id": 19,
+              "menuTitle": "Bar code reader",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4569"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 20,
+              "menuTitle": "Mother board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4573"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 21,
+              "menuTitle": "RJ45",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4570"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 22,
+              "menuTitle": "Quick button board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4574"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 23,
+              "menuTitle": "Fingerprinter",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4571"],
+              "isUpgrade": true,
+              "isShow": true
+            }, {
+              "id": 24,
+              "menuTitle": "Fingerprinter",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4572"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 25,
+              "menuTitle": "Touchpad",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4576"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 26,
+              "menuTitle": "Smart card",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4575"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 27,
+              "menuTitle": "Smart card",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4605"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 28,
+              "menuTitle": "Heatsink",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4578"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 29,
+              "menuTitle": "Case C",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4579"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 30,
+              "menuTitle": "Case A",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4577"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 31,
+              "menuTitle": "Camera",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4580"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 32,
+              "menuTitle": "Microphone cable",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4583"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 33,
+              "menuTitle": "Microphone",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4584"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 34,
+              "menuTitle": "LED Driver Board touch screen LCD",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4586"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+
+            {
+              "id": 35,
+              "menuTitle": "Touch screen",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4588"],
+              "isUpgrade": false,
+              "isShow": false
+            }, {
+              "id": 36,
+              "menuTitle": "Battery",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4585"],
+              "isUpgrade": true,
+              "isShow": true
+            }, {
+              "id": 37,
+              "menuTitle": "Express Card",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4582"],
+              "isUpgrade": true,
+              "isShow": true
+            }, {
+              "id": 38,
+              "menuTitle": "Express Card",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4606"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 39,
+              "menuTitle": "MXM",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4587"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 40,
+              "menuTitle": "MXM",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4590"],
+              "isUpgrade": true,
+              "isShow": true
+            }, {
+              "id": 41,
+              "menuTitle": "Case B (LCD)",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4589"],
+              "isUpgrade": false,
+              "isShow": true
+            }, {
+              "id": 42,
+              "menuTitle": "Keyboard",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4607"],
+              "isUpgrade": false,
+              "isShow": true
+            }
+          ]
+        },
+        {
+          "id": "s410-g3",
+          "title": "GETAC S410-G3",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2665?t=1623909626201"
+          ],
+          "imgSrc": "S410G4_03-2.png",
+          "descroption": "",
+          "txt": ""
+        },
+        {
+          "id": "b300",
+          "title": "GETAC B300",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2663?t=1623908877960"
+          ],
+          "imgSrc": "S410G4_03-2.png",
+          "descroption": "",
+          "txt": ""
+        },
+        {
+          "id": "b360",
+          "title": "GETAC B360",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/3461?t=1623909533024"
+          ],
+          "imgSrc": "B360_WIN10_2021-06.png",
+          "descroption": "",
+          "txt": ""
+        },
+        {
+          "id": "s400",
+          "title": "GETAC S400",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2664?t=1623909595945"
+          ],
+          "imgSrc": "S410G4_03-2.png",
+          "descroption": "",
+          "txt": ""
+        },
+        {
+          "id": "v110-g5",
+          "title": "GETAC V110-G5",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2662?t=1623909720686"
+          ],
+          "imgSrc": "V110_WIN10_2021-1.png",
+          "descroption": "",
+          "txt": ""
+        },
+        {
+          "id": "v110-g6",
+          "title": "GETAC V110 G6",
+          "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4337"],
+          "imgSrc": "V110-G6.png",
+          "descroption": "Please click \"PREPARATION\" to know what to prepare before the service.",
+          "txt": "Please select the category with initial alphabet of the item your would like to repair and click the specific component to view the video.",
+          "menu": [{
+              "id": 0,
+              "menuTitle": "Hinge Cover",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4378"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 1,
+              "menuTitle": "SSD",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4310"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 2,
+              "menuTitle": "Keyboard",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4309"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 3,
+              "menuTitle": "Handle (Hard)",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4381"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 4,
+              "menuTitle": "Handle (Soft)",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4382"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 5,
+              "menuTitle": "Bottom DDR",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4312"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 6,
+              "menuTitle": "Bottom DDR",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4379"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 7,
+              "menuTitle": "4G Module",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4380"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 8,
+              "menuTitle": "Case-D / Bottom Plate",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4318"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 9,
+              "menuTitle": "Case-A / Top Cover",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4336"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 10,
+              "menuTitle": "Case-B / LCD Bezel",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4467"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 11,
+              "menuTitle": "LCD Driver Board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4385"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 12,
+              "menuTitle": "RFID Antenna",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4466"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 13,
+              "menuTitle": "Multi-function Board / Fingerprint",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4343"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 14,
+              "menuTitle": "Multi-function Board / Fingerprint",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4305"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 15,
+              "menuTitle": "Touchscreen FFC",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4334"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 16,
+              "menuTitle": "SIM Card Board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4324"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 17,
+              "menuTitle": "SIM Card Board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4321"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 18,
+              "menuTitle": "WIFI Module",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4342"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 19,
+              "menuTitle": "Pogo Board / Passthrough",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4326"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 20,
+              "menuTitle": "Sensor Board ",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4325"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 21,
+              "menuTitle": "RS232 Board ",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4327"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 22,
+              "menuTitle": "Motherboard",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4328"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 23,
+              "menuTitle": "Bottom Camera",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4323"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 24,
+              "menuTitle": "Bottom Camera",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4383"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 25,
+              "menuTitle": "Quick Key / Power Button Board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4319"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 26,
+              "menuTitle": "Battery Board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4317"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 27,
+              "menuTitle": "Speaker",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4320"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 28,
+              "menuTitle": "RJ45 Connector ",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4329"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 29,
+              "menuTitle": "Top DDR",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4330"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 30,
+              "menuTitle": "SD Card Reader",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4331"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 31,
+              "menuTitle": "SD Card Reader",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4332"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 32,
+              "menuTitle": "Fan / Control Board",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4333"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 33,
+              "menuTitle": "Case-C / Chassis",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4347"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 34,
+              "menuTitle": "WebCam",
+              "videoUrl": ["https://support.getac.com/Elibrary/GetVideo/4335"],
+              "isUpgrade": false,
+              "isShow": true
+            }
+          ]
+        },
+        {
+          "id": "x500",
+          "title": "GETAC X500",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2666?t=1623909762621",
+            "https://support.getac.com/Elibrary/GetVideo/3124?t=1623909788593",
+            "https://support.getac.com/Elibrary/GetVideo/3125?t=1623909811055"
+          ],
+          "imgSrc": "X500_WIN10_2021-1.png",
+          "descroption": "",
+          "txt": ""
+        }
+      ]
+    },
+    {
+      "name": "Tablets",
+      "datas": [{
+          "id": "a140",
+          "title": "GETAC A140",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2667?t=1623909842701"
+          ],
+          "imgSrc": "A140_WIN10_2021-1-2.png",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "f110-g5",
+          "title": "GETAC F110 G5",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2668?t=1623909873944"
+          ],
+          "imgSrc": "F110_WIN10_2021-1.png",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "f110-g6",
+          "title": "GETAC F110 G6",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2668?t=1623909873944"
+          ],
+          "imgSrc": "F110-G6.png",
+          "descroption": "Please click \"PREPARATION\" to know what to prepare before the service.",
+          "txt": "Please select the category with initial alphabet of the item your would like to repair and click the specific component to view the video.",
+          "menu": [{
+              "id": 0,
+              "menuTitle": "Preparation",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 1,
+              "menuTitle": "Smart Card",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 2,
+              "menuTitle": "Smart Card",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 3,
+              "menuTitle": "HID RFID",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 4,
+              "menuTitle": "HID RFID",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 5,
+              "menuTitle": "DDR",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 6,
+              "menuTitle": "WIFI",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 7,
+              "menuTitle": "4G",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 8,
+              "menuTitle": "4G",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 9,
+              "menuTitle": "LTE GPS",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 10,
+              "menuTitle": "LTE GPS",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 11,
+              "menuTitle": "MC10100-V2b GPS",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 12,
+              "menuTitle": "MC10100-V2b GPS",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 13,
+              "menuTitle": "MC1010G GPS",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 14,
+              "menuTitle": "MC1010G GPS",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 15,
+              "menuTitle": "Case A / Top Cover",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 16,
+              "menuTitle": "Option FPC",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 17,
+              "menuTitle": "Option FPC",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 18,
+              "menuTitle": "Front Camera",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 19,
+              "menuTitle": "Rear Camera",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 20,
+              "menuTitle": "SSD",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 21,
+              "menuTitle": "2D Barcode",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 22,
+              "menuTitle": "2D Barcode",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 23,
+              "menuTitle": "MicroSD Card",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 24,
+              "menuTitle": "MicroSD Card",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 25,
+              "menuTitle": "RS232/LAN",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 26,
+              "menuTitle": "RS232/LAN",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 27,
+              "menuTitle": "USB 2.0",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 28,
+              "menuTitle": "USB 2.0",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 29,
+              "menuTitle": "Top Cover",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 30,
+              "menuTitle": "Bottom Cover",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 31,
+              "menuTitle": "Left Cap",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 32,
+              "menuTitle": "Motherboard",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 33,
+              "menuTitle": "DJ Jack",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 34,
+              "menuTitle": "Fan",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 35,
+              "menuTitle": "Expansion Bay",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 36,
+              "menuTitle": "SIM Card Board",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 37,
+              "menuTitle": "RF Switch Board",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 38,
+              "menuTitle": "NXP RFID Right Cap",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 39,
+              "menuTitle": "NXP RFID Right Cap",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 40,
+              "menuTitle": "Fingerprinter Right Cap",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 41,
+              "menuTitle": "Fingerprinter Right Cap",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            },
+            {
+              "id": 42,
+              "menuTitle": "Antenna",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 43,
+              "menuTitle": "SSD Translation Board",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 44,
+              "menuTitle": "LCD Cable",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 45,
+              "menuTitle": "Keypad FPC",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 46,
+              "menuTitle": "Battery Sensor FPC",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 47,
+              "menuTitle": "LED Board",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 48,
+              "menuTitle": "Case B/LCD Bezel",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 49,
+              "menuTitle": "Digitizer LCD",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": false,
+              "isShow": true
+            },
+            {
+              "id": 50,
+              "menuTitle": "Digitizer LCD",
+              "videoUrl": ["123.mp4"],
+              "isUpgrade": true,
+              "isShow": true
+            }
+          ]
+        },
+        {
+          "id": "k120",
+          "title": "GETAC K120",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2829?t=1623909899670"
+          ],
+          "imgSrc": "K120G2_01-2.png",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "mx50",
+          "title": "GETAC MX50",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2669?t=1623909927065"
+          ],
+          "imgSrc": "Getac_MX50_front_Android.jpg",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "rx10",
+          "title": "GETAC RX10",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2670?t=1623909957244"
+          ],
+          "imgSrc": "demo.png",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "t800",
+          "title": "GETAC T800",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2671?t=1623909993344"
+          ],
+          "imgSrc": "T800_WIN10_2021-1.png",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "ux10",
+          "title": "GETAC UX10",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/3001?t=1623910023377"
+          ],
+          "imgSrc": "UX10_WIN10_2021-01.png",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "zx10",
+          "title": "GETAC ZX10",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/5551?t=1623910055942"
+          ],
+          "imgSrc": "Getac_ZX10_01-2.png",
+          "descroption": "",
+          "menu": ""
+        },
+        {
+          "id": "zx70",
+          "title": "GETAC ZX70",
+          "videoUrl": [
+            "https://support.getac.com/Elibrary/GetVideo/2672?t=1623910055942"
+          ],
+          "imgSrc": "ZX70_Android10_01_800.png",
+          "descroption": "",
+          "menu": ""
+        }
+      ]
+    }
+  ]
+}

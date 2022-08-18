@@ -153,6 +153,8 @@ select::-ms-expand
   +mobile
     // padding-top: 20px
     // padding-bottom: 20px
+    padding-left: 20px
+    padding-right: 20px
 
     .columns
       display: flex
@@ -306,6 +308,7 @@ select::-ms-expand
   .search-bar input
     width: 100%
     max-width: 210px
+    box-sizing: border-box
 
     
 .search-result-total
@@ -387,3 +390,208 @@ select::-ms-expand
   width: 48px
   height: 48px
   background: url(~@/assets/icon/icon-x.png)
+
+
+
+.sub-scroll
+  width: 100%
+  height: 500px
+  overflow: hidden
+  overflow-y: scroll
+
+
+.sub-menu__nav
+  padding-left: 20px
+  text-align: left
+
+
+.sub-menu__nav li:hover a,.sub-menu__nav li:hover:before,
+.sub-menu__nav li.active a,.sub-menu__nav li.active:before
+  color: #D3461E
+  font-weight: bold
+
+
+.sub-menu .side-menu__title
+  margin-top: 30px
+  margin-bottom: 20px
+
+
+.sub-menu .side-menu__title span
+  background-color: #000
+  padding-left: 15px
+  padding-right: 15px
+
+
+.sub-menu__nav, .sub-menu__nav a
+  color: white
+  font-size: 18px
+  line-height: 1.5
+  transition: all .5s ease
+
+
+.sub-menu__nav li::after
+  content: ""
+  display: block
+  position: absolute
+  top: 6px
+  left: -30px
+  border-color: transparent transparent transparent #D3461E
+  border-width: 8px
+  border-style: solid
+  opacity: 0
+  transition: all .3s ease
+
+.sub-menu__nav li 
+  position: relative
+  counter-increment: li
+  list-style: none
+  margin-bottom: 10px
+  padding-left: 20px
+
+.sub-menu__nav li::before
+  content: counter(li) '.'
+  color: white
+  font-family: Oswald,sans-serif
+  margin-left: -1em
+  text-align: right
+  direction: rtl
+  padding-right: 10px
+  transition: all .3s ease
+
+
+.sub-menu__nav li:hover::after,.sub-menu__nav li.active::after
+  opacity: 1
+  left: -20px
+
+
+
+.col-left
+  flex: 30%
+  padding-right: 50px
+  box-sizing: border-box
+
+
+div.row-block
+  display: block
+
+
+div.row-block .col-left,
+div.row-block .col-right
+  flex: 100%
+
+
+.col-right
+  flex: 70%
+
+.row
+  display: flex
+
+
+.row-pt70
+  padding-top: 100px
+
+.side-menu__item span
+  color: #d3461e
+
+.main-box .container-inner .side-menu__item h2
+    position: relative
+    font-size: 18px
+    color: #fa0
+    display: block
+    width: 100%
+
+
+.main-box .container-inner .side-menu__item h2 svg
+    margin-top: 3px
+    margin-right: 10px
+
+
+.main-box .container-inner .side-menu__item a 
+    color: #fff
+    font-size: 18px
+    line-height: 1.5
+
+.main-box .container-inner .side-menu__item
+  padding-left: 0
+  text-align: left
+  margin-bottom: 20px
+
+
+.slide-menu-link
+  text-decoration: underline
+
+
+@media screen and (max-width: 1200px)
+  .side-menu__list
+    padding-left: 0
+
+  .button.is-org,.search-bar input
+    min-width: initial
+    max-width: initial
+    display: block
+    box-sizing: border-box
+
+  .search-bar
+    width: 100%
+  .search-bar .item:nth-child(1)
+    flex: 60%
+    max-width: 60%
+
+    
+  .search-bar .item:nth-child(2)
+    flex: 40%
+    max-width: 40%
+    padding-right: 10px
+    .button.is-org
+      box-sizing: border-box
+      max-width: initial
+      
+
+@media screen and (max-width: 1000px)
+  .main-box .container-inner .row
+      padding-bottom: 100px
+  
+  .col-left
+      flex: 35%
+  
+  
+  .col-right
+      flex: 65%
+      padding-top: 30px
+
+  .search-bar .item:nth-child(1)
+    flex: 100%
+    max-width: 100%
+
+    
+  .search-bar .item:nth-child(2)
+    flex: 100%
+    max-width: 100%
+    padding-right: 0
+
+@media screen and (max-width: 640px)
+  .main-box .container-inner .row
+      flex-flow: wrap row
+      padding-bottom: 100px
+  
+  .col-left,
+  .col-right
+      flex: 100%
+      padding: 0
+
+  .col-right
+    order: 1
+    margin-bottom: 30px
+  
+  .col-left
+    order: 2
+
+#scroll-thin
+  height: 500px
+
+#scroll-thick
+  height: 100%
+
+  .vb-dragger
+    width: 17px !important
+    background: #909090
