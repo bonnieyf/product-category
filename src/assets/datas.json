@@ -46,7 +46,7 @@
               "imgSrc": "B360_WIN10_2021-06.png",
               "isOld": false,
               "isNewMenu": true,
-              "status": "open"
+              "status": "b360"
             }
           ]
         },
@@ -132,7 +132,7 @@
               "imgSrc": "F110_WIN10_2021-1.png",
               "isOld": false,
               "isNewMenu": false,
-              "status": "open"
+              "status": "f110g6"
             }
           ]
         },
@@ -145,7 +145,7 @@
               "imgSrc": "K120G2_01-2.png",
               "isOld": false,
               "isNewMenu": true,
-              "status": "open"
+              "status": "k120"
             }
           ]
         },
@@ -210,7 +210,7 @@
               "imgSrc": "Getac_ZX10_01-2.png",
               "isOld": false,
               "isNewMenu": true,
-              "status": "open"
+              "status": "zx10"
             }
           ]
         },
@@ -6306,6 +6306,20 @@
                 23
               ]
             }
+          },
+          {
+            "id": 24,
+            "active": true,
+            "isUpgrade": false,
+            "menuTitle": "LCD CaseB",
+            "url": {
+              "dismantle": [
+                0,6,7,8,9,13,14,15,25
+              ],
+              "assembly": [
+                0,6,7,8,9,13,14,15,25 
+              ]
+            }
           }
         ],
         "dismantle": [
@@ -6408,6 +6422,10 @@
           {
             "title": "Camera module(D)",
             "url": "https://support.getac.com/Elibrary/GetVideo/5569"
+          },
+          {
+            "title": "LCD CaseB(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/5592"
           }
         ],
         "assembly": [
@@ -6510,6 +6528,10 @@
           {
             "title": "Camera module(A)",
             "url": "https://support.getac.com/Elibrary/GetVideo/5570"
+          },
+          {
+            "title": "LCD CaseB(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/5591"
           }
         ]
       }

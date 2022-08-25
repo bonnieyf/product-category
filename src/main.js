@@ -20,7 +20,7 @@ import {
 } from "@fortawesome/vue-fontawesome";
 import VuePlyr from "vue-plyr";
 import "vue-plyr/dist/vue-plyr.css";
-import VueGtag from "vue-gtag";
+// import VueGtag from "vue-gtag";
 import Vuebar from 'vuebar';
 Vue.use(Vuebar);
 
@@ -38,14 +38,14 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.use(VueRouter);
 
-Vue.use(VueGtag, {
-  config: {
-    id: "UA-225899724-1"
-  },
-  params: {
-    send_page_view: false
-  }
-}, router);
+// Vue.use(VueGtag, {
+//   config: {
+//     id: "UA-225899724-1"
+//   },
+//   params: {
+//     send_page_view: false
+//   }
+// }, router);
 
 new Vue({
   store,

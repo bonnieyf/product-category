@@ -61,9 +61,9 @@ var store = new _vuex["default"].Store({
 
       if (isNewMenu) {
         element = state.filterData.menu.menuList;
-      }
+      } // console.log(element)
 
-      console.log(element);
+
       element.forEach(function (link) {
         var getFirstLetter = link.menuTitle.toUpperCase().charAt(0);
         categories.push(getFirstLetter);

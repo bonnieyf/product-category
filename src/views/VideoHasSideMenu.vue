@@ -281,10 +281,10 @@ export default {
     };
   },
   methods: {
-    loaded($event) {
-      console.log("-----------");
-      console.log($event);
-      console.log("-----------");
+    loaded() {
+      // console.log("-----------");
+      // console.log($event);
+      // console.log("-----------");
     },
     cleanResult() {
       this.search = "";
@@ -304,7 +304,7 @@ export default {
     updateUrl(id) {
       if (id == "before") {
         this.newUrl = this.getDatas.videoUrl[0];
-        console.log(this.getDatas);
+        // console.log(this.getDatas);
       } else if (this.isNewMenu && id != "before") {
         this.newUrl = {
           initVideo: this.getDatas.videoUrl[0],
@@ -318,7 +318,7 @@ export default {
     setPlayer() {
       this.isInit = false;
       let currentUrl = event.target.getAttribute("data-url");
-      console.log(currentUrl);
+      // console.log(currentUrl);
       this.player.source = {
         type: "video",
         sources: [

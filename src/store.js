@@ -43,7 +43,7 @@ const store = new Vuex.Store({
       if (isNewMenu) {
         element = state.filterData.menu.menuList;
       }
-      console.log(element)
+      // console.log(element)
       element.forEach((link) => {
         let getFirstLetter = link.menuTitle.toUpperCase().charAt(0);
         categories.push(getFirstLetter);

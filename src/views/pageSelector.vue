@@ -28,7 +28,7 @@
                     v-for="(option, index) in options"
                     :value="option.id"
                     :key="option.id"
-                    @click="select(index)"
+                    @click="select(index,option.id);"
                   >
                     <span>{{ `${option.id}`.toUpperCase() }}</span>
                   </li>
@@ -41,8 +41,38 @@
               v-if="options[code].status === 'open'"
               class="link"
               :to="getEnterURL"
+              
               ><b-button type="is-org" expanded>Enter</b-button></router-link
             >
+
+            <a
+              v-if="options[code].status === 'b360'"
+              class="link"
+              href="./b360/index.html"
+              ><b-button type="is-org" expanded>Enter</b-button></a
+            >
+
+            <a
+              v-if="options[code].status === 'k120'"
+              class="link"
+              href="./k120/index.html"
+              ><b-button type="is-org" expanded>Enter</b-button></a
+            >
+
+            <a
+              v-if="options[code].status === 'f110g6'"
+              class="link"
+              href="./f110/index.html"
+              ><b-button type="is-org" expanded>Enter</b-button></a
+            >
+
+            <a
+              v-if="options[code].status === 'zx10'"
+              class="link"
+              href="./zx10/index.html"
+              ><b-button type="is-org" expanded>Enter</b-button></a
+            >
+
             <span v-else class="note"></span>
           </div>
         </div>
@@ -67,21 +97,40 @@ export default {
     itemLength: Number,
   },
   methods: {
+    sandGa(device){
+      console.log('sendGA: '+device)
+      this.$gtag.event('click',{
+        'event_category': 'Homepage',
+        'event_label': device,
+        'value': 500
+      })
+    },
     toggleDropdown() {
       this.visible = !this.visible;
     },
     closeDropDown() {
       this.visible = false;
     },
-    select(option) {
-      this.code = option;
-      let newURL = this.getEnterURL;
-      let newState = this.options[this.code].status;
-      if (newState == "open") {
-        setTimeout(() => {
-          this.$router.push({ path: newURL });
-        }, 500);
+    select(option,device) {
+      if(device === 'b360'){
+        window.location = './b360/index.html'
+      }else if(device === 'f110-g6'){
+         window.location = './f110/index.html'
+      }else if(device === 'k120-g2'){
+         window.location = './k120/index.html'
+      }else if(device === 'zx10'){
+         window.location = './zx10/index.html'
+      }else{
+        this.code = option;
+        let newURL = this.getEnterURL;
+        let newState = this.options[this.code].status;
+        if (newState == "open") {
+          setTimeout(() => {
+            this.$router.push({ path: newURL });
+          }, 500);
+        }
       }
+      
     },
     getURL(val) {
       return require(`./../assets/images/${val}`);

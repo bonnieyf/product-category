@@ -28,12 +28,11 @@ var _vuePlyr = _interopRequireDefault(require("vue-plyr"));
 
 require("vue-plyr/dist/vue-plyr.css");
 
-var _vueGtag = _interopRequireDefault(require("vue-gtag"));
-
 var _vuebar = _interopRequireDefault(require("vuebar"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
+// import VueGtag from "vue-gtag";
 _vue["default"].use(_vuebar["default"]);
 
 _vue["default"].use(_buefy["default"]);
@@ -50,16 +49,15 @@ _fontawesomeSvgCore.library.add(_freeSolidSvgIcons.fas);
 
 _vue["default"].component("font-awesome-icon", _vueFontawesome.FontAwesomeIcon);
 
-_vue["default"].use(_vueRouter["default"]);
+_vue["default"].use(_vueRouter["default"]); // Vue.use(VueGtag, {
+//   config: {
+//     id: "UA-225899724-1"
+//   },
+//   params: {
+//     send_page_view: false
+//   }
+// }, router);
 
-_vue["default"].use(_vueGtag["default"], {
-  config: {
-    id: "UA-225899724-1"
-  },
-  params: {
-    send_page_view: false
-  }
-}, _router["default"]);
 
 new _vue["default"]({
   store: _store["default"],
