@@ -198,6 +198,14 @@
               "isOld": true,
               "isNewMenu": false,
               "status": "open"
+            },
+            {
+              "id": "ux10-g2",
+              "general ": "",
+              "imgSrc": "UX10_WIN10_2021-01.png",
+              "isOld": false,
+              "isNewMenu": true,
+              "status": "open"
             }
           ]
         },
@@ -5812,6 +5820,918 @@
     },
     {
       "type": "tablets",
+      "id": "ux10-g2",
+      "title": "GETAC UX10-G2",
+      "videoUrl": [
+        "https://support.getac.com/Elibrary/GetVideo/5688"
+      ],
+      "imgSrc": "UX10_WIN10_2021-01.png",
+      "descroption": "Please click \"PREPARATION\" to know what to prepare before the service.",
+      "txt": "Please select the category with initial alphabet of the item your would like to repair and click the specific component to view the video.",
+      "isNewMenu": true,
+      "menu": {
+        "menuList": [
+          {
+              "id": 0,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Battery Pack",
+              "url": {
+                  "dismantle": [0],
+                  "assembly": [0]
+              }
+          },
+          {
+              "id": 1,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Smart Card & Bridge Battery",
+              "url": {
+                  "dismantle": [0,1],
+                  "assembly": [0,1]
+              }
+          },
+          {
+              "id": 2,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "SSD Door",
+              "url": {
+                  "dismantle": [0,2],
+                  "assembly": [0,2]
+              }
+          },
+          {
+              "id": 3,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Barcode Module(48 Barcode Reader",
+              "url": {
+                  "dismantle": [0,35],
+                  "assembly": [0,35]
+              }
+          },
+          {
+              "id": 4,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "SSD",
+              "url": {
+                  "dismantle": [0,2,3],
+                  "assembly": [0,2,3]
+              }
+          },
+          {
+              "id": 5,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Internal GPS Switch Board",
+              "url": {
+                  "dismantle": [0,2,4],
+                  "assembly": [0,2,4]
+              }
+          },
+          {
+              "id": 6,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "4G Module",
+              "url": {
+                  "dismantle": [0,2,4,5],
+                  "assembly": [0,2,4,5]
+              }
+          },
+          {
+              "id": 7,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "WIFI Module",
+              "url": {
+                  "dismantle": [0,2,4,6],
+                  "assembly": [0,2,4,6]
+              }
+          },
+          {
+              "id": 8,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Smart Card or Bridge Battery Transfer Board",
+              "url": {
+                  "dismantle": [0,2,7],
+                  "assembly": [0,2,7]
+              }
+          },
+          {
+              "id": 9,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Handle",
+              "url": {
+                  "dismantle": [0,8],
+                  "assembly": [0,8]
+              }
+          },
+          {
+              "id": 10,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "All Caps",
+              "url": {
+                  "dismantle": [0,2,8,9],
+                  "assembly": [0,2,8,9]
+              }
+          },
+          {
+              "id": 11,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Rear Cover",
+              "url": {
+                  "dismantle": [0,2,8,9,10],
+                  "assembly": [0,2,8,9,10]
+              }
+          },
+          {
+              "id": 12,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "SIM Card & TPM Board",
+              "url": {
+                  "dismantle": [0,2,8,9,10,11],
+                  "assembly": [0,2,8,9,10,11]
+              }
+          },
+          {
+              "id": 13,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "RF Switch Board",
+              "url": {
+                  "dismantle": [0,2,8,9,10,12],
+                  "assembly": [0,2,8,9,10,12]
+              }
+          },
+          {
+              "id": 14,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Barcode Reader Decoding Board",
+              "url": {
+                  "dismantle": [0,2,8,9,10,13],
+                  "assembly": [0,2,8,9,10,13]
+              }
+          },
+          {
+              "id": 15,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Keypad Board",
+              "url": {
+                  "dismantle": [0,2,8,9,10,14],
+                  "assembly": [0,2,8,9,10,14]
+              }
+          },
+          {
+              "id": 16,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "POGO FPC Cable",
+              "url": {
+                  "dismantle": [0,2,8,9,10,15],
+                  "assembly": [0,2,8,9,10,15]
+              }
+          },
+          {
+              "id": 17,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "EDP Panel Cable Touch Panel",
+              "url": {
+                  "dismantle": [0,2,8,9,10,16],
+                  "assembly": [0,2,8,9,10,16]
+              }
+          },
+          {
+              "id": 18,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "4G Antennas",
+              "url": {
+                  "dismantle": [0,2,8,9,10,17],
+                  "assembly": [0,2,8,9,10,17]
+              }
+          },
+          {
+              "id": 19,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Wi-Fi Antennas",
+              "url": {
+                  "dismantle": [0,2,8,9,10,13,18],
+                  "assembly": [0,2,8,9,10,13,18]
+              }
+          },
+          {
+              "id": 20,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Speaker",
+              "url": {
+                  "dismantle": [0,2,8,9,10,19],
+                  "assembly": [0,2,8,9,10,19]
+              }
+          },
+          {
+              "id": 21,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Camera",
+              "url": {
+                  "dismantle": [0,2,8,9,10,12,20],
+                  "assembly": [0,2,8,9,10,12,20]
+              }
+          },
+          {
+              "id": 22,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "LED & MIC Array Board",
+              "url": {
+                  "dismantle": [0,2,8,9,10,10,21],
+                  "assembly": [0,2,8,9,10,10,21]
+              }
+          },
+          {
+              "id": 23,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Motherboard",
+              "url": {
+                  "dismantle": [0,2,3,4,5,6,7,8,9,10,11,22],
+                  "assembly": [0,2,3,4,5,6,7,8,9,10,11,22]
+              }
+          },
+          {
+              "id": 24,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Memory",
+              "url": {
+                  "dismantle": [0,2,3,4,5,6,7,8,9,10,11,22,23],
+                  "assembly": [0,2,3,4,5,6,7,8,9,10,11,22,23]
+              }
+          },
+          {
+              "id": 25,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "LED & MIC Array Board FFC",
+              "url": {
+                  "dismantle": [0,2,3,4,5,6,7,8,9,10,11,22,24],
+                  "assembly": [0,2,3,4,5,6,7,8,9,10,11,22,24]
+              }
+          },
+          {
+              "id": 26,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Fan",
+              "url": {
+                  "dismantle": [0,2,3,4,5,6,7,8,9,10,11,22,25],
+                  "assembly": [0,2,3,4,5,6,7,8,9,10,11,22,25]
+              }
+          },
+          {
+              "id": 27,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Finger Print",
+              "url": {
+                  "dismantle": [0,26],
+                  "assembly": [0,26]
+              }
+          },
+          {
+              "id": 28,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "LCD & Case B",
+              "url": {
+                  "dismantle": [0,2,3,4,5,6,7,8,9,10,11,22,27],
+                  "assembly": [0,2,3,4,5,6,7,8,9,10,11,22,27]
+              }
+          },
+          {
+              "id": 29,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "Serial Port board",
+              "url": {
+                  "dismantle": [0,2,8,29,9,10,28],
+                  "assembly": [0,2,8,29,9,10,28]
+              }
+          },
+          {
+              "id": 30,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Serial Port",
+              "url": {
+                  "dismantle": [0,2,8,29],
+                  "assembly": [0,2,8,29]
+              }
+          },
+          {
+              "id": 31,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "USB 3.0 Type C board",
+              "url": {
+                  "dismantle": [0,2,8,31,9,10,30],
+                  "assembly": [0,2,8,31,9,10,30]
+              }
+          },
+          {
+              "id": 32,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "USB 3.0 Type C",
+              "url": {
+                  "dismantle": [0,2,8,31],
+                  "assembly": [0,2,8,31]
+              }
+          },
+          {
+              "id": 33,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "USB 3.0 board",
+              "url": {
+                  "dismantle": [0,2,8,33,9,10,32],
+                  "assembly": [0,2,8,33,9,10,32]
+              }
+          },
+          {
+              "id": 34,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "USB 3.0",
+              "url": {
+                  "dismantle": [0,2,8,33],
+                  "assembly": [0,2,8,33]
+              }
+          },
+          {
+              "id": 35,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "Barcode Reader Board",
+              "url": {
+                  "dismantle": [0,2,8,35,9,10,34],
+                  "assembly": [0,2,8,35,9,10,34]
+              }
+          },
+          {
+              "id": 36,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "Barcode Reader",
+              "url": {
+                  "dismantle": [0,2,8,35],
+                  "assembly": [0,2,8,35]
+              }
+          },
+          {
+              "id": 37,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "NXP RFID board",
+              "url": {
+                  "dismantle": [0,2,8,37,9,10,36],
+                  "assembly": [0,2,8,37,9,10,36]
+              }
+          },
+          {
+              "id": 38,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "NXP RFID",
+              "url": {
+                  "dismantle": [0,2,8,37],
+                  "assembly": [0,2,8,37]
+              }
+          },
+          {
+              "id": 39,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "VGA board",
+              "url": {
+                  "dismantle": [0,2,8,39,9,10,38],
+                  "assembly": [0,2,8,39,9,10,38]
+              }
+          },
+          {
+              "id": 40,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "VGA",
+              "url": {
+                  "dismantle": [0,2,8,39],
+                  "assembly": [0,2,8,39]
+              }
+          },
+          {
+              "id": 41,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "LAN board",
+              "url": {
+                  "dismantle": [0,2,8,41,9,10,40],
+                  "assembly": [0,2,8,41,9,10,40]
+              }
+          },
+          {
+              "id": 42,
+              "active": true,
+              "isUpgrade": false,
+              "menuTitle": "LAN",
+              "url": {
+                  "dismantle": [0,2,8,41],
+                  "assembly": [0,2,8,41]
+              }
+          },
+          {
+              "id": 43,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "NXP RFID",
+              "url": {
+                  "dismantle": [0,2,3,4,5,6,7,8,9,10,11,22,42],
+                  "assembly": [0,2,3,4,5,6,7,8,9,10,11,22,42]
+              }
+          },
+          {
+              "id": 44,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "Serial Port and LAN",
+              "url": {
+                  "dismantle": [0,2,3,4,5,6,7,8,9,10,11,22,43],
+                  "assembly": [0,2,3,4,5,6,7,8,9,10,11,22,43]
+              }
+          },
+          {
+              "id": 45,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "MSR",
+              "url": {
+                  "dismantle": [0,2,3,4,5,6,7,8,9,10,11,22,44],
+                  "assembly": [0,2,3,4,5,6,7,8,9,10,11,22,44]
+              }
+          },
+          {
+              "id": 46,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "Smart Card",
+              "url": {
+                  "dismantle": [0,1,3,4,5,6,7,8,9,10,11,22,45],
+                  "assembly": [0,1,3,4,5,6,7,8,9,10,11,22,45]
+              }
+          },
+          {
+              "id": 47,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "Expansion Bay Module FPC & Cable",
+              "url": {
+                  "dismantle": [0,2,3,4,5,6,7,8,9,10,11,22,46],
+                  "assembly": [0,2,3,4,5,6,7,8,9,10,11,22,46]
+              }
+          },
+          {
+              "id": 48,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "Rear camera",
+              "url": {
+                  "dismantle": [0,2,3,4,5,6,7,8,9,10,11,22,47],
+                  "assembly": [0,2,3,4,5,6,7,8,9,10,11,22,47]
+              }
+          },
+          {
+              "id": 49,
+              "active": true,
+              "isUpgrade": true,
+              "menuTitle": "Front camera",
+              "url": {
+                  "dismantle": [0,2,3,4,5,6,7,8,9,10,11,22,48],
+                  "assembly": [0,2,3,4,5,6,7,8,9,10,11,22,48]
+              }
+          }
+        ],
+        "dismantle": [
+          {
+              "title":"Battery Pack(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5684" 
+          },
+          {
+              "title":"Smart Card & Bridge Battery(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5686" 
+          },
+          {
+              "title":"SSD Door(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5687" 
+          },
+          {
+              "title":"SSD(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5682" 
+          },
+          {
+              "title":"Internal GPS Switch Board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5676" 
+          },
+          {
+              "title":"4G Module(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5677" 
+          },
+          {
+              "title":"WIFI Module(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5672" 
+          },
+          {
+              "title":"Smart Card or Bridge Battery Transfer Board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5675" 
+          },
+          {
+              "title":"Handle(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5712" 
+          },
+          {
+              "title":"All Caps(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5715" 
+          },
+          {
+              "title":"Rear Cover(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5708" 
+          },
+          {
+              "title":"SIM Card & TPM Board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5710" 
+          },
+          {
+              "title":"RF Switch Board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5744" 
+          },
+          {
+              "title":"Barcode Reader Decoding Board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5741" 
+          },
+          {
+              "title":"Keypad Board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5742" 
+          },
+          {
+              "title":"POGO FPC Cable(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5739" 
+          },
+          {
+              "title":"EDP Panel Cable Touch Panel(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5737" 
+          },
+          {
+              "title":"Antennas(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5736" 
+          },
+          {
+              "title":"Wi-Fi Antennas(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5738" 
+          },
+          {
+              "title":"Speaker(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5731" 
+          },
+          {
+              "title":"Camera(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5733" 
+          },
+          {
+              "title":"LED & MIC Array Board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5729" 
+          },
+          {
+              "title":"Motherboard(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5728" 
+          },
+          {
+              "title":"Memory(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5725" 
+          },
+          {
+              "title":"LED & MIC Array Board FFC(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5719" 
+          },
+          {
+              "title":"Fan(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5717" 
+          },
+          {
+              "title":"Finger Print(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5721" 
+          },
+          {
+              "title":"LCD & Case B(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5727" 
+          },
+          {
+              "title":"Serial Port board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5766" 
+          },
+          {
+              "title":"Serial Port(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5768" 
+          },
+          {
+              "title":"USB 3.0 Type C board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5764" 
+          },
+          {
+              "title":"USB 3.0 Type C(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5762" 
+          },
+          {
+              "title":"USB 3.0 board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5757" 
+          },
+          {
+              "title":"USB 3.0(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5763" 
+          },
+          {
+              "title":"Barcode Reader Board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5749" 
+          },
+          {
+              "title":"Barcode Reader(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5756" 
+          },
+          {
+              "title":"NXP RFID board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5759" 
+          },
+          {
+              "title":"NXP RFID(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5751" 
+          },
+          {
+              "title":"VGA board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5747" 
+          },
+          {
+              "title":"VGA(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5670" 
+          },
+          {
+              "title":"N board(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5706" 
+          },
+          {
+              "title":"5LAN(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5703" 
+          },
+          {
+              "title":"NXP RFID(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5699" 
+          },
+          {
+              "title":"Serial Port and LAN(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5701" 
+          },
+          {
+              "title":"MSR(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5695" 
+          },
+          {
+              "title":"Smart Card(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5671" 
+          },
+          {
+              "title":"Expansion Bay Module FPC & Cable(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5692" 
+          },
+          {
+              "title":"Rear camera(D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5689" 
+          },
+          {
+              "title":"Front camera (D)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5690"
+          }
+        ],
+        "assembly": [
+          {
+              "title":"Battery Pack(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5691"
+          },
+          {
+              "title":"Smart Card & Bridge Battery(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5683"
+          },
+          {
+              "title":"SSD Door(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5681"
+          },
+          {
+              "title":"SSD(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5680"
+          },
+          {
+              "title":"Internal GPS Switch Board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5678"
+          },
+          {
+              "title":"4G Module(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5679"
+          },
+          {
+              "title":"WIFI Module(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5685"
+          },
+          {
+              "title":"Smart Card or Bridge Battery Transfer Board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5674"
+          },
+          {
+              "title":"Handle(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5673"
+          },
+          {
+              "title":"All Caps(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5713"
+          },
+          {
+              "title":"Rear Cover(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5711"
+          },
+          {
+              "title":"SIM Card & TPM Board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5714"
+          },
+          {
+              "title":"RF Switch Board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5709"
+          },
+          {
+              "title":"Barcode Reader Decoding Board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5743"
+          },
+          {
+              "title":"Keypad Board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5740"
+          },
+          {
+              "title":"POGO FPC Cable(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5745"
+          },
+          {
+              "title":"EDP Panel Cable Touch Panel(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5746"
+          },
+          {
+              "title":"4G Antennas(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5735"
+          },
+          {
+              "title":"Wi-Fi Antennas(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5732"
+          },
+          {
+              "title":"Speaker(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5730"
+          },
+          {
+              "title":"Camera(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5734"
+          },
+          {
+              "title":"LED & MIC Array Board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5722"
+          },
+          {
+              "title":"Motherboard(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5726"
+          },
+          {
+              "title":"Memory(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5723"
+          },
+          {
+              "title":"LED & MIC Array Board FFC(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5720"
+          },
+          {
+              "title":"Fan(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5724"
+          },
+          {
+              "title":"Finger Print(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5716"
+          },
+          {
+              "title":"LCD & Case B(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5718"
+          },
+          {
+              "title":"Serial Port board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5767"
+          },
+          {
+              "title":"Serial Port(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5765"
+          },
+          {
+              "title":"USB 3.0 Type C board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5761"
+          },
+          {
+              "title":"USB 3.0 Type C(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5760"
+          },
+          {
+              "title":"USB 3.0 board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5752"
+          },
+          {
+              "title":"USB 3.0(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5758"
+          },
+          {
+              "title":"Barcode Reader Board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5753"
+          },
+          {
+              "title":"Barcode Reader(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5754"
+          },
+          {
+              "title":"NXP RFID board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5755"
+          },
+          {
+              "title":"NXP RFID(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5748"
+          },
+          {
+              "title":"VGA board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5750"
+          },
+          {
+              "title":"VGA(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5707"
+          },
+          {
+              "title":"LAN board(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5705"
+          },
+          {
+              "title":"LAN(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5702"
+          },
+          {
+              "title":"NXP RFID(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5704"
+          },
+          {
+              "title":"Serial Port and LAN(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5700"
+          },
+          {
+              "title":"MSR(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5697"
+          },
+          {
+              "title":"Smart Card(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5696"
+          },
+          {
+              "title":"Expansion Bay Module FPC & Cable(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5698"
+          },
+          {
+              "title":"Rear camera(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5693"
+          },
+          {
+              "title":"Front camera(A)",
+              "url":"https://support.getac.com/Elibrary/GetVideo/5694"
+          }
+        ]
+      }
+    },
+    {
+      "type": "tablets",
       "id": "zx10",
       "title": "GETAC ZX10",
       "descroption": "Please click \"PREPARATION\" to know what to prepare before the service.",
@@ -6311,13 +7231,13 @@
             "id": 24,
             "active": true,
             "isUpgrade": false,
-            "menuTitle": "LCD CaseB",
+            "menuTitle": "LCD / CaseB",
             "url": {
               "dismantle": [
-                0,6,7,8,9,13,14,15,25
+                0,6,7,8,9,13,24,26,25
               ],
               "assembly": [
-                0,6,7,8,9,13,14,15,25 
+                0,6,7,8,9,13,24,26,25 
               ]
             }
           }
@@ -6424,8 +7344,12 @@
             "url": "https://support.getac.com/Elibrary/GetVideo/5569"
           },
           {
-            "title": "LCD CaseB(D)",
+            "title": "LCD / CaseB(D)",
             "url": "https://support.getac.com/Elibrary/GetVideo/5592"
+          },
+          {
+            "title": "Barcod module(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/5594"
           }
         ],
         "assembly": [
@@ -6530,8 +7454,12 @@
             "url": "https://support.getac.com/Elibrary/GetVideo/5570"
           },
           {
-            "title": "LCD CaseB(A)",
+            "title": "LCD / CaseB(A)",
             "url": "https://support.getac.com/Elibrary/GetVideo/5591"
+          },
+          {
+            "title": "Barcod module(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/5593"
           }
         ]
       }
