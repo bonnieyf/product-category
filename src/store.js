@@ -11,6 +11,7 @@ const store = new Vuex.Store({
     filterData: {},
     categoryFilterSelected: "All",
     categoriesList: [],
+    menuStatus: false
   },
   mutations: {
     FILTER_CATEGORYLIST: (state, payload) => {
@@ -20,10 +21,17 @@ const store = new Vuex.Store({
 
       state.filterData = newData[0];
     },
+    CHANGE_STATUS: (state, payload) => {
+      state.menuStatus = payload.status;
+    },
+
   },
   actions: {
     COMMITFILTERDATA: (context, payload) => {
       context.commit("FILTER_CATEGORYLIST", payload);
+    },
+    CHANGESTATUS: (context, payload) => {
+      context.commit("CHANGE_STATUS", payload);
     },
   },
   getters: {
@@ -35,6 +43,9 @@ const store = new Vuex.Store({
     },
     GET_SELECTD_CATE: (state) => {
       return state.categoryFilterSelected;
+    },
+    GET_MENU_STATUS: (state) => {
+      return state.menuStatus;
     },
     GET_FIRST_CATE: (state) => {
       let categories = [];

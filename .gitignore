@@ -21,3 +21,6 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+public/init.mp4
+public/video1.mp4
+public/video2.mp4

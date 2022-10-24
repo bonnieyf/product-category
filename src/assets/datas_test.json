@@ -4059,7 +4059,7 @@
     {
       "type": "tablets",
       "id": "k120-g2",
-      "title": "GETAC K120 G2",
+      "title": "GETAC K120 G2AAAAA",
       "videoUrl": [
         "https://support.getac.com/Elibrary/GetVideo/5391"
       ],
@@ -5821,9 +5821,9 @@
     {
       "type": "tablets",
       "id": "ux10-g2",
-      "title": "GETAC UX10-G2",
+      "title": "GETAC UX10-G2AAA",
       "videoUrl": [
-        "https://support.getac.com/Elibrary/GetVideo/5688"
+        "./init.mp4"
       ],
       "imgSrc": "UX10_WIN10_2021-01.png",
       "descroption": "Please click \"PREPARATION\" to know what to prepare before the service.",
@@ -7095,15 +7095,15 @@
     "dismantle": [
         {
             "title": "Battery Pack(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/5684"
+            "url": "./video1.mp4"
         },
         {
             "title": "Smart Card & Bridge Battery(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/5686"
+            "url": "./video2.mp4"
         },
         {
             "title": "SSD Door(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/5687"
+            "url": "./video2.mp4"
         },
         {
             "title": "SSD(D)",

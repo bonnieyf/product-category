@@ -29,7 +29,8 @@ var store = new _vuex["default"].Store({
     productList: _datas["default"].productList,
     filterData: {},
     categoryFilterSelected: "All",
-    categoriesList: []
+    categoriesList: [],
+    menuStatus: false
   },
   mutations: {
     FILTER_CATEGORYLIST: function FILTER_CATEGORYLIST(state, payload) {
@@ -37,11 +38,17 @@ var store = new _vuex["default"].Store({
         return item.id === payload.id;
       });
       state.filterData = newData[0];
+    },
+    CHANGE_STATUS: function CHANGE_STATUS(state, payload) {
+      state.menuStatus = payload.status;
     }
   },
   actions: {
     COMMITFILTERDATA: function COMMITFILTERDATA(context, payload) {
       context.commit("FILTER_CATEGORYLIST", payload);
+    },
+    CHANGESTATUS: function CHANGESTATUS(context, payload) {
+      context.commit("CHANGE_STATUS", payload);
     }
   },
   getters: {
@@ -53,6 +60,9 @@ var store = new _vuex["default"].Store({
     },
     GET_SELECTD_CATE: function GET_SELECTD_CATE(state) {
       return state.categoryFilterSelected;
+    },
+    GET_MENU_STATUS: function GET_MENU_STATUS(state) {
+      return state.menuStatus;
     },
     GET_FIRST_CATE: function GET_FIRST_CATE(state) {
       var categories = [];

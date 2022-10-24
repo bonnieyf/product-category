@@ -3,6 +3,8 @@
     <div class="main-box" :class="{ showmenu: openMenu }">
       <div class="container">
         <div class="container-inner" :class="{ move: openMenu }">
+
+          <!-- Title Style -->
           <div v-if="getVideoId != 'before' && !isNewMenu">
             <h3 class="title is-4 is-spaced bd-anchor-title">
               <span class="bd-anchor-name">
@@ -154,19 +156,23 @@
         </div>
       </div>
 
+      <!-- Back Button -->
       <div class="back-to-list">
         <router-link :to="`/${getType}/${getId}/`"
           ><b-button type="is-org">Back to List</b-button></router-link
         >
       </div>
 
+
+      <!-- Side Bar switch button -->
       <div class="menu-button left" v-if="getVideoId != 'video'">
-        <a href="#" @click.prevent="openMenu = !openMenu">
+        <a href="#" @click.prevent="handleMenuStatus">
           <i v-if="openMenu == false" class="icon-bar"></i>
           <i v-else class="icon-x"></i>
         </a>
       </div>
 
+      <!-- Side Memu -->
       <div class="side-menu" v-if="getVideoId != 'video'">
         <div
           v-bar="{
@@ -193,7 +199,6 @@
                 >
               </div>
             </div>
-
             <div class="search-result" v-if="search.length > 0">
               <div class="search-result-total">
                 <span>
@@ -226,7 +231,6 @@
               <div class="side-menu__item">
                 <h2><font-awesome-icon icon="star" /></h2>
                 <router-link
-                  @click.native="updateUrl('before')"
                   :to="`/${getType}/${getId}/before`"
                   >Preparation Before Service</router-link
                 >
@@ -234,7 +238,7 @@
 
               <div
                 class="side-menu__item"
-                v-for="(data, key) in cateTatal"
+                v-for="(data, key) in cateTotal"
                 :key="data.id"
               >
                 <h2>{{ key }}</h2>
@@ -244,7 +248,6 @@
                       @click.native="updateUrl(group.id)"
                       :to="`/${getType}/${getId}/${group.id}`"
                       >{{ group.menuTitle.replace("(Device Upgrade)", "") }}
-
                       <br />
                       <span
                         class="upgrade-tag"
@@ -270,7 +273,7 @@ export default {
     return {
       filterSelectData: null,
       publicPath: process.env.BASE_URL,
-      cateTatal: {},
+      cateTotal: {},
       openMenu: false,
       newUrl: null,
       player: null,
@@ -281,10 +284,12 @@ export default {
     };
   },
   methods: {
-    loaded() {
-      // console.log("-----------");
-      // console.log($event);
-      // console.log("-----------");
+    handleMenuStatus(){
+      this.openMenu = !this.openMenu;
+      this.$store.dispatch("CHANGESTATUS", {
+        status: this.openMenu,
+      });
+
     },
     cleanResult() {
       this.search = "";
@@ -298,13 +303,12 @@ export default {
         let returnData = this.filterLinks.filter(
           (innerItem) => innerItem.menuTitle.charAt(0) === item
         );
-        this.cateTatal[item] = returnData;
+        this.cateTotal[item] = returnData;
       });
     },
     updateUrl(id) {
       if (id == "before") {
         this.newUrl = this.getDatas.videoUrl[0];
-        // console.log(this.getDatas);
       } else if (this.isNewMenu && id != "before") {
         this.newUrl = {
           initVideo: this.getDatas.videoUrl[0],
@@ -318,7 +322,7 @@ export default {
     setPlayer() {
       this.isInit = false;
       let currentUrl = event.target.getAttribute("data-url");
-      // console.log(currentUrl);
+
       this.player.source = {
         type: "video",
         sources: [
@@ -343,6 +347,9 @@ export default {
     },
     getDatas() {
       return this.$store.state.filterData;
+    },
+    getMenuStatue() {
+      return this.$store.getters.GET_MENU_STATUS;
     },
     getCate() {
       return this.$store.getters.GET_FIRST_CATE;
@@ -377,15 +384,14 @@ export default {
     });
     this.isNewMenu = this.getDatas.isNewMenu;
     this.getSelectedData();
-    this.updateUrl(this.getVideoId);
+    this.updateUrl(this.getVideoId)
+    this.openMenu = this.getMenuStatue;
 
-    if (this.isNewMenu) {
-      this.marginObject();
-    }
+    this.marginObject();
   },
   mounted() {
     this.player = this.$refs.plyr.player;
-    let initUrl = this.newUr;
+    let initUrl = this.newUrl;
     if (this.isNewMenu && this.isInit) {
       initUrl = this.getDatas.videoUrl[0];
     }

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view ref="showbox" />
+    <router-view :key="$route.fullPath" ref="showbox" />
   </div>
 </template>
 
@@ -13,8 +13,8 @@ export default {
   },
   components: {},
   mounted(){
-    
-    
+
+
   }
   // mounted() {
   //   // document.oncontextmenu = function() {
@@ -30,7 +30,7 @@ export default {
   //   //   "*"
   //   // );
 
-    
+
   // },
 };
 </script>
