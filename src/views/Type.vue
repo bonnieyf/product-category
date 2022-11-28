@@ -253,7 +253,13 @@ export default {
       });
     },
   },
-  mounted() {},
+  mounted() {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  },
   created() {
     this.$store.dispatch("COMMITFILTERDATA", {
       deviceId: this.getType,

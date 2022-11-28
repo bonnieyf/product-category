@@ -247,7 +247,7 @@
                     <router-link
                       @click.native="updateUrl(group.id)"
                       :to="`/${getType}/${getId}/${group.id}`"
-                      >{{ group.menuTitle.replace("(Device Upgrade)", "") }}
+                      ><span class="link-text">{{ group.menuTitle.replace("(Device Upgrade)", "") }}</span>
                       <br />
                       <span
                         class="upgrade-tag"
@@ -405,6 +405,12 @@ export default {
     };
 
     this.player.crrentTime = 0;
+
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
   },
 };
 </script>

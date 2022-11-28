@@ -122,8 +122,8 @@
               "id": "f110-g5",
               "general": "g5",
               "imgSrc": "F110_WIN10_2021-1.png",
-              "isOld": true,
-              "isNewMenu": false,
+              "isOld": false,
+              "isNewMenu": true,
               "status": "open"
             },
             {
@@ -2312,12 +2312,662 @@
       "id": "f110-g5",
       "title": "GETAC F110 G5",
       "videoUrl": [
-        "https://support.getac.com/Elibrary/GetVideo/2668?t=1623909873944"
+        "https://support.getac.com/Elibrary/GetVideo/9360"
       ],
       "imgSrc": "F110_WIN10_2021-1.png",
-      "descroption": "",
-      "menu": "",
-      "isNewMenu": false
+      "descroption": "Please click \"PREPARATION\" to know what to prepare before the service.",
+      "txt": "Please select the category with initial alphabet of the item your would like to repair and click the specific component to view the video.",
+      "isNewMenu": true,
+      "menu": {
+        "menuList":[{
+          "id": 0,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "battery pack",
+          "url": {
+            "dismantle": [0],
+            "assembly": [0]
+          }
+        },
+        {
+          "id": 1,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Expansion Bay",
+          "url": {
+            "dismantle": [0,4],
+            "assembly": [0,4]
+          }
+        },
+        {
+          "id": 2,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "FingerPrint",
+          "url": {
+            "dismantle": [0,1],
+            "assembly": [0,1]
+          }
+        },
+        {
+          "id": 3,
+          "active": true,
+          "isUpgrade": true,
+          "menuTitle": "FingerPrint",
+          "url": {
+            "dismantle": [0,4],
+            "assembly": [0,1]
+          }
+        },
+        {
+          "id": 4,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Smartcard",
+          "url": {
+            "dismantle": [0,2],
+            "assembly": [0,2]
+          }
+        },
+        {
+          "id": 5,
+          "active": true,
+          "isUpgrade": true,
+          "menuTitle": "Smartcard",
+          "url": {
+            "dismantle": [0,4],
+            "assembly": [0,2]
+          }
+        },
+        {
+          "id": 6,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "RFID",
+          "url": {
+            "dismantle": [0,3],
+            "assembly": [0,3]
+          }
+        },
+        {
+          "id": 7,
+          "active": true,
+          "isUpgrade": true,
+          "menuTitle": "RFID",
+          "url": {
+            "dismantle": [0,4],
+            "assembly": [0,3]
+          }
+        },
+        {
+          "id": 8,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "4G Module",
+          "url": {
+            "dismantle": [0,4,5,6],
+            "assembly": [0,4,5,6]
+          }
+        },
+        {
+          "id": 9,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "SSD Module",
+          "url": {
+            "dismantle": [0,4,5,7],
+            "assembly": [0,4,5,7]
+          }
+        },
+        {
+          "id": 10,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Wi-Fi Module",
+          "url": {
+            "dismantle": [0,4,5,8],
+            "assembly": [0,4,5,8]
+          }
+        },
+        {
+          "id": 11,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Battery Trans Board",
+          "url": {
+            "dismantle": [0,9,10],
+            "assembly": [0,9,10]
+          }
+        },
+        {
+          "id": 12,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Option Bay",
+          "url": {
+            "dismantle": [0,9,17],
+            "assembly": [0,9,17]
+          }
+        },
+        {
+          "id": 13,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Rear Camera",
+          "url": {
+            "dismantle": [0,9,17,19,18],
+            "assembly": [0,9,17,19,18]
+          }
+        },
+        {
+          "id": 14,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Mother Board",
+          "url": {
+            "dismantle": [0,4,5,6,7,8,9,17,19,20],
+            "assembly": [0,4,5,6,7,8,9,17,19,20]
+          }
+        },
+        {
+          "id": 15,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Memory",
+          "url": {
+            "dismantle": [0,4,5,6,7,8,9,17,19,20,21],
+            "assembly": [0,4,5,6,7,8,9,17,19,20,21]
+          }
+        },
+        {
+          "id": 16,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Each Antenna",
+          "url": {
+            "dismantle": [0,4,5,6,7,8,9,17,19,20,22],
+            "assembly": [0,4,5,6,7,8,9,17,19,20,22]
+          }
+        },
+        {
+          "id": 17,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Fan",
+          "url": {
+            "dismantle": [0,4,5,6,7,8,9,17,19,20,23],
+            "assembly": [0,4,5,6,7,8,9,17,19,20,23]
+          }
+        },
+        {
+          "id": 18,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "RF Board",
+          "url": {
+            "dismantle": [0,9,24],
+            "assembly": [0,9,24]
+          }
+        },
+        {
+          "id": 19,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Pogo Board",
+          "url": {
+            "dismantle": [0,9,5,6,7,8,9,17,19,20,25],
+            "assembly": [0,9,5,6,7,8,9,17,19,20,25]
+          }
+        },
+        {
+          "id": 20,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "LCD Cable",
+          "url": {
+            "dismantle": [0,9,26],
+            "assembly": [0,9,26]
+          }
+        },
+        {
+          "id": 21,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Keypad Board",
+          "url": {
+            "dismantle": [0,9,27],
+            "assembly": [0,9,27]
+          }
+        },
+        {
+          "id": 22,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Front Camera",
+          "url": {
+            "dismantle": [0,9,29,28],
+            "assembly": [0,9,29,28]
+          }
+        },
+        {
+          "id": 23,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Home Keypad Board",
+          "url": {
+            "dismantle": [0,9,30],
+            "assembly": [0,9,30]
+          }
+        },
+        {
+          "id": 24,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "Digitizer Cable",
+          "url": {
+            "dismantle": [0,31],
+            "assembly": [0,31]
+          }
+        },
+        {
+          "id": 25,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "LCD",
+          "url": {
+            "dismantle": [0,32],
+            "assembly": [0,32]
+          }
+        },
+        {
+          "id": 26,
+          "active": true,
+          "isUpgrade": false,
+          "menuTitle": "RJ-45",
+          "url": {
+            "dismantle": [0,9],
+            "assembly": [0,9]
+          }
+        },
+        {
+          "id": 27,
+          "active": true,
+          "isUpgrade": true,
+          "menuTitle": "RJ-45",
+          "url": {
+            "dismantle": [0,9,17],
+            "assembly": [0,9,17]
+          }
+        },
+        {
+          "id": 28,
+          "active": false,
+          "isUpgrade": false,
+          "menuTitle": "RJ-45 RS232 Combo",
+          "url": {
+            "dismantle": [0,9],
+            "assembly": [0,9]
+          }
+        },
+        {
+          "id": 29,
+          "active": true,
+          "isUpgrade": true,
+          "menuTitle": "RJ-45 RS232 Combo",
+          "url": {
+            "dismantle": [0,9,17],
+            "assembly": [0,9,17]
+          }
+        },
+        {
+          "id": 30,
+          "active": false,
+          "isUpgrade": false,
+          "menuTitle": "Barcode",
+          "url": {
+            "dismantle": [0,9,13],
+            "assembly": [0,9,13]
+          }
+        },
+        {
+          "id": 31,
+          "active": true,
+          "isUpgrade": true,
+          "menuTitle": "Barcode",
+          "url": {
+            "dismantle": [0,9,17],
+            "assembly": [0,9,13]
+          }
+        },
+        {
+          "id": 32,
+          "active": false,
+          "isUpgrade": false,
+          "menuTitle": "MicroSD",
+          "url": {
+            "dismantle": [0,9,14],
+            "assembly": [0,9,14]
+          }
+        },
+        {
+          "id": 33,
+          "active": true,
+          "isUpgrade": true,
+          "menuTitle": "MicroSD",
+          "url": {
+            "dismantle": [0,9,17],
+            "assembly": [0,9,14]
+          }
+        },
+        {
+          "id": 34,
+          "active": false,
+          "isUpgrade": false,
+          "menuTitle": "RS232",
+          "url": {
+            "dismantle": [0,9,15],
+            "assembly": [0,9,15]
+          }
+        },
+        {
+          "id": 35,
+          "active": true,
+          "isUpgrade": true,
+          "menuTitle": "RS232",
+          "url": {
+            "dismantle": [0,9,17],
+            "assembly": [0,9,15]
+          }
+        },
+        {
+          "id": 36,
+          "active": false,
+          "isUpgrade": false,
+          "menuTitle": "USB2.0",
+          "url": {
+            "dismantle": [0,9,16],
+            "assembly": [0,9,16]
+          }
+        },
+        {
+          "id": 37,
+          "active": true,
+          "isUpgrade": true,
+          "menuTitle": "USB2.0",
+          "url": {
+            "dismantle": [0,9,17],
+            "assembly": [0,9,16]
+          }
+        }],
+        "dismantle": [
+          {
+            "title": "Battery Pack(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9356"
+          },
+          {
+            "title": "Fingerprint(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9355"
+          },
+          {
+            "title": "Smartcard(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9402"
+          },
+          {
+            "title": "RFID(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9399"
+          },
+          {
+            "title": "Expansion Bay(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9397"
+          },
+          {
+            "title": "Plate(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9401"
+          },
+          {
+            "title": "4G Module(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9392"
+          },
+          {
+            "title": "SSD Module(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9390"
+          },
+          {
+            "title": "Wi-Fi Module(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9393"
+          },
+          {
+            "title": "Case A(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9403"
+          },
+          {
+            "title": "Battery Trans Board(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9389"
+          },
+          {
+            "title": "RJ45(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9387"
+          },
+          {
+            "title": "RJ-45 RS232 Combo(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9408"
+          },
+          {
+            "title": "Barcode(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9410"
+          },
+          {
+            "title": "MicroSD(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9386"
+          },
+          {
+            "title": "RS232(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9411"
+          },
+          {
+            "title": "USB2.0(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9382"
+          },
+          {
+            "title": "Option Bay(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9385"
+          },
+          {
+            "title": "Rear Camera(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9380"
+          },
+          {
+            "title": "Rear Camera Module(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9376"
+          },
+          {
+            "title": "Mother Board(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9404"
+          },
+          {
+            "title": "Memory(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9379"
+          },
+          {
+            "title": "Each Antenna(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9373"
+          },
+          {
+            "title": "Fan(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9374"
+          },
+          {
+            "title": "RF Board(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9372"
+          },
+          {
+            "title": "Pogo Board(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9370"
+          },
+          {
+            "title": "LCD Cable(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9368"
+          },
+          {
+            "title": "Keypad Board(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9363"
+          },
+          {
+            "title": "Front Camera(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9364"
+          },
+          {
+            "title": "Front Camera Module(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9361"
+          },
+          {
+            "title": "Home Keypad Board(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9358"
+          },
+          {
+            "title": "Digitizer Cable(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9357"
+          },
+          {
+            "title": "LCD(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9406"
+          }
+        ],
+        "assembly": [
+          {
+            "title": "Battery Pack(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9353"
+          },
+          {
+            "title": "Fingerprint(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9359"
+          },
+          {
+            "title": "Smartcard(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9350"
+          },
+          {
+            "title": "RFID(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9400"
+          },
+          {
+            "title": "Expansion Bay(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9351"
+          },
+          {
+            "title": "Plate(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9396"
+          },
+          {
+            "title": "4G Module(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9391"
+          },
+          {
+            "title": "SSD Module(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9395"
+          },
+          {
+            "title": "Wi-Fi Module(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9394"
+          },
+          {
+            "title": "Case A(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9405"
+          },
+          {
+            "title": "Battery Trans Board(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9398"
+          },
+          {
+            "title": "RJ45(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9388"
+          },
+          {
+            "title": "RJ-45 RS232 Combo(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9408"
+          },
+          {
+            "title": "Barcode(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9410"
+          },
+          {
+            "title": "MicroSD(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9386"
+          },
+          {
+            "title": "RS232(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9411"
+          },
+          {
+            "title": "USB2.0(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9382"
+          },
+          {
+            "title": "Option Bay(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9381"
+          },
+          {
+            "title": "Rear Camera(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9384"
+          },
+          {
+            "title": "Rear Camera Module(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9352"
+          },
+          {
+            "title": "Mother Board(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9407"
+          },
+          {
+            "title": "Memory(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9383"
+          },
+          {
+            "title": "Each Antenna(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9375"
+          },
+          {
+            "title": "Fan(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9378"
+          },
+          {
+            "title": "RF Board(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9377"
+          },
+          {
+            "title": "Pogo Board(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9371"
+          },
+          {
+            "title": "LCD Cable(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9369"
+          },
+          {
+            "title": "Keypad Board(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9367"
+          },
+          {
+            "title": "Front Camera(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9366"
+          },
+          {
+            "title": "Front Camera Module(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9362"
+          },
+          {
+            "title": "Home Keypad Board(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9365"
+          },
+          {
+            "title": "Digitizer Cable(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9357"
+          },
+          {
+            "title": "LCD(A)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/9409"
+          }
+        ]
+      }
     },
     {
       "type": "tablets",
