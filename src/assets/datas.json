@@ -2312,7 +2312,7 @@
       "id": "f110-g5",
       "title": "GETAC F110 G5",
       "videoUrl": [
-        "https://support.getac.com/Elibrary/GetVideo/9360"
+        "https://support.getac.com/Elibrary/GetVideo/5841"
       ],
       "imgSrc": "F110_WIN10_2021-1.png",
       "descroption": "Please click \"PREPARATION\" to know what to prepare before the service.",
@@ -2583,40 +2583,40 @@
           "id": 26,
           "active": true,
           "isUpgrade": false,
-          "menuTitle": "RJ-45",
+          "menuTitle": "RJ45",
           "url": {
-            "dismantle": [0,9],
-            "assembly": [0,9]
+            "dismantle": [0,9,11],
+            "assembly": [0,9,11]
           }
         },
         {
           "id": 27,
           "active": true,
           "isUpgrade": true,
-          "menuTitle": "RJ-45",
+          "menuTitle": "RJ45",
           "url": {
             "dismantle": [0,9,17],
-            "assembly": [0,9,17]
+            "assembly": [0,9,11]
           }
         },
         {
           "id": 28,
           "active": false,
           "isUpgrade": false,
-          "menuTitle": "RJ-45 RS232 Combo",
+          "menuTitle": "RJ45 RS232 Combo",
           "url": {
-            "dismantle": [0,9],
-            "assembly": [0,9]
+            "dismantle": [0,9,12],
+            "assembly": [0,9,12]
           }
         },
         {
           "id": 29,
           "active": true,
           "isUpgrade": true,
-          "menuTitle": "RJ-45 RS232 Combo",
+          "menuTitle": "RJ45 RS232 Combo",
           "url": {
             "dismantle": [0,9,17],
-            "assembly": [0,9,17]
+            "assembly": [0,9,12]
           }
         },
         {
@@ -2702,271 +2702,271 @@
         "dismantle": [
           {
             "title": "Battery Pack(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9356"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5837"
+        },
+        {
             "title": "Fingerprint(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9355"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5836"
+        },
+        {
             "title": "Smartcard(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9402"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5883"
+        },
+        {
             "title": "RFID(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9399"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5880"
+        },
+        {
             "title": "Expansion Bay(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9397"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5878"
+        },
+        {
             "title": "Plate(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9401"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5882"
+        },
+        {
             "title": "4G Module(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9392"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5873"
+        },
+        {
             "title": "SSD Module(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9390"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5871"
+        },
+        {
             "title": "Wi-Fi Module(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9393"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5874"
+        },
+        {
             "title": "Case A(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9403"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5884"
+        },
+        {
             "title": "Battery Trans Board(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9389"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5919"
+        },
+        {
             "title": "RJ45(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9387"
-          },
-          {
-            "title": "RJ-45 RS232 Combo(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9408"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5913"
+        },
+        {
+            "title": "RJ45 RS232 Combo(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/5866"
+        },
+        {
             "title": "Barcode(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9410"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5912"
+        },
+        {
             "title": "MicroSD(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9386"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5857"
+        },
+        {
             "title": "RS232(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9411"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5885"
+        },
+        {
             "title": "USB2.0(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9382"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5860"
+        },
+        {
             "title": "Option Bay(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9385"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5915"
+        },
+        {
             "title": "Rear Camera(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9380"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5926"
+        },
+        {
             "title": "Rear Camera Module(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9376"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5925"
+        },
+        {
             "title": "Mother Board(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9404"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5921"
+        },
+        {
             "title": "Memory(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9379"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5923"
+        },
+        {
             "title": "Each Antenna(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9373"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5854"
+        },
+        {
             "title": "Fan(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9374"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5855"
+        },
+        {
             "title": "RF Board(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9372"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5853"
+        },
+        {
             "title": "Pogo Board(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9370"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5851"
+        },
+        {
             "title": "LCD Cable(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9368"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5849"
+        },
+        {
             "title": "Keypad Board(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9363"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5844"
+        },
+        {
             "title": "Front Camera(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9364"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5845"
+        },
+        {
             "title": "Front Camera Module(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9361"
-          },
-          {
-            "title": "Home Keypad Board(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9358"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5842"
+        },
+        {
+            "title": "HOME Keypad Board(D)",
+            "url": "https://support.getac.com/Elibrary/GetVideo/5839"
+        },
+        {
             "title": "Digitizer Cable(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9357"
-          },
-          {
+            "url": "https://support.getac.com/Elibrary/GetVideo/5838"
+        },
+        {
             "title": "LCD(D)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9406"
+            "url": "https://support.getac.com/Elibrary/GetVideo/5887"
+        }
+          ],
+          "assembly": [
+            {
+              "title":"Battery Pack(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5834"
+          },
+          {
+              "title":"Fingerprint(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5840"
+          },
+          {
+              "title":"Smartcard(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5831"
+          },
+          {
+              "title":"RFID(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5881"
+          },
+          {
+              "title":"Expansion Bay(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5832"
+          },
+          {
+              "title":"Plate(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5877"
+          },
+          {
+              "title":"4G Module(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5872"
+          },
+          {
+              "title":"SSD Module(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5876"
+          },
+          {
+              "title":"Wi-Fi Module(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5875"
+          },
+          {
+              "title":"Case A(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5886"
+          },
+          {
+              "title":"Battery Trans Board(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5918"
+          },
+          {
+              "title":"RJ45(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5914"
+          },
+          {
+              "title":"RJ45 RS232 Combo(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5889"
+          },
+          {
+              "title":"Barcode(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5917"
+          },
+          {
+              "title":"MicroSD(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5867"
+          },
+          {
+              "title":"RS232(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5892"
+          },
+          {
+              "title":"USB2.0(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5863"
+          },
+          {
+              "title":"Option Bay(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5916"
+          },
+          {
+              "title":"Rear Camera(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5927"
+          },
+          {
+              "title":"Rear Camera Module(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5924"
+          },
+          {
+              "title":"Mother Board(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5920"
+          },
+          {
+              "title":"Memory(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5922"
+          },
+          {
+              "title":"Each Antenna(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5856"
+          },
+          {
+              "title":"Fan(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5859"
+          },
+          {
+              "title":"RF Board(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5858"
+          },
+          {
+              "title":"Pogo Board(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5852"
+          },
+          {
+              "title":"LCD Cable(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5850"
+          },
+          {
+              "title":"Keypad Board(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5848"
+          },
+          {
+              "title":"Front Camera(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5847"
+          },
+          {
+              "title":"Front Camera Module(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5843"
+          },
+          {
+              "title":"HOME Keypad Board(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5846"
+          },
+          {
+              "title":"Digitizer Cable(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5835"
+          },
+          {
+              "title":"LCD(A)",
+              "url": "https://support.getac.com/Elibrary/GetVideo/5890"
           }
-        ],
-        "assembly": [
-          {
-            "title": "Battery Pack(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9353"
-          },
-          {
-            "title": "Fingerprint(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9359"
-          },
-          {
-            "title": "Smartcard(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9350"
-          },
-          {
-            "title": "RFID(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9400"
-          },
-          {
-            "title": "Expansion Bay(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9351"
-          },
-          {
-            "title": "Plate(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9396"
-          },
-          {
-            "title": "4G Module(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9391"
-          },
-          {
-            "title": "SSD Module(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9395"
-          },
-          {
-            "title": "Wi-Fi Module(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9394"
-          },
-          {
-            "title": "Case A(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9405"
-          },
-          {
-            "title": "Battery Trans Board(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9398"
-          },
-          {
-            "title": "RJ45(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9388"
-          },
-          {
-            "title": "RJ-45 RS232 Combo(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9408"
-          },
-          {
-            "title": "Barcode(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9410"
-          },
-          {
-            "title": "MicroSD(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9386"
-          },
-          {
-            "title": "RS232(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9411"
-          },
-          {
-            "title": "USB2.0(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9382"
-          },
-          {
-            "title": "Option Bay(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9381"
-          },
-          {
-            "title": "Rear Camera(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9384"
-          },
-          {
-            "title": "Rear Camera Module(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9352"
-          },
-          {
-            "title": "Mother Board(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9407"
-          },
-          {
-            "title": "Memory(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9383"
-          },
-          {
-            "title": "Each Antenna(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9375"
-          },
-          {
-            "title": "Fan(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9378"
-          },
-          {
-            "title": "RF Board(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9377"
-          },
-          {
-            "title": "Pogo Board(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9371"
-          },
-          {
-            "title": "LCD Cable(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9369"
-          },
-          {
-            "title": "Keypad Board(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9367"
-          },
-          {
-            "title": "Front Camera(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9366"
-          },
-          {
-            "title": "Front Camera Module(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9362"
-          },
-          {
-            "title": "Home Keypad Board(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9365"
-          },
-          {
-            "title": "Digitizer Cable(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9357"
-          },
-          {
-            "title": "LCD(A)",
-            "url": "https://support.getac.com/Elibrary/GetVideo/9409"
-          }
-        ]
+          ]
       }
     },
     {
